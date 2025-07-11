@@ -53,11 +53,10 @@ book:
         - chapters/01Build-inDataType/01_boolean.qmd
         - chapters/01Build-inDataType/02_numeric.qmd
         - chapters/01Build-inDataType/03_string.qmd
-        # - chapters/01Build-inDataType/06_list.qmd
-        # - chapters/01Build-inDataType/07_tuple.qmd
-        # - chapters/01Build-inDataType/08_set.qmd
-        # - chapters/01Build-inDataType/09_dict.qmd
-        # - chapters/01Build-inDataType/10_frozenset.qmd
+        - chapters/01Build-inDataType/04_list.qmd
+        - chapters/01Build-inDataType/05_set.qmd
+        - chapters/01Build-inDataType/06_dict.qmd
+        - chapters/01Build-inDataType/07_binary.qmd
         # - chapters/01Build-inDataType/11_bytes.qmd
         # - chapters/01Build-inDataType/12_bytearray.qmd
         # - chapters/01Build-inDataType/13_memoryview.qmd

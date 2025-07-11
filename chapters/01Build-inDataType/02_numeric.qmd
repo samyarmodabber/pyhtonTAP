@@ -1,4 +1,4 @@
-# Numeric
+# Numeric Type
 
 ## Introduction
 In Python, **numeric types** are built-in data types used to store and manipulate numbers. There are three main numeric types:
@@ -191,3 +191,14 @@ print(x is not None) # False
 print(y is None) # True
 ```
 Why? Because `None` is a singleton, and identity checks (`is`) are more precise than equality checks (`==`).
+
+#### Boolean as a Subclass of Integer
+
+```python
+True == 1     # True
+False == 0    # True
+True + True   # 2
+False + 3     # 3
+```
+
+But for readability, it’s best to **use `True` and `False` explicitly** for logical operations rather than numeric 1 and 0.

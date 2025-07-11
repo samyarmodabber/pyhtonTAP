@@ -1,4 +1,4 @@
-# Boolean
+# Boolean Type
 
 ## Introduction
 

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>11&nbsp; Conditions and Loops – Python TAP (Theory, Application and Practice)</title>
+<title>6&nbsp; Mapping Types – Python TAP (Theory, Application and Practice)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/05/05-functions.html" rel="next">
-<link href="../../chapters/03/03-data-structures.html" rel="prev">
+<link href="../../chapters/01Build-inDataType/07_binary.html" rel="next">
+<link href="../../chapters/01Build-inDataType/05_set.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -312,7 +312,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/01/01-basic-and-string.html">Practice</a></li><li class="breadcrumb-item"><a href="../../chapters/04/04-conditions-and-loops.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Conditions and Loops</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/01Build-inDataType/01_boolean.html">Built-in Data Types</a></li><li class="breadcrumb-item"><a href="../../chapters/01Build-inDataType/06_dict.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Mapping Types</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -384,7 +384,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/01Build-inDataType/06_dict.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/01Build-inDataType/06_dict.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Mapping Types</span></span></a>
   </div>
 </li>
@@ -425,7 +425,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/04/04-conditions-and-loops.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/04/04-conditions-and-loops.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Conditions and Loops</span></span></a>
   </div>
 </li>
@@ -453,9 +453,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">content</h2>
    
   <ul class="collapse">
-  <li><a href="#if-elif-else" id="toc-if-elif-else" class="nav-link active" data-scroll-target="#if-elif-else"><span class="header-section-number">11.1</span> if, elif, else</a></li>
-  <li><a href="#for" id="toc-for" class="nav-link" data-scroll-target="#for"><span class="header-section-number">11.2</span> For</a></li>
-  <li><a href="#while" id="toc-while" class="nav-link" data-scroll-target="#while"><span class="header-section-number">11.3</span> while</a></li>
+  <li><a href="#creating-a-dictionary" id="toc-creating-a-dictionary" class="nav-link active" data-scroll-target="#creating-a-dictionary"><span class="header-section-number">6.1</span> Creating a Dictionary</a></li>
+  <li><a href="#dictionarys-feature" id="toc-dictionarys-feature" class="nav-link" data-scroll-target="#dictionarys-feature"><span class="header-section-number">6.2</span> Dictionary’s Feature</a></li>
+  <li><a href="#accessing-and-modifying" id="toc-accessing-and-modifying" class="nav-link" data-scroll-target="#accessing-and-modifying"><span class="header-section-number">6.3</span> Accessing and Modifying</a></li>
+  <li><a href="#common-methods" id="toc-common-methods" class="nav-link" data-scroll-target="#common-methods"><span class="header-section-number">6.4</span> Common Methods</a></li>
+  <li><a href="#looping-through-a-dictionary" id="toc-looping-through-a-dictionary" class="nav-link" data-scroll-target="#looping-through-a-dictionary"><span class="header-section-number">6.5</span> Looping Through a Dictionary</a></li>
+  <li><a href="#dictionary-comprehension" id="toc-dictionary-comprehension" class="nav-link" data-scroll-target="#dictionary-comprehension"><span class="header-section-number">6.6</span> Dictionary Comprehension</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes"><span class="header-section-number">6.7</span> Notes</a></li>
   </ul>
 </nav>
     </div>
@@ -463,9 +467,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/01/01-basic-and-string.html">Practice</a></li><li class="breadcrumb-item"><a href="../../chapters/04/04-conditions-and-loops.html"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Conditions and Loops</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/01Build-inDataType/01_boolean.html">Built-in Data Types</a></li><li class="breadcrumb-item"><a href="../../chapters/01Build-inDataType/06_dict.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Mapping Types</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Conditions and Loops</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Mapping Types</span></h1>
 </div>
 
 
@@ -482,317 +486,133 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="if-elif-else" class="level2" data-number="11.1">
-<h2 data-number="11.1" class="anchored" data-anchor-id="if-elif-else"><span class="header-section-number">11.1</span> if, elif, else</h2>
-<div id="cell-2" class="cell" data-execution_count="8">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># a='sara' #23</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># b='saara' #22</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span>[<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">5</span>,<span class="dv">8</span>]</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>b<span class="op">=</span> [<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">7</span>]</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> a<span class="op">==</span>b:</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>a<span class="sc">}</span><span class="ss"> is equal </span><span class="sc">{</span>b<span class="sc">}</span><span class="ss">.'</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> a<span class="op">&gt;</span>b:</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>a<span class="sc">}</span><span class="ss"> is greater than </span><span class="sc">{</span>b<span class="sc">}</span><span class="ss">.'</span>)</span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> a<span class="op">&lt;</span>b:     </span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>a<span class="sc">}</span><span class="ss"> is less than </span><span class="sc">{</span>b<span class="sc">}</span><span class="ss">.'</span>)</span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Non of theme'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[2, 3, 5, 8] is less than [2, 3, 7].</code></pre>
-</div>
-</div>
-<section id="logic-operators" class="level3">
-<h3 class="anchored" data-anchor-id="logic-operators">Logic operators</h3>
-<div id="cell-4" class="cell" data-execution_count="9">
-<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>user<span class="op">=</span><span class="st">'Admin'</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>logged_in<span class="op">=</span><span class="va">False</span></span>
+<p>In Python, a <strong><code>dict</code> (dictionary)</strong> is the primary <strong>mapping type</strong>. It maps <strong>keys to values</strong>, allowing fast lookup, insertion, and deletion.</p>
+<section id="creating-a-dictionary" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="creating-a-dictionary"><span class="header-section-number">6.1</span> Creating a Dictionary</h2>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using curly braces</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>person <span class="op">=</span> {<span class="st">'name'</span>: <span class="st">'Alice'</span>, <span class="st">'age'</span>: <span class="dv">30</span>}</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Using dict() constructor</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>data <span class="op">=</span> <span class="bu">dict</span>(country<span class="op">=</span><span class="st">'Germany'</span>, capital<span class="op">=</span><span class="st">'Berlin'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="dictionarys-feature" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="dictionarys-feature"><span class="header-section-number">6.2</span> Dictionary’s Feature</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Feature</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td><code>dict</code></td>
+</tr>
+<tr class="even">
+<td><strong>Mutable</strong></td>
+<td>✅ Yes</td>
+</tr>
+<tr class="odd">
+<td><strong>Ordered</strong></td>
+<td>✅ Yes (since Python 3.7+)</td>
+</tr>
+<tr class="even">
+<td><strong>Key uniqueness</strong></td>
+<td>✅ Keys must be unique</td>
+</tr>
+<tr class="odd">
+<td><strong>Key types</strong></td>
+<td>Must be hashable (e.g., <code>str</code>, <code>int</code>, <code>tuple</code>)</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="accessing-and-modifying" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="accessing-and-modifying"><span class="header-section-number">6.3</span> Accessing and Modifying</h2>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Access</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(person[<span class="st">'name'</span>])      <span class="co"># Alice</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Add or update</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>person[<span class="st">'age'</span>] <span class="op">=</span> <span class="dv">31</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Add new key</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>person[<span class="st">'city'</span>] <span class="op">=</span> <span class="st">'Berlin'</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="common-methods" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="common-methods"><span class="header-section-number">6.4</span> Common Methods</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 71%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>d.get(key[, default])</code></td>
+<td>Returns value for key or <code>default</code> if key not found</td>
+</tr>
+<tr class="even">
+<td><code>d.keys()</code></td>
+<td>Returns a view of keys</td>
+</tr>
+<tr class="odd">
+<td><code>d.values()</code></td>
+<td>Returns a view of values</td>
+</tr>
+<tr class="even">
+<td><code>d.items()</code></td>
+<td>Returns a view of (key, value) pairs</td>
+</tr>
+<tr class="odd">
+<td><code>d.pop(key[, default])</code></td>
+<td>Removes key and returns its value</td>
+</tr>
+<tr class="even">
+<td><code>d.popitem()</code></td>
+<td>Removes and returns the <strong>last inserted</strong> (key, value)</td>
+</tr>
+<tr class="odd">
+<td><code>d.update(other_dict)</code></td>
+<td>Updates dictionary with key-value pairs from another dict</td>
+</tr>
+<tr class="even">
+<td><code>d.clear()</code></td>
+<td>Removes all items</td>
+</tr>
+<tr class="odd">
+<td><code>key in d</code></td>
+<td>Tests if a key exists in the dictionary</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="looping-through-a-dictionary" class="level2" data-number="6.5">
+<h2 data-number="6.5" class="anchored" data-anchor-id="looping-through-a-dictionary"><span class="header-section-number">6.5</span> Looping Through a Dictionary</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key <span class="kw">in</span> person:</span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(key, person[key])</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> user<span class="op">==</span><span class="st">'Admin'</span> <span class="kw">and</span> logged_in:</span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span> (<span class="st">'Admin Page'</span>)</span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> <span class="kw">not</span> logged_in:</span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'Login Page'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Login Page</code></pre>
-</div>
-</div>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># or</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> key, value <span class="kw">in</span> person.items():</span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>key<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>value<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="false-value" class="level3">
-<h3 class="anchored" data-anchor-id="false-value">False Value</h3>
+<section id="dictionary-comprehension" class="level2" data-number="6.6">
+<h2 data-number="6.6" class="anchored" data-anchor-id="dictionary-comprehension"><span class="header-section-number">6.6</span> Dictionary Comprehension</h2>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>squares <span class="op">=</span> {x: x<span class="op">*</span>x <span class="cf">for</span> x <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">5</span>)}</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co"># {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="notes" class="level2" data-number="6.7">
+<h2 data-number="6.7" class="anchored" data-anchor-id="notes"><span class="header-section-number">6.7</span> Notes</h2>
 <ul>
-<li>False</li>
-<li>None</li>
-<li>Zero</li>
-<li>Empty structure: ’’, [], (), {}</li>
+<li>Dictionaries are <strong>not</strong> sequences (like lists or tuples), but they are <strong>iterable</strong>.</li>
+<li>Keys must be <strong>hashable</strong> (e.g., strings, numbers, tuples of immutable types).</li>
+<li>Values can be of any type and duplicated.</li>
 </ul>
-<div id="cell-6" class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">None</span> <span class="kw">or</span> <span class="dv">0</span> <span class="kw">or</span> [] <span class="kw">or</span> () <span class="kw">or</span> {} <span class="kw">or</span> <span class="st">''</span>:</span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'One of them is True'</span>)</span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'All of them are False'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>All of them are False</code></pre>
-</div>
-</div>
-</section>
-</section>
-<section id="for" class="level2" data-number="11.2">
-<h2 data-number="11.2" class="anchored" data-anchor-id="for"><span class="header-section-number">11.2</span> For</h2>
-<div id="cell-8" class="cell" data-execution_count="10">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>courses<span class="op">=</span>[<span class="st">'Calcules'</span>,<span class="st">'Physics'</span>,<span class="st">'Computer'</span>,<span class="st">'Statistic'</span>,<span class="st">'Algebra'</span>]</span>
-<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> c <span class="kw">in</span> courses:</span>
-<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(c)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Calcules
-Physics
-Computer
-Statistic
-Algebra</code></pre>
-</div>
-</div>
-<div id="cell-9" class="cell" data-execution_count="11">
-<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>courses<span class="op">=</span>[<span class="st">'Calcules'</span>,<span class="st">'Physics'</span>,<span class="st">'Computer'</span>,<span class="st">'Statistic'</span>,<span class="st">'Algebra'</span>]</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> _ <span class="kw">in</span> courses:</span>
-<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">'*'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>*
-*
-*
-*
-*</code></pre>
-</div>
-</div>
-<div id="cell-10" class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">7</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="13">
-<pre><code>[0, 1, 2, 3, 4, 5, 6]</code></pre>
-</div>
-</div>
-<div id="cell-11" class="cell" data-execution_count="17">
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">7</span>):</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i<span class="op">%</span><span class="dv">2</span><span class="op">==</span><span class="dv">0</span>:</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss"> is Even.'</span>)</span>
-<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'</span><span class="sc">{</span>i<span class="sc">}</span><span class="ss"> is Odd.'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>0 is Even.
-1 is Odd.
-2 is Even.
-3 is Odd.
-4 is Even.
-5 is Odd.
-6 is Even.</code></pre>
-</div>
-</div>
-<div id="cell-12" class="cell" data-execution_count="19">
-<div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>limit<span class="op">=</span><span class="dv">3</span></span>
-<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">7</span>):</span>
-<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i<span class="op">&lt;</span>limit:</span>
-<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'Your password is not correct. </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss">/</span><span class="sc">{</span>limit<span class="sc">}</span><span class="ss">.'</span>)</span>
-<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f'You input incorrected password </span><span class="sc">{</span>i<span class="sc">}</span><span class="ss"> times. Your card is blocked.'</span>)</span>
-<span id="cb15-8"><a href="#cb15-8" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>Your password is not correct. 1/3.
-Your password is not correct. 2/3.
-You input incorrected password 3 times. Your card is blocked.</code></pre>
-</div>
-</div>
-<div id="cell-13" class="cell" data-execution_count="26">
-<div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">20</span>):</span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> i<span class="op">%</span><span class="dv">3</span><span class="op">==</span><span class="dv">0</span>:</span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(i)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>1
-2
-4
-5
-7
-8
-10
-11
-13
-14
-16
-17
-19</code></pre>
-</div>
-</div>
-<div id="cell-14" class="cell" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(<span class="dv">3</span>):</span>
-<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> j <span class="kw">in</span> <span class="st">'abc'</span>:</span>
-<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(i,j)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>0 a
-0 b
-0 c
-1 a
-1 b
-1 c
-2 a
-2 b
-2 c</code></pre>
-</div>
-</div>
-</section>
-<section id="while" class="level2" data-number="11.3">
-<h2 data-number="11.3" class="anchored" data-anchor-id="while"><span class="header-section-number">11.3</span> while</h2>
-<div id="cell-16" class="cell" data-execution_count="22">
-<div class="sourceCode cell-code" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> x<span class="op">&lt;=</span><span class="dv">10</span>:</span>
-<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    x<span class="op">+=</span><span class="dv">1</span></span>
-<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span>
-<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>    </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>1
-2
-3
-4
-5
-6
-7
-8
-9
-10
-11</code></pre>
-</div>
-</div>
-<div id="cell-17" class="cell" data-execution_count="21">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>x</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="21">
-<pre><code>11</code></pre>
-</div>
-</div>
-<div id="cell-18" class="cell" data-execution_count="23">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>u<span class="op">=</span>[<span class="dv">2</span> ,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">5</span>]</span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>v<span class="op">=</span>[<span class="op">-</span><span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">0</span>,<span class="dv">6</span>,<span class="dv">7</span>]</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>s<span class="op">=</span><span class="dv">0</span></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="bu">len</span>(u)</span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>    s<span class="op">+=</span>u[i]<span class="op">*</span>v[i]</span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>s</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="23">
-<pre><code>96</code></pre>
-</div>
-</div>
-<div id="cell-19" class="cell" data-execution_count="28">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>u<span class="op">=</span>[<span class="dv">2</span> ,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">5</span>,<span class="dv">4</span>,<span class="dv">2</span>,<span class="dv">5</span>,<span class="dv">2</span>]</span>
-<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a>v<span class="op">=</span>[<span class="op">-</span><span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">0</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="op">-</span><span class="dv">1</span>,<span class="dv">8</span>,<span class="dv">6</span>,<span class="dv">5</span>]</span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>s<span class="op">=</span><span class="dv">0</span></span>
-<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="bu">len</span>(u)</span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">len</span>(u)<span class="op">!=</span><span class="bu">len</span>(v):</span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'dim is not equal: </span><span class="sc">{</span><span class="bu">len</span>(u)<span class="sc">}</span><span class="ss"> , </span><span class="sc">{</span><span class="bu">len</span>(v)<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>        s<span class="op">+=</span>u[i]<span class="op">*</span>v[i]</span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>s</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="28">
-<pre><code>148</code></pre>
-</div>
-</div>
-<div id="cell-20" class="cell" data-execution_count="29">
-<div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a>u<span class="op">=</span>[<span class="dv">2</span> ,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">8</span>,<span class="dv">5</span>,<span class="dv">4</span>,<span class="dv">2</span>,<span class="dv">5</span>,<span class="dv">2</span>]</span>
-<span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a>v<span class="op">=</span>[<span class="op">-</span><span class="dv">1</span>,<span class="dv">5</span>,<span class="dv">0</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="op">-</span><span class="dv">1</span>,<span class="dv">8</span>,<span class="dv">6</span>,<span class="dv">5</span>]</span>
-<span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-4"><a href="#cb29-4" aria-hidden="true" tabindex="-1"></a>s<span class="op">=</span><span class="dv">0</span></span>
-<span id="cb29-5"><a href="#cb29-5" aria-hidden="true" tabindex="-1"></a>n<span class="op">=</span><span class="bu">len</span>(u)</span>
-<span id="cb29-6"><a href="#cb29-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb29-7"><a href="#cb29-7" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="bu">len</span>(u)<span class="op">==</span><span class="bu">len</span>(v):</span>
-<span id="cb29-8"><a href="#cb29-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(n):</span>
-<span id="cb29-9"><a href="#cb29-9" aria-hidden="true" tabindex="-1"></a>        s<span class="op">+=</span>u[i]<span class="op">*</span>v[i]</span>
-<span id="cb29-10"><a href="#cb29-10" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
-<span id="cb29-11"><a href="#cb29-11" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="ss">f'dim is not equal: </span><span class="sc">{</span><span class="bu">len</span>(u)<span class="sc">}</span><span class="ss"> , </span><span class="sc">{</span><span class="bu">len</span>(v)<span class="sc">}</span><span class="ss">'</span>)</span>
-<span id="cb29-12"><a href="#cb29-12" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb29-13"><a href="#cb29-13" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb29-14"><a href="#cb29-14" aria-hidden="true" tabindex="-1"></a>s</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="29">
-<pre><code>148</code></pre>
-</div>
-</div>
-<div id="cell-21" class="cell" data-execution_count="37">
-<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> inner_product(a,b):</span>
-<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>    m<span class="op">=</span><span class="bu">len</span>(a)</span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>    n<span class="op">=</span><span class="bu">len</span>(b)</span>
-<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>    s<span class="op">=</span><span class="dv">0</span></span>
-<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> m<span class="op">==</span>n :</span>
-<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">for</span> i <span class="kw">in</span> <span class="bu">range</span>(m):</span>
-<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a>            s<span class="op">+=</span>a[i]<span class="op">*</span>b[i]</span>
-<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a>        <span class="cf">return</span> <span class="st">'Dimentions are not equal'</span></span>
-<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> s</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="cell-22" class="cell" data-execution_count="31">
-<div class="sourceCode cell-code" id="cb32"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a>inner_product(u,v)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="31">
-<pre><code>148</code></pre>
-</div>
-</div>
-<div id="cell-23" class="cell" data-execution_count="32">
-<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a>u1<span class="op">=</span>[<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">6</span>]</span>
-<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a>u2<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">5</span>,<span class="dv">9</span>]</span>
-<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a>inner_product(u1,u2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="32">
-<pre><code>69</code></pre>
-</div>
-</div>
-<div id="cell-24" class="cell" data-execution_count="38">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>u1<span class="op">=</span>[<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">6</span>,<span class="dv">3</span>]</span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>u2<span class="op">=</span>[<span class="dv">0</span>,<span class="dv">5</span>,<span class="dv">9</span>]</span>
-<span id="cb36-3"><a href="#cb36-3" aria-hidden="true" tabindex="-1"></a>inner_product(u1,u2)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="38">
-<pre><code>'Dimentions are not equal'</code></pre>
-</div>
-</div>
-<div id="cell-25" class="cell">
-<div class="sourceCode cell-code" id="cb38"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb38-1"><a href="#cb38-1" aria-hidden="true" tabindex="-1"></a>a<span class="op">=</span>[<span class="dv">1</span>,<span class="dv">2</span>,<span class="dv">3</span>,<span class="dv">4</span>,<span class="dv">5</span>,<span class="dv">6</span>,<span class="dv">7</span>,<span class="dv">8</span>,<span class="dv">9</span>]</span>
-<span id="cb38-2"><a href="#cb38-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-3"><a href="#cb38-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb38-4"><a href="#cb38-4" aria-hidden="true" tabindex="-1"></a><span class="co"># 1 2 3</span></span>
-<span id="cb38-5"><a href="#cb38-5" aria-hidden="true" tabindex="-1"></a><span class="co"># 4 5 6</span></span>
-<span id="cb38-6"><a href="#cb38-6" aria-hidden="true" tabindex="-1"></a><span class="co"># 7 8 9</span></span>
-<span id="cb38-7"><a href="#cb38-7" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div id="cell-26" class="cell" data-execution_count="40">
-<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="bu">list</span>(<span class="bu">range</span>(<span class="dv">1</span>,<span class="dv">26</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="40">
-<pre><code>[1,
- 2,
- 3,
- 4,
- 5,
- 6,
- 7,
- 8,
- 9,
- 10,
- 11,
- 12,
- 13,
- 14,
- 15,
- 16,
- 17,
- 18,
- 19,
- 20,
- 21,
- 22,
- 23,
- 24,
- 25]</code></pre>
-</div>
-</div>
 
 
 </section>
@@ -1212,13 +1032,13 @@ You input incorrected password 3 times. Your card is blocked.</code></pre>
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../chapters/03/03-data-structures.html" class="pagination-link" aria-label="Data structures">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Data structures</span></span>
+      <a href="../../chapters/01Build-inDataType/05_set.html" class="pagination-link" aria-label="Set Type">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Set Type</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/05/05-functions.html" class="pagination-link" aria-label="Function">
-        <span class="nav-page-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Function</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/01Build-inDataType/07_binary.html" class="pagination-link" aria-label="Binary Sequence">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">Binary Sequence</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
