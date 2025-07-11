@@ -1,21 +1,30 @@
-# Paython(Basic)
+# Python TAP (Theory, Application, and Practice)
 
-This repository holds the Jupyter Book source for `Paython(Basic)`.
+This repository contains the source code and content for the book ***Python TAP: Theory, Application, and Practice***.
 
-## 1. To make a change to the book and update
+## Preview the Book Locally
 
-1. Fork the repository:
+To preview the book locally, run:
 
+```bash
+quarto preview
+```
+
+Make sure you have Quarto installed. For installation and usage details, refer to:
+
+* [Getting Started with Quarto](https://quarto.org/docs/get-started/)
+* [Quarto Documentation](https://quarto.org/docs/guide/)
+
+## Contributing to the Book
+
+To propose changes or improvements:
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/samyarmodabber/pythontap
    ```
-   git clone https://github.com/samyarmodabber/python-book
-   ```
-2. Change the file you wish and commit it to the repository.
-3. Pull request your.
 
-## 2. Build and preview the book locally
+2. Make your changes in the relevant file(s) and commit them.
 
-To build locally, `pip install -r requirements.txt` and then `jupyter-book build .`
-
-**Follow the build instructions on the Jupyter Book guide**. The guide has
-information for how to use the Jupyter Book CLI to build this book. You can find
-the [Jupyter Book build instructions here](https://jupyterbook.org/start/build.html).
+3. Open a pull request with a clear description of your updates.

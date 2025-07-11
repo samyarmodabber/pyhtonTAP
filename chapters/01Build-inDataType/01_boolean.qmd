@@ -1,0 +1,74 @@
+# Boolean
+
+## Introduction
+
+In Python, **booleans** are a built-in data type that represent one of two values:
+
+* `True`
+* `False`
+
+These are the two built-in constant of the `bool` type.
+For showing the type of a value, you can use the `type()` function.
+
+```python
+type(True)   # <class 'bool'>
+type(False)  # <class 'bool'>
+```
+
+Booleans are often used in:
+
+* Comparisons
+* Conditionals (`if`, `while`)
+* Logical operations
+
+---
+
+## Common Boolean Operators
+
+| Operator | Description | Example                    |
+| -------- | ----------- | -------------------------- |
+| `and`    | Logical AND | `True and False` → `False` |
+| `or`     | Logical OR  | `True or False` → `True`   |
+| `not`    | Logical NOT | `not True` → `False`       |
+
+---
+
+### Example Usage
+
+```python
+print(2 < 5)  # True
+print(3==13)  # False
+```
+---
+
+## `None` in Python
+
+In Python, **built-in constants** are special predefined names that represent fixed values. They are always available and do not require an import. Until now, we have used two built-in constants: `True` and `False`.
+
+`None` is another **built-in constant** in Python that 
+
+- represents the **absence of a value** or a **null value**.
+- It is a singleton object: there is only one instance of `NoneType`.
+
+
+It is often used to:
+
+- Indicate that a variable has no value yet
+- Represent the default return value of functions that don’t explicitly return anything
+
+```python
+x = None
+print(type(x))  # <class 'NoneType'>
+```
+
+---
+### Comparison with `None`
+
+Use `is` and `is not` to test an variable is change to None or not. Teses are **comparison operators**.
+
+```python
+x = 2
+print(x is None) # False
+print(x is not None) # True
+```
+

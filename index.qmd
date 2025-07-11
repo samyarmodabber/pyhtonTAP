@@ -1,0 +1,6 @@
+# Introduction {.unnumbered}
+
+In this book, I will teach you Python 3 from the ground up.
+
+I will start with the basics and then move on to more advanced topics. I will also provide you with exercises and projects to help you practice what you have learned. I will also provide you with a reference guide to help you look up information quickly.
+

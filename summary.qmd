@@ -1,0 +1,3 @@
+# Summary
+
+You have learned basic concept in Python from this book. Now it can help you in your future projects and jobs. Whith python you can do anything from web development to machine learning and artificial intelligence. It is a very powerful language and it is very easy to learn. It help you to solve your problems in a very efficient way.
