@@ -12,116 +12,116 @@
   {
     "objectID": "chapters/01helloPython/00_input-output.html",
     "href": "chapters/01helloPython/00_input-output.html",
-    "title": "1  Start with python",
+    "title": "1  Basic Concepts",
     "section": "",
-    "text": "1.1 Variables\nA variable holds a value. You can store strings, numbers, or any data.\nHere’s a table of common Python data types with their descriptions and examples:",
+    "text": "1.1 Variables\nA variable holds a value. You can store strings, numbers, or any data.",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
     ]
   },
   {
     "objectID": "chapters/01helloPython/00_input-output.html#variables",
     "href": "chapters/01helloPython/00_input-output.html#variables",
-    "title": "1  Start with python",
+    "title": "1  Basic Concepts",
     "section": "",
-    "text": "city = \"Berlin\"\npopulation = 3850000\narea = 891.8        \nis_capital = True   \n\n\n\n\n\n\n\n\n\n\nType\nClass Name\nDescription\nExample\n\n\n\n\nInteger\nint\nWhole numbers\n42, -3\n\n\nFloating-point\nfloat\nDecimal numbers\n3.14, -0.01\n\n\nBoolean\nbool\nLogical values\nTrue, False\n\n\nString\nstr\nText (sequence of characters)\n“hello”, ‘Python’\n\n\nNone\nNoneType\nRepresents no value\nNone\n\n\n\n\nNone\nNone represents the absence of a value. This is useful when you want to define a variable before assigning a real value later.\nresult = None\nprint(\"Result is:\", result)",
+    "text": "city = \"Berlin\"\npopulation = 3850000\narea = 891.8        \nis_capital = True\nrivers=None\n\nNone represents the absence of a value. This is useful when you want to define a variable before assigning a real value.\nPython is case-sensitive. This means that variable names, function names, and identifiers with different capitalizations are treated as completely different.\n\n\n\ncommon Python data types\nHere’s a table of common Python data types with their descriptions and examples:\n\n\n\n\n\n\n\n\n\nType\nClass Name\nDescription\nExample\n\n\n\n\nString\nstr\nsequence of characters\n“hello”, ‘Python’\n\n\nInteger\nint\nWhole numbers\n42, -3\n\n\nFloating-point\nfloat\nDecimal numbers\n3.14, -0.01\n\n\nBoolean\nbool\nLogical values\nTrue, False\n\n\nNone\nNoneType\nRepresents no value\nNone",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
     ]
   },
   {
     "objectID": "chapters/01helloPython/00_input-output.html#comments",
     "href": "chapters/01helloPython/00_input-output.html#comments",
-    "title": "1  Start with python",
+    "title": "1  Basic Concepts",
     "section": "1.2 Comments",
-    "text": "1.2 Comments\nIn Python, comments are used to explain the code and are ignored during execution.\n\n\n\n\n\n\n\n\nType\nSymbol\nExample\n\n\n\n\nSingle-line\n#\n# This is a comment\n\n\nInline\n# at end\nx = 10 # set x to 10\n\n\nMulti-line\n““” … ““” or ’’’ … ’’’\n(used for docstrings or multi-line notes)\n\n\n\n\nExamples\n\n1. Single-line comment\n# This prints \"Hello\"\nprint(\"Hello\")\n\n\n2. Inline comment\nx = 5  # Store 5 in x\n\n\n3. Multi-line comment (usually not recommended for regular comments)\nprint(\"Before Comment\")\n\"\"\"\nThis is a multi-line comment\nor documentation block.\n\"\"\"\nprint(\"After Comment\")",
+    "text": "1.2 Comments\nIn Python, comments are used to explain the code and are ignored during execution.\n\nSingle-line comment\n\n# This prints \"Hello\"\n\nInline comment\n\nx = 5  # Store 5 in x\n\nMulti-line comment\n\n\"\"\"\nThis is a multi-line comment\nor documentation block.\n\"\"\"",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
     ]
   },
   {
     "objectID": "chapters/01helloPython/00_input-output.html#display-output",
     "href": "chapters/01helloPython/00_input-output.html#display-output",
-    "title": "1  Start with python",
+    "title": "1  Basic Concepts",
     "section": "1.3 Display Output",
-    "text": "1.3 Display Output\nIn Python, print() is a built-in function used to display output on the screen (usually in the terminal or console).\n\nBasic Syntax\nprint(object1, object2, ..., sep=' ', end='\\n', file=sys.stdout, flush=False)\n\n\nCommon Uses\n\nPrint a string or number\n\nprint(\"Hello, world!\")\nprint(42)\n\nPrint multiple items\n\nprint(\"Age:\", 25) # Output: Age: 25\n\nChange separator\n\nprint(\"A\", \"B\", \"C\", sep=\"-\") # Output: A-B-C\n\nChange end character\n\nprint(\"Hello\", end=\" \")\nprint(\"World\")\n# Output: Hello World\n\nPrint variables\n\nname = \"Samyar\"\nprint(\"Name:\", name)\n\nFormatted output\n\nx = 3.14159\nprint(f\"Pi is approximately {x:.2f}\")",
+    "text": "1.3 Display Output\nIn Python, print() is a built-in function used to display output on the screen (usually in the terminal or console).\n\nBasic Syntax\nprint(object1, object2, ..., sep=' ', end='\\n')\n\n\nCommon Uses\n\nPrint one or multiple items\n\nprint(\"Hello, world!\")\nprint(42)\nprint(\"Age:\", 25) # Output: Age: 25\n\n\nChange separator\n\nprint(\"A\", \"B\", \"C\", sep=\"-\") # Output: A-B-C\n\nChange end character\n\nprint(\"Hello\", end=\" \")\nprint(\"World\")\n# Output: Hello World\n\nPrint variables\n\nname = \"Samyar\"\nprint(\"Name:\", name)\n\n\n\nFormatted output\n\n\n1. Using f-string (Recommended)\nprint(f\"{city} is a capital city with a population of {population:,} and an area of {area:.1f} km².\")\n\n\n2. Using str.format()\nprint(\"{} is a capital city with a population of {:,} and an area of {:.1f} km².\".format(city, population, area))\n\n\n3. Using % formatting (old style)\nprint(\"%s is a capital city with a population of %,d and an area of %.1f km².\" % (city, population, area))\nOutput:\nBerlin is a capital city with a population of 3,850,000 and an area of 891.8 km².",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
     ]
   },
   {
     "objectID": "chapters/01helloPython/00_input-output.html#check-data-type",
     "href": "chapters/01helloPython/00_input-output.html#check-data-type",
-    "title": "1  Start with python",
+    "title": "1  Basic Concepts",
     "section": "1.4 Check Data Type",
-    "text": "1.4 Check Data Type\nThe type() function in Python is used to check the data type of a variable or value.\n\nSyntax:\ntype(object)\n\n\nExamples:\nprint(type(42))           # &lt;class 'int'&gt;\nprint(type(3.14))         # &lt;class 'float'&gt;\nprint(type(\"hello\"))      # &lt;class 'str'&gt;\nprint(type(None))         # &lt;class 'NoneType'&gt;\nprint(type(True))         # &lt;class 'bool'&gt;\nprint(type(print))        # &lt;class 'builtin_function_or_method'&gt;\nThe isinstance() function in Python is used to check if a value is an instance of a specific type or class.\n\n\nSyntax:\nisinstance(object, classinfo)\n\nobject: the value or variable to check\nclassinfo: a type or a tuple of types\n\n\n\n\nExamples:\nx = 42\ns = \"hello\"\nprint(isinstance(x, int))     # True\nprint(isinstance(x, float))   # False\nprint(isinstance(s, str))     # True\nprint(isinstance(s, bool))    # False",
+    "text": "1.4 Check Data Type\n\nThe type() function in Python is used to check the data type of a variable or value.\n\nSyntax\ntype(object)\n\n\nExamples\nprint(type(42))           # &lt;class 'int'&gt;\nprint(type(3.14))         # &lt;class 'float'&gt;\nprint(type(\"hello\"))      # &lt;class 'str'&gt;\nprint(type(None))         # &lt;class 'NoneType'&gt;\nprint(type(True))         # &lt;class 'bool'&gt;\nprint(type(print))        # &lt;class 'builtin_function_or_method'&gt;\n\nThe isinstance() function in Python is used to check if a value is an instance of a specific type or class.\n\n\nSyntax\nisinstance(object, &lt;class_name&gt;)\n\n\nExamples\nx = 42\ns = \"hello\"\nprint(isinstance(x, int))     # True\nprint(isinstance(x, float))   # False\nprint(isinstance(s, str))     # True\nprint(isinstance(s, bool))    # False",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01helloPython/00_input-output.html#get-user-input",
-    "href": "chapters/01helloPython/00_input-output.html#get-user-input",
-    "title": "1  Start with python",
-    "section": "1.5 Get User Input",
-    "text": "1.5 Get User Input\nThe input() function in Python is used to take input from the user as a string.\n\nSyntax:\nvariable = input(\"Prompt message\")\n\nThe message inside input() is optional and is shown to the user.\nThe return value is always a string (str), even if the user types a number.\n\n\n\nExamples:\n\n1. Get user’s name\nname = input(\"What is your name? \")\nprint(\"Hello, \" + name)\n\n\n2. Get number input\nage = input(\"Enter your age: \")\nprint(type(age))   # &lt;class 'str'&gt;\n\n\n3. Convert input to integer\nage = int(input(\"Enter your age: \"))\nprint(age + 5)\n\n\n4. Multiple inputs\nx, y = input(\"Enter two numbers separated by space: \").split()\nprint(x, y)\n\n\n\nCommon Mistake\nAlways validate or cast carefully.\n# This will cause an error if input is not a number\nnum = int(input(\"Enter a number: \"))",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
     ]
   },
   {
     "objectID": "chapters/01helloPython/00_input-output.html#type-conversion",
     "href": "chapters/01helloPython/00_input-output.html#type-conversion",
-    "title": "1  Start with python",
-    "section": "1.6 Type Conversion",
-    "text": "1.6 Type Conversion\nIn Python, Type Conversion means converting a value from one data type to another. Two Types of Type Conversion are:\n\n\n\nType\nDescription\n\n\n\n\nImplicit\nDone automatically by Python\n\n\nExplicit\nDone manually using functions (casting)\n\n\n\n\n1. Implicit Type Conversion\nPython automatically converts types during expressions:\nx = 5      # int\ny = 2.0    # float\nz = x + y  # int + float → float\nprint(z)   # 7.0\nprint(type(z))  # &lt;class 'float'&gt;\n\n\n2. Explicit Type Conversion (Casting)\nYou can use built-in functions (class name):\n\n\n\nFunction\nConverts to\nExample\n\n\n\n\nint()\nInteger\nint(“5”) → 5\n\n\nfloat()\nFloat\nfloat(“3.14”) → 3.14\n\n\nstr()\nString\nstr(10) → “10”\n\n\nbool()\nBoolean\nbool(0) → False\n\n\n\n\n\nExamples:\na = \"123\"\nb = int(a)       # Now b is 123 as int\n\nc = 3.99\nd = int(c)       # → 3 (truncates decimal)\n\ne = 0\nprint(bool(e))   # False",
+    "title": "1  Basic Concepts",
+    "section": "1.5 Type Conversion",
+    "text": "1.5 Type Conversion\nIn Python, Type Conversion means converting a value from one data type to another. Two Types of Type Conversion are:\n\n\n\nType\nDescription\n\n\n\n\nImplicit\nDone automatically by Python\n\n\nExplicit\nDone manually using functions (casting)\n\n\n\n\n\n1. Implicit Type Conversion\nPython automatically converts types during expressions:\nx = 5      # int\ny = 2.0    # float\nz = x + y  # int + float → float\nprint(z)   # 7.0\nprint(type(z))  # &lt;class 'float'&gt;\n\n\n\n2. Explicit Type Conversion (Casting)\nYou can use built-in functions (class name):\n\n\n\nFunction\nConverts to\nExample\n\n\n\n\nint()\nInteger\nint(“5”) → 5\n\n\nfloat()\nFloat\nfloat(“3.14”) → 3.14\n\n\nstr()\nString\nstr(10) → “10”\n\n\nbool()\nBoolean\nbool(0) → False\n\n\n\n\n\n\nExamples\na = \"123\"\nb = int(a)       # Now b is 123 as int\n\nc = 3.99\nd = int(c)       # → 3 (truncates decimal)\n\ne = 0\nprint(bool(e))   # False",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/00_input-output.html#get-user-input",
+    "href": "chapters/01helloPython/00_input-output.html#get-user-input",
+    "title": "1  Basic Concepts",
+    "section": "1.6 Get User Input",
+    "text": "1.6 Get User Input\nThe input() function in Python is used to take input from the user as a string.\n\nSyntax\nvariable = input(\"Prompt message\")\n\nThe message inside input() is optional and is shown to the user.\nThe return value is always a string (str), even if the user types a number.\n\n\n\n\nExamples\n\n1. Get user’s name\nname = input(\"What is your name? \")\nprint(\"Hello, \" + name)\n\n\n2. Get number input\nage = input(\"Enter your age: \")\nprint(type(age))   # &lt;class 'str'&gt;\n\n\n\n3. Convert input to integer\nage = int(input(\"Enter your age: \"))\nprint(age + 5)\n\n\n4. Multiple inputs\nx, y = input(\"Enter two numbers separated by space: \").split()\nprint(x, y)\n\n\n\n\nCommon Mistake\nAlways validate or cast carefully.\n# This will cause an error if input is not a number\nnum = int(input(\"Enter a number: \"))",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
     ]
   },
   {
     "objectID": "chapters/01helloPython/00_input-output.html#practice-task",
     "href": "chapters/01helloPython/00_input-output.html#practice-task",
-    "title": "1  Start with python",
+    "title": "1  Basic Concepts",
     "section": "1.7 Practice Task",
     "text": "1.7 Practice Task\n# Define a constant for the value of Pi (used in circle area calculation)\nPI = 3.14159\n\n# Ask the user to enter their name and store it as a string\nname = input(\"Enter your name: \")\n\n# Ask the user to enter the radius, convert the input from string to float\nradius = float(input(\"Enter the radius of a circle: \"))\n\n# Calculate the area of the circle using the formula: area = π * r^2\narea = PI * radius * radius\n\n# Greet the user by name\nprint(\"Hello\", name)\n\n# Display the calculated area of the circle\nprint(\"Circle area is:\", area)",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_loop-condition.html",
-    "href": "chapters/01helloPython/01_loop-condition.html",
+    "objectID": "chapters/01helloPython/01_condition.html",
+    "href": "chapters/01helloPython/01_condition.html",
     "title": "2  Conditions",
     "section": "",
-    "text": "2.1 Comparing Numbers\nPython uses comparison operators to compare values.\nThese expressions return a Boolean value: True or False.\nYou can also store boolean values in variables:",
+    "text": "2.1 Comparing Numbers\nPython uses comparison operators to compare values.\nThese expressions return a Boolean value: True or False.",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_loop-condition.html#comparing-numbers",
-    "href": "chapters/01helloPython/01_loop-condition.html#comparing-numbers",
+    "objectID": "chapters/01helloPython/01_condition.html#comparing-numbers",
+    "href": "chapters/01helloPython/01_condition.html#comparing-numbers",
     "title": "2  Conditions",
     "section": "",
-    "text": "Operator\nMeaning\nExample\n\n\n\n\n==\nEqual to\n3 == 3 → True\n\n\n!=\nNot equal to\n3 != 4 → True\n\n\n&gt;\nGreater than\n5 &gt; 2 → True\n\n\n&lt;\nLess than\n2 &lt; 5 → True\n\n\n&gt;=\nGreater than or equal\n5 &gt;= 5 → True\n\n\n&lt;=\nLess than or equal\n4 &lt;= 3 → False\n\n\n\nx = 10\ny = 5\n\nprint(x &gt; y)      # True\nprint(x == y)     # False\n\nis_tall = True\nis_ready = False\nis_positive=30&gt;0",
+    "text": "Operator\nMeaning\nExample\n\n\n\n\n==\nEqual to\n3 == 3 → True\n\n\n!=\nNot equal to\n3 != 4 → True\n\n\n&gt;\nGreater than\n5 &gt; 2 → True\n\n\n&lt;\nLess than\n2 &lt; 5 → True\n\n\n&gt;=\nGreater than or equal\n5 &gt;= 5 → True\n\n\n&lt;=\nLess than or equal\n4 &lt;= 3 → False\n\n\n\n\n\nExample\nx = 10\ny = 5\n\nprint(x &gt; y)      # True\nprint(x == y)     # False\nYou can also store boolean values in variables:\nis_tall = True\nis_ready = False\nis_positive=30&gt;0",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_loop-condition.html#if-else-making-decisions",
-    "href": "chapters/01helloPython/01_loop-condition.html#if-else-making-decisions",
+    "objectID": "chapters/01helloPython/01_condition.html#if-else-making-decisions",
+    "href": "chapters/01helloPython/01_condition.html#if-else-making-decisions",
     "title": "2  Conditions",
     "section": "2.2 IF-ELSE: Making Decisions",
     "text": "2.2 IF-ELSE: Making Decisions\nThese are used to control the flow of your program based on conditions.\n\nif Statement\nage = 18\n\nif age &gt;= 18:\n    print(\"You are an adult\")\n\n\nif-else Statement\nage = 16\n\nif age &gt;= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n\n\nif-elif-else Chain\nscore = 75\n\nif score &gt;= 90:\n    print(\"Grade: A\")\nelif score &gt;= 80:\n    print(\"Grade: B\")\nelif score &gt;= 70:\n    print(\"Grade: C\")\nelse:\n    print(\"Grade: F\")",
@@ -131,8 +131,8 @@
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_loop-condition.html#while-loop-condition",
-    "href": "chapters/01helloPython/01_loop-condition.html#while-loop-condition",
+    "objectID": "chapters/01helloPython/01_condition.html#while-loop-condition",
+    "href": "chapters/01helloPython/01_condition.html#while-loop-condition",
     "title": "2  Conditions",
     "section": "2.3 While: Loop Condition",
     "text": "2.3 While: Loop Condition\nThe while loop keeps running as long as the condition is True.\ncount = 1\n\nwhile count &lt;= 5:\n    print(\"Count is:\", count)\n    count += 1  # Same as count = count + 1\nOutput:\nCount is: 1\nCount is: 2\nCount is: 3\nCount is: 4\nCount is: 5\n\nInfinite Loop\nIf you forget to change the condition, the loop can run forever!\n# WARNING: This loop never stops!\nwhile True:\n    print(\"Hello\")  # Press Ctrl + C to stop in terminal\n\n\nControlling\n\nbreak — Stop the Loop Early\nx = 1\n\nwhile x &lt;= 10:\n    if x == 5:\n        break  # Exit the loop when x is 5\n    print(x)\n    x += 1\nOutput:\n1\n2\n3\n4\n\n\n\ncontinue — Skip One Iteration\nx = 0\n\nwhile x &lt; 5:\n    x += 1\n    if x == 3:\n        continue  # Skip the rest of the loop for x = 3\n    print(x)\nOutput:\n1\n2\n4\n5",
@@ -142,8 +142,8 @@
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_loop-condition.html#summary-table",
-    "href": "chapters/01helloPython/01_loop-condition.html#summary-table",
+    "objectID": "chapters/01helloPython/01_condition.html#summary-table",
+    "href": "chapters/01helloPython/01_condition.html#summary-table",
     "title": "2  Conditions",
     "section": "2.4 Summary Table",
     "text": "2.4 Summary Table\n\n\n\n\n\n\n\n\nConcept\nExample\nDescription\n\n\n\n\nComparison\nx &gt; y, x == y\nCompares values\n\n\nBoolean\nTrue, False\nLogical values\n\n\nif\nif x &gt; 0:\nRun code if condition is True\n\n\nelif\nelif x == 0:\nCheck another condition\n\n\nelse\nelse:\nRun if all above are False\n\n\nwhile\nRepeat while condition is true\nwhile x &lt; 5:\n\n\nbreak\nExit the loop immediately\nif x == 5: break\n\n\ncontinue\nSkip current loop and go to next one\nif x == 3: continue",
@@ -153,11 +153,11 @@
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_loop-condition.html#practice-tasks",
-    "href": "chapters/01helloPython/01_loop-condition.html#practice-tasks",
+    "objectID": "chapters/01helloPython/01_condition.html#practice-tasks",
+    "href": "chapters/01helloPython/01_condition.html#practice-tasks",
     "title": "2  Conditions",
-    "section": "2.5 Practice Tasks",
-    "text": "2.5 Practice Tasks\n\nPractice Task 1\nWrite a program that:\n\nAsks the user to enter a number\nChecks if the number is:\n\nPositive\nZero\nNegative\n\n\nnumber = float(input(\"Enter a number: \"))\n\nif number &gt; 0:\n    print(\"The number is positive\")\nelif number == 0:\n    print(\"The number is zero\")\nelse:\n    print(\"The number is negative\")\n\n\nPractice Task 2\nWrite a program that:\n\nAsks the user to guess a secret number between 1 and 10\nRepeats until the user guesses correctly\n\nsecret = 7\nguess = None\n\nwhile guess != secret:\n    guess = int(input(\"Guess the number (1-10): \"))\n    if guess == secret:\n        print(\"Correct!\")\n    else:\n        print(\"Try again!\")",
+    "section": "2.6 Practice Tasks",
+    "text": "2.6 Practice Tasks\n\n\nPractice Task 1\nWrite a program that:\n\nAsks the user to enter a number\nChecks if the number is: Positive, Zero or Negative\n\nnumber = float(input(\"Enter a number: \"))\n\nif number &gt; 0:\n    print(\"The number is positive\")\nelif number == 0:\n    print(\"The number is zero\")\nelse:\n    print(\"The number is negative\")\n\n\n\nPractice Task 2\nWrite a program that:\n\nAsks the user to guess a secret number between 1 and 10\nRepeats until the user guesses correctly\n\nsecret = 7\nguess = None\n\nwhile guess != secret:\n    guess = int(input(\"Guess the number (1-10): \"))\n    if guess == secret:\n        print(\"Correct!\")\n    else:\n        print(\"Try again!\")",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
@@ -549,69 +549,124 @@
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html",
-    "href": "chapters/01helloPython/01_condition.html",
+    "objectID": "chapters/01helloPython/01_condition.html#while---loop-condition",
+    "href": "chapters/01helloPython/01_condition.html#while---loop-condition",
     "title": "2  Conditions",
-    "section": "",
-    "text": "2.1 Comparing Numbers\nPython uses comparison operators to compare values.\nThese expressions return a Boolean value: True or False.\nYou can also store boolean values in variables:",
+    "section": "2.3 While - Loop Condition",
+    "text": "2.3 While - Loop Condition\nThe while loop keeps running as long as the condition is True.\ncount = 1\n\nwhile count &lt;= 5:\n    print(\"Count is:\", count)\n    count += 1  # Same as count = count + 1\nOutput:\nCount is: 1\nCount is: 2\nCount is: 3\nCount is: 4\nCount is: 5\n\n\nInfinite Loop\nIf you forget to change the condition, the loop can run forever!\n# WARNING: This loop never stops!\nwhile True:\n    print(\"Hello\")  # Press Ctrl + C to stop in terminal\n\n\n\nControlling a loop\n\n\nbreak — Stop the Loop Early\nx = 1\n\nwhile x &lt;= 10:\n    if x == 5:\n        break  # Exit the loop when x is 5\n    print(x)\n    x += 1\nOutput:\n1\n2\n3\n4\n\n\n\n\ncontinue — Skip One Iteration\nx = 0\n\nwhile x &lt; 5:\n    x += 1\n    if x == 3:\n        continue  # Skip the rest of the loop for x = 3\n    print(x)\nOutput:\n1\n2\n4\n5",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#comparing-numbers",
-    "href": "chapters/01helloPython/01_condition.html#comparing-numbers",
+    "objectID": "chapters/01helloPython/01_condition.html#if-eelse-making-decisions",
+    "href": "chapters/01helloPython/01_condition.html#if-eelse-making-decisions",
     "title": "2  Conditions",
-    "section": "",
-    "text": "Operator\nMeaning\nExample\n\n\n\n\n==\nEqual to\n3 == 3 → True\n\n\n!=\nNot equal to\n3 != 4 → True\n\n\n&gt;\nGreater than\n5 &gt; 2 → True\n\n\n&lt;\nLess than\n2 &lt; 5 → True\n\n\n&gt;=\nGreater than or equal\n5 &gt;= 5 → True\n\n\n&lt;=\nLess than or equal\n4 &lt;= 3 → False\n\n\n\nx = 10\ny = 5\n\nprint(x &gt; y)      # True\nprint(x == y)     # False\n\nis_tall = True\nis_ready = False\nis_positive=30&gt;0",
+    "section": "2.2 IF-EELSE: Making Decisions",
+    "text": "2.2 IF-EELSE: Making Decisions\n\nThese are used to control the flow of your program based on conditions.\n\nif Statement\nage = 18\n\nif age &gt;= 18:\n    print(\"You are an adult\")\n\n\n\nif-else Statement\nage = 16\n\nif age &gt;= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n\n\n\nif-elif-else Chain\nscore = 75\n\nif score &gt;= 90:\n    print(\"Grade: A\")\nelif score &gt;= 80:\n    print(\"Grade: B\")\nelif score &gt;= 70:\n    print(\"Grade: C\")\nelse:\n    print(\"Grade: F\")",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#if-else-making-decisions",
-    "href": "chapters/01helloPython/01_condition.html#if-else-making-decisions",
+    "objectID": "chapters/01helloPython/01_condition.html#if-elifelse-making-decisions",
+    "href": "chapters/01helloPython/01_condition.html#if-elifelse-making-decisions",
     "title": "2  Conditions",
-    "section": "2.2 IF-ELSE: Making Decisions",
-    "text": "2.2 IF-ELSE: Making Decisions\nThese are used to control the flow of your program based on conditions.\n\nif Statement\nage = 18\n\nif age &gt;= 18:\n    print(\"You are an adult\")\n\n\nif-else Statement\nage = 16\n\nif age &gt;= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n\n\nif-elif-else Chain\nscore = 75\n\nif score &gt;= 90:\n    print(\"Grade: A\")\nelif score &gt;= 80:\n    print(\"Grade: B\")\nelif score &gt;= 70:\n    print(\"Grade: C\")\nelse:\n    print(\"Grade: F\")",
+    "section": "2.2 IF-ELIFELSE: Making Decisions",
+    "text": "2.2 IF-ELIFELSE: Making Decisions\n\nThese are used to control the flow of your program based on conditions.\n\nif Statement\nage = 18\n\nif age &gt;= 18:\n    print(\"You are an adult\")\n\n\n\nif-else Statement\nage = 16\n\nif age &gt;= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n\n\n\nif-elif-else Chain\nscore = 75\n\nif score &gt;= 90:\n    print(\"Grade: A\")\nelif score &gt;= 80:\n    print(\"Grade: B\")\nelif score &gt;= 70:\n    print(\"Grade: C\")\nelse:\n    print(\"Grade: F\")",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#while-loop-condition",
-    "href": "chapters/01helloPython/01_condition.html#while-loop-condition",
+    "objectID": "chapters/01helloPython/01_condition.html#if-elif-else-making-decisions",
+    "href": "chapters/01helloPython/01_condition.html#if-elif-else-making-decisions",
     "title": "2  Conditions",
-    "section": "2.3 While: Loop Condition",
-    "text": "2.3 While: Loop Condition\nThe while loop keeps running as long as the condition is True.\ncount = 1\n\nwhile count &lt;= 5:\n    print(\"Count is:\", count)\n    count += 1  # Same as count = count + 1\nOutput:\nCount is: 1\nCount is: 2\nCount is: 3\nCount is: 4\nCount is: 5\n\nInfinite Loop\nIf you forget to change the condition, the loop can run forever!\n# WARNING: This loop never stops!\nwhile True:\n    print(\"Hello\")  # Press Ctrl + C to stop in terminal\n\n\nControlling\n\nbreak — Stop the Loop Early\nx = 1\n\nwhile x &lt;= 10:\n    if x == 5:\n        break  # Exit the loop when x is 5\n    print(x)\n    x += 1\nOutput:\n1\n2\n3\n4\n\n\n\ncontinue — Skip One Iteration\nx = 0\n\nwhile x &lt; 5:\n    x += 1\n    if x == 3:\n        continue  # Skip the rest of the loop for x = 3\n    print(x)\nOutput:\n1\n2\n4\n5",
+    "section": "2.2 IF-ELIF-ELSE: Making Decisions",
+    "text": "2.2 IF-ELIF-ELSE: Making Decisions\n\nThese are used to control the flow of your program based on conditions.\n\nif Statement\nage = 18\n\nif age &gt;= 18:\n    print(\"You are an adult\")\n\n\n\nif-else Statement\nage = 16\n\nif age &gt;= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n\n\n\nif-elif-else Chain\nscore = 75\n\nif score &gt;= 90:\n    print(\"Grade: A\")\nelif score &gt;= 80:\n    print(\"Grade: B\")\nelif score &gt;= 70:\n    print(\"Grade: C\")\nelse:\n    print(\"Grade: F\")",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#summary-table",
-    "href": "chapters/01helloPython/01_condition.html#summary-table",
+    "objectID": "chapters/01helloPython/01_condition.html#section",
+    "href": "chapters/01helloPython/01_condition.html#section",
     "title": "2  Conditions",
-    "section": "2.4 Summary Table",
-    "text": "2.4 Summary Table\n\n\n\n\n\n\n\n\nConcept\nExample\nDescription\n\n\n\n\nComparison\nx &gt; y, x == y\nCompares values\n\n\nBoolean\nTrue, False\nLogical values\n\n\nif\nif x &gt; 0:\nRun code if condition is True\n\n\nelif\nelif x == 0:\nCheck another condition\n\n\nelse\nelse:\nRun if all above are False\n\n\nwhile\nRepeat while condition is true\nwhile x &lt; 5:\n\n\nbreak\nExit the loop immediately\nif x == 5: break\n\n\ncontinue\nSkip current loop and go to next one\nif x == 3: continue",
+    "section": "2.5 ",
+    "text": "2.5 \nIn Python, the for loop is used to iterate over a sequence (like a list, tuple, string, or range). Here’s how it works:\n\nSyntax\nfor variable in iterable:\n    # code block\n\n\n\nExamples\n\nFor through a string\nfor letter in \"hello\":\n    print(letter)\n\n\nFor with break and continue\nfor i in range(5):\n    if i == 3:\n        break  # exits the loop\n    print(i)\n\nfor i in range(5):\n    if i == 3:\n        continue  # skips 3\n    print(i)\n\n\n\nFor with else\nfor i in range(3):\n    print(i)\nelse:\n    print(\"Loop finished!\")",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#practice-tasks",
-    "href": "chapters/01helloPython/01_condition.html#practice-tasks",
+    "objectID": "chapters/01helloPython/01_condition.html#for",
+    "href": "chapters/01helloPython/01_condition.html#for",
     "title": "2  Conditions",
-    "section": "2.5 Practice Tasks",
-    "text": "2.5 Practice Tasks\n\nPractice Task 1\nWrite a program that:\n\nAsks the user to enter a number\nChecks if the number is:\n\nPositive\nZero\nNegative\n\n\nnumber = float(input(\"Enter a number: \"))\n\nif number &gt; 0:\n    print(\"The number is positive\")\nelif number == 0:\n    print(\"The number is zero\")\nelse:\n    print(\"The number is negative\")\n\n\nPractice Task 2\nWrite a program that:\n\nAsks the user to guess a secret number between 1 and 10\nRepeats until the user guesses correctly\n\nsecret = 7\nguess = None\n\nwhile guess != secret:\n    guess = int(input(\"Guess the number (1-10): \"))\n    if guess == secret:\n        print(\"Correct!\")\n    else:\n        print(\"Try again!\")",
+    "section": "2.5 For",
+    "text": "2.5 For\nIn Python, the for loop is used to iterate over a sequence (like a list, tuple, string, or range). Here’s how it works:\n\nSyntax\nfor variable in iterable:\n    # code block\n\n\n\nExamples\n\nFor through a string\nfor letter in \"hello\":\n    print(letter)\n\n\nFor with break and continue\nfor i in range(5):\n    if i == 3:\n        break  # exits the loop\n    print(i)\n\nfor i in range(5):\n    if i == 3:\n        continue  # skips 3\n    print(i)\n\n\n\nFor with else\nfor i in range(3):\n    print(i)\nelse:\n    print(\"Loop finished!\")",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/01_condition.html#for---l",
+    "href": "chapters/01helloPython/01_condition.html#for---l",
+    "title": "2  Conditions",
+    "section": "2.5 For - L",
+    "text": "2.5 For - L\nIn Python, the for loop is used to iterate over a sequence (like a list, tuple, string, or range). Here’s how it works:\n\nSyntax\nfor variable in iterable:\n    # code block\n\n\n\nExamples\n\nFor through a string\nfor letter in \"hello\":\n    print(letter)\n\n\nFor with break and continue\nfor i in range(5):\n    if i == 3:\n        break  # exits the loop\n    print(i)\n\nfor i in range(5):\n    if i == 3:\n        continue  # skips 3\n    print(i)\n\n\n\nFor with else\nfor i in range(3):\n    print(i)\nelse:\n    print(\"Loop finished!\")",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/01_condition.html#for---loop",
+    "href": "chapters/01helloPython/01_condition.html#for---loop",
+    "title": "2  Conditions",
+    "section": "2.5 For - Loop",
+    "text": "2.5 For - Loop\nIn Python, the for loop is used to iterate over a sequence (like a str that is a sequence of charechtors). Here’s how it works:\n\nSyntax\nfor variable in iterable:\n    # code block\n\n\n\nExamples\n\nFor through a string\nfor letter in \"hello\":\n    print(letter)\n\n\nFor with break and continue\nfor i in range(5):\n    if i == 3:\n        break  # exits the loop\n    print(i)\n\nfor i in range(5):\n    if i == 3:\n        continue  # skips 3\n    print(i)\n\n\n\nFor with else\nfor i in range(3):\n    print(i)\nelse:\n    print(\"Loop finished!\")",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/00_input-output.html#none-represents-the-absence-of-a-value.-this-is-useful-when-you-want-to-define-a-variable-before-assigning-a-real-value-later",
+    "href": "chapters/01helloPython/00_input-output.html#none-represents-the-absence-of-a-value.-this-is-useful-when-you-want-to-define-a-variable-before-assigning-a-real-value-later",
+    "title": "1  Basic Concepts",
+    "section": "1.2 None represents the absence of a value. This is useful when you want to define a variable before assigning a real value later",
+    "text": "1.2 None represents the absence of a value. This is useful when you want to define a variable before assigning a real value later\n\ncommon Python data types\nHere’s a table of common Python data types with their descriptions and examples:\n\n\n\n\n\n\n\n\n\nType\nClass Name\nDescription\nExample\n\n\n\n\nInteger\nint\nWhole numbers\n42, -3\n\n\nFloating-point\nfloat\nDecimal numbers\n3.14, -0.01\n\n\nBoolean\nbool\nLogical values\nTrue, False\n\n\nString\nstr\nText (sequence of characters)\n“hello”, ‘Python’\n\n\nNone\nNoneType\nRepresents no value\nNone\n\n\n\n\n\n\nNone\nresult = None\nprint(None)",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/00_input-output.html#comments-1",
+    "href": "chapters/01helloPython/00_input-output.html#comments-1",
+    "title": "1  Basic Concepts",
+    "section": "1.3 Comments",
+    "text": "1.3 Comments\n\n1. Single-line comment\n# This prints \"Hello\"\nprint(\"Hello\")\n\n\n2. Inline comment\nx = 5  # Store 5 in x\n\n\n\n3. Multi-line comment (usually not recommended for regular comments)\nprint(\"Before Comment\")\n\"\"\"\nThis is a multi-line comment\nor documentation block.\n\"\"\"\nprint(\"After Comment\")",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/00_input-output.html#commentss",
+    "href": "chapters/01helloPython/00_input-output.html#commentss",
+    "title": "1  Basic Concepts",
+    "section": "1.2 Commentss",
+    "text": "1.2 Commentss\n\n\n\n\n\n\n\n\nType\nSymbol\nExample\n\n\n\n\nSingle-line\n#\n# This is a comment\n\n\nInline\n# at end\nx = 10 # set x to 10\n\n\nMulti-line\n““” ““” or ’’’ ’’’\nused for multi-line notes",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
     ]
   }
 ]

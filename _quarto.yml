@@ -21,10 +21,20 @@ book:
   # cover-image: logo.png
   favicon: logo.png
   reader-mode: true
+  page-navigation: true
 
   search:
     location: navbar
     type: overlay
+  
+  page-footer: 
+    left: "Copyright 2021, Samyar Modabber" 
+    right: 
+      - icon: github
+        href: https://github.com/samyarmodabber
+      - icon: innstagram 
+        href: https://instagram.com/samyar.de
+
 
   navbar:
     pinned: true
@@ -49,8 +59,8 @@ book:
     - index.qmd
     - part: "Basics of Python"
       chapters:
-        - chapters/01helloPython/00_input-output.qmd
-        - chapters/01helloPython/01_condition.qmd
+        - chapters/01helloPython/00_input-output.md
+        - chapters/01helloPython/01_condition.md
         - chapters/02dataTypes/01_simple.qmd
         - chapters/02dataTypes/02_structured.qmd
         # - chapters/01Build-inDataType/01_boolean.qmd

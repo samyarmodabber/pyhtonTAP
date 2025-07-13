@@ -1,8 +1,13 @@
+---
+marp: true
+---
 # Conditions
+
+---
 
 ## Comparing Numbers
 
-Python uses **comparison operators** to compare values. 
+Python uses **comparison operators** to compare values.
 
 These expressions return a **Boolean value**: **True** or **False**.
 
@@ -15,6 +20,9 @@ These expressions return a **Boolean value**: **True** or **False**.
 |  **>=**      | Greater than or equal |  5 >= 5  →  True   |
 |  **<=**      | Less than or equal    |  4 <= 3  →  False  |
 
+---
+
+### Example
 
 ```python
 x = 10
@@ -32,11 +40,15 @@ is_ready = False
 is_positive=30>0
 ```
 
-## IF-ELSE: Making Decisions
+---
+
+## **IF-ELIF-ELSE**: Making Decisions
+
+---
 
 These are used to **control the flow** of your program based on conditions.
 
-### if Statement
+### **if** Statement
 
 ```python
 age = 18
@@ -45,7 +57,9 @@ if age >= 18:
     print("You are an adult")
 ```
 
-### if-else Statement
+---
+
+### **if-else** Statement
 
 ```python
 age = 16
@@ -56,7 +70,9 @@ else:
     print("Minor")
 ```
 
-### if-elif-else Chain
+---
+
+### **if-elif-else** Chain
 
 ```python
 score = 75
@@ -71,8 +87,9 @@ else:
     print("Grade: F")
 ```
 
+---
 
-## While: Loop Condition
+## **While** - Loop Condition
 
 The **while** loop keeps running **as long as** the condition is **True**.
 
@@ -86,13 +103,15 @@ while count <= 5:
 
 Output:
 
-```
+```bash
 Count is: 1
 Count is: 2
 Count is: 3
 Count is: 4
 Count is: 5
 ```
+
+---
 
 ### Infinite Loop
 
@@ -104,7 +123,12 @@ while True:
     print("Hello")  # Press Ctrl + C to stop in terminal
 ```
 
-### Controlling
+---
+
+### Controlling a loop
+
+---
+
 #### **break** — Stop the Loop Early
 
 ```python
@@ -119,12 +143,14 @@ while x <= 10:
 
 Output:
 
-```
+```bash
 1
 2
 3
 4
 ```
+
+---
 
 ### **continue** — Skip One Iteration
 
@@ -140,12 +166,14 @@ while x < 5:
 
 Output:
 
-```
+```bash
 1
 2
 4
 5
 ```
+
+---
 
 ## Summary Table
 
@@ -160,19 +188,67 @@ Output:
 | **break**    | Exit the loop immediately            | **if x == 5: break**    |
 | **continue** | Skip current loop and go to next one | **if x == 3: continue** |
 
+---
+
+## **For** - Loop
+
+In Python, the **for** loop is used to iterate over a sequence (like a str that is a sequence of charechtors). Here's how it works:
+
+### Syntax
+
+```python
+for variable in iterable:
+    # code block
+```
+
+---
+
+### Examples
+
+#### For through a **string**
+
+```python
+for letter in "hello":
+    print(letter)
+```
+
+#### **For** with **break** and **continue**
+
+```python
+for i in range(5):
+    if i == 3:
+        break  # exits the loop
+    print(i)
+
+for i in range(5):
+    if i == 3:
+        continue  # skips 3
+    print(i)
+```
+
+---
+
+#### For with **else**
+
+```python
+for i in range(3):
+    print(i)
+else:
+    print("Loop finished!")
+```
+
+---
 
 ## Practice Tasks
+
+---
 
 ### Practice Task 1
 
 Write a program that:
 
 1. Asks the user to enter a number
-2. Checks if the number is:
-
-   * Positive
-   * Zero
-   * Negative
+2. Checks if the number is: **Positive**, **Zero** or **Negative**
 
 ```python
 number = float(input("Enter a number: "))
@@ -184,6 +260,8 @@ elif number == 0:
 else:
     print("The number is negative")
 ```
+
+---
 
 ### Practice Task 2
 
