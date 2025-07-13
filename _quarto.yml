@@ -13,7 +13,6 @@ number-depth: 2
 
 bibliography: references.bib
 
-
 book:
   title: "Python TAP (Theory, Application and Practice)"
   author: "Samyar Modabber"
@@ -22,51 +21,56 @@ book:
   # cover-image: logo.png
   favicon: logo.png
   reader-mode: true
-  
+
   search:
     location: navbar
     type: overlay
 
   navbar:
-      pinned: true
-      logo: logo.png
-      right:
+    pinned: true
+    logo: logo.png
+    right:
       # - title: "Math"
       - icon: github
         href: https://github.com/samyarmodabber/pythonTAP
         aria-label: GitHub
-      
+
   sidebar:
     alignment: left
     search: true
     logo: logo.png
   # page-footer:
-  #   center: 
+  #   center:
   #     - text: "درباره ما"
   #       href: pages/about.qmd
-      # - text: "License"
-      #   href: pages/license.qmd
+  # - text: "License"
+  #   href: pages/license.qmd
   chapters:
     - index.qmd
-    - part: "Built-in Data Types"
+    - part: "Basics of Python"
       chapters:
-        - chapters/01Build-inDataType/01_boolean.qmd
-        - chapters/01Build-inDataType/02_numeric.qmd
-        - chapters/01Build-inDataType/03_string.qmd
-        - chapters/01Build-inDataType/04_list.qmd
-        - chapters/01Build-inDataType/05_set.qmd
-        - chapters/01Build-inDataType/06_dict.qmd
-        - chapters/01Build-inDataType/07_binary.qmd
+        - chapters/01helloPython/00_input-output.qmd
+        - chapters/01helloPython/01_condition.qmd
+        - chapters/02dataTypes/01_simple.qmd
+        - chapters/02dataTypes/02_structured.qmd
+        # - chapters/01Build-inDataType/01_boolean.qmd
+        # - chapters/01Build-inDataType/02_numeric.qmd
+        # - chapters/01Build-inDataType/03_string.qmd
+        # - chapters/01Build-inDataType/04_list.qmd
+        # - chapters/01Build-inDataType/05_set.qmd
+        # - chapters/01Build-inDataType/06_dict.qmd
+        # - chapters/01Build-inDataType/07_binary.qmd
+
         # - chapters/01Build-inDataType/11_bytes.qmd
         # - chapters/01Build-inDataType/12_bytearray.qmd
         # - chapters/01Build-inDataType/13_memoryview.qmd
     - part: "Practice"
       chapters:
-        - chapters/01/01-basic-and-string.ipynb
-        - chapters/02/02-integers-and-float.ipynb
-        - chapters/03/03-data-structures.ipynb
-        - chapters/04/04-conditions-and-loops.ipynb
-        - chapters/05/05-functions.ipynb
+        - chapters/Practice/01/01-basic-and-string.ipynb
+        - chapters/Practice/02/02-integers-and-float.ipynb
+        - chapters/Practice/03/03-data-structures.ipynb
+        - chapters/Practice/04/04-conditions-and-loops.ipynb
+        - chapters/Practice/05/05-functions.ipynb
         # - chapters/06/06-modules.ipynb
         # - chapters/07/07-classes.ipynb
         # - chapters/08/08-exceptions.ipynb
@@ -81,8 +85,8 @@ book:
 format:
   html:
     theme:
-      dark: [darkly , style/custom.scss]
-      light: [cosmo , style/custom.scss]
+      dark: [darkly, style/custom.scss]
+      light: [cosmo, style/custom.scss]
     fontsize: "17px"
     linestretch: 1.6
     mainfont: "Roboto"
@@ -99,5 +103,3 @@ format:
     reference-location: margin
     mermaid:
       theme: neutral
-
-

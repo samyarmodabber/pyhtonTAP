@@ -10,707 +10,608 @@
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/01_boolean.html",
-    "href": "chapters/01Build-inDataType/01_boolean.html",
-    "title": "1  Boolean Type",
+    "objectID": "chapters/01helloPython/00_input-output.html",
+    "href": "chapters/01helloPython/00_input-output.html",
+    "title": "1  Start with python",
     "section": "",
-    "text": "1.1 Introduction\nIn Python, booleans are a built-in data type that represent one of two values:\nThese are the two built-in constant of the bool type. For showing the type of a value, you can use the type() function.\nBooleans are often used in:",
+    "text": "1.1 Variables\nA variable holds a value. You can store strings, numbers, or any data.\nHere’s a table of common Python data types with their descriptions and examples:",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Boolean Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/01_boolean.html#introduction",
-    "href": "chapters/01Build-inDataType/01_boolean.html#introduction",
-    "title": "1  Boolean Type",
+    "objectID": "chapters/01helloPython/00_input-output.html#variables",
+    "href": "chapters/01helloPython/00_input-output.html#variables",
+    "title": "1  Start with python",
     "section": "",
-    "text": "True\nFalse\n\n\ntype(True)   # &lt;class 'bool'&gt;\ntype(False)  # &lt;class 'bool'&gt;\n\n\nComparisons\nConditionals (if, while)\nLogical operations",
+    "text": "city = \"Berlin\"\npopulation = 3850000\narea = 891.8        \nis_capital = True   \n\n\n\n\n\n\n\n\n\n\nType\nClass Name\nDescription\nExample\n\n\n\n\nInteger\nint\nWhole numbers\n42, -3\n\n\nFloating-point\nfloat\nDecimal numbers\n3.14, -0.01\n\n\nBoolean\nbool\nLogical values\nTrue, False\n\n\nString\nstr\nText (sequence of characters)\n“hello”, ‘Python’\n\n\nNone\nNoneType\nRepresents no value\nNone\n\n\n\n\nNone\nNone represents the absence of a value. This is useful when you want to define a variable before assigning a real value later.\nresult = None\nprint(\"Result is:\", result)",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Boolean Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/01_boolean.html#common-boolean-operators",
-    "href": "chapters/01Build-inDataType/01_boolean.html#common-boolean-operators",
-    "title": "1  Boolean Type",
-    "section": "1.2 Common Boolean Operators",
-    "text": "1.2 Common Boolean Operators\n\n\n\nOperator\nDescription\nExample\n\n\n\n\nand\nLogical AND\nTrue and False → False\n\n\nor\nLogical OR\nTrue or False → True\n\n\nnot\nLogical NOT\nnot True → False\n\n\n\n\n\nExample Usage\nprint(2 &lt; 5)  # True\nprint(3==13)  # False",
+    "objectID": "chapters/01helloPython/00_input-output.html#comments",
+    "href": "chapters/01helloPython/00_input-output.html#comments",
+    "title": "1  Start with python",
+    "section": "1.2 Comments",
+    "text": "1.2 Comments\nIn Python, comments are used to explain the code and are ignored during execution.\n\n\n\n\n\n\n\n\nType\nSymbol\nExample\n\n\n\n\nSingle-line\n#\n# This is a comment\n\n\nInline\n# at end\nx = 10 # set x to 10\n\n\nMulti-line\n““” … ““” or ’’’ … ’’’\n(used for docstrings or multi-line notes)\n\n\n\n\nExamples\n\n1. Single-line comment\n# This prints \"Hello\"\nprint(\"Hello\")\n\n\n2. Inline comment\nx = 5  # Store 5 in x\n\n\n3. Multi-line comment (usually not recommended for regular comments)\nprint(\"Before Comment\")\n\"\"\"\nThis is a multi-line comment\nor documentation block.\n\"\"\"\nprint(\"After Comment\")",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Boolean Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/01_boolean.html#none-in-python",
-    "href": "chapters/01Build-inDataType/01_boolean.html#none-in-python",
-    "title": "1  Boolean Type",
-    "section": "1.3 None in Python",
-    "text": "1.3 None in Python\nIn Python, built-in constants are special predefined names that represent fixed values. They are always available and do not require an import. Until now, we have used two built-in constants: True and False.\nNone is another built-in constant in Python that\n\nrepresents the absence of a value or a null value.\nIt is a singleton object: there is only one instance of NoneType.\n\nIt is often used to:\n\nIndicate that a variable has no value yet\nRepresent the default return value of functions that don’t explicitly return anything\n\nx = None\nprint(type(x))  # &lt;class 'NoneType'&gt;\n\n\nComparison with None\nUse is and is not to test an variable is change to None or not. Teses are comparison operators.\nx = 2\nprint(x is None) # False\nprint(x is not None) # True",
+    "objectID": "chapters/01helloPython/00_input-output.html#display-output",
+    "href": "chapters/01helloPython/00_input-output.html#display-output",
+    "title": "1  Start with python",
+    "section": "1.3 Display Output",
+    "text": "1.3 Display Output\nIn Python, print() is a built-in function used to display output on the screen (usually in the terminal or console).\n\nBasic Syntax\nprint(object1, object2, ..., sep=' ', end='\\n', file=sys.stdout, flush=False)\n\n\nCommon Uses\n\nPrint a string or number\n\nprint(\"Hello, world!\")\nprint(42)\n\nPrint multiple items\n\nprint(\"Age:\", 25) # Output: Age: 25\n\nChange separator\n\nprint(\"A\", \"B\", \"C\", sep=\"-\") # Output: A-B-C\n\nChange end character\n\nprint(\"Hello\", end=\" \")\nprint(\"World\")\n# Output: Hello World\n\nPrint variables\n\nname = \"Samyar\"\nprint(\"Name:\", name)\n\nFormatted output\n\nx = 3.14159\nprint(f\"Pi is approximately {x:.2f}\")",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Boolean Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/02_numeric.html",
-    "href": "chapters/01Build-inDataType/02_numeric.html",
-    "title": "2  Numeric Type",
+    "objectID": "chapters/01helloPython/00_input-output.html#check-data-type",
+    "href": "chapters/01helloPython/00_input-output.html#check-data-type",
+    "title": "1  Start with python",
+    "section": "1.4 Check Data Type",
+    "text": "1.4 Check Data Type\nThe type() function in Python is used to check the data type of a variable or value.\n\nSyntax:\ntype(object)\n\n\nExamples:\nprint(type(42))           # &lt;class 'int'&gt;\nprint(type(3.14))         # &lt;class 'float'&gt;\nprint(type(\"hello\"))      # &lt;class 'str'&gt;\nprint(type(None))         # &lt;class 'NoneType'&gt;\nprint(type(True))         # &lt;class 'bool'&gt;\nprint(type(print))        # &lt;class 'builtin_function_or_method'&gt;\nThe isinstance() function in Python is used to check if a value is an instance of a specific type or class.\n\n\nSyntax:\nisinstance(object, classinfo)\n\nobject: the value or variable to check\nclassinfo: a type or a tuple of types\n\n\n\n\nExamples:\nx = 42\ns = \"hello\"\nprint(isinstance(x, int))     # True\nprint(isinstance(x, float))   # False\nprint(isinstance(s, str))     # True\nprint(isinstance(s, bool))    # False",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/00_input-output.html#get-user-input",
+    "href": "chapters/01helloPython/00_input-output.html#get-user-input",
+    "title": "1  Start with python",
+    "section": "1.5 Get User Input",
+    "text": "1.5 Get User Input\nThe input() function in Python is used to take input from the user as a string.\n\nSyntax:\nvariable = input(\"Prompt message\")\n\nThe message inside input() is optional and is shown to the user.\nThe return value is always a string (str), even if the user types a number.\n\n\n\nExamples:\n\n1. Get user’s name\nname = input(\"What is your name? \")\nprint(\"Hello, \" + name)\n\n\n2. Get number input\nage = input(\"Enter your age: \")\nprint(type(age))   # &lt;class 'str'&gt;\n\n\n3. Convert input to integer\nage = int(input(\"Enter your age: \"))\nprint(age + 5)\n\n\n4. Multiple inputs\nx, y = input(\"Enter two numbers separated by space: \").split()\nprint(x, y)\n\n\n\nCommon Mistake\nAlways validate or cast carefully.\n# This will cause an error if input is not a number\nnum = int(input(\"Enter a number: \"))",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/00_input-output.html#type-conversion",
+    "href": "chapters/01helloPython/00_input-output.html#type-conversion",
+    "title": "1  Start with python",
+    "section": "1.6 Type Conversion",
+    "text": "1.6 Type Conversion\nIn Python, Type Conversion means converting a value from one data type to another. Two Types of Type Conversion are:\n\n\n\nType\nDescription\n\n\n\n\nImplicit\nDone automatically by Python\n\n\nExplicit\nDone manually using functions (casting)\n\n\n\n\n1. Implicit Type Conversion\nPython automatically converts types during expressions:\nx = 5      # int\ny = 2.0    # float\nz = x + y  # int + float → float\nprint(z)   # 7.0\nprint(type(z))  # &lt;class 'float'&gt;\n\n\n2. Explicit Type Conversion (Casting)\nYou can use built-in functions (class name):\n\n\n\nFunction\nConverts to\nExample\n\n\n\n\nint()\nInteger\nint(“5”) → 5\n\n\nfloat()\nFloat\nfloat(“3.14”) → 3.14\n\n\nstr()\nString\nstr(10) → “10”\n\n\nbool()\nBoolean\nbool(0) → False\n\n\n\n\n\nExamples:\na = \"123\"\nb = int(a)       # Now b is 123 as int\n\nc = 3.99\nd = int(c)       # → 3 (truncates decimal)\n\ne = 0\nprint(bool(e))   # False",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/00_input-output.html#practice-task",
+    "href": "chapters/01helloPython/00_input-output.html#practice-task",
+    "title": "1  Start with python",
+    "section": "1.7 Practice Task",
+    "text": "1.7 Practice Task\n# Define a constant for the value of Pi (used in circle area calculation)\nPI = 3.14159\n\n# Ask the user to enter their name and store it as a string\nname = input(\"Enter your name: \")\n\n# Ask the user to enter the radius, convert the input from string to float\nradius = float(input(\"Enter the radius of a circle: \"))\n\n# Calculate the area of the circle using the formula: area = π * r^2\narea = PI * radius * radius\n\n# Greet the user by name\nprint(\"Hello\", name)\n\n# Display the calculated area of the circle\nprint(\"Circle area is:\", area)",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Start with python</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/01_loop-condition.html",
+    "href": "chapters/01helloPython/01_loop-condition.html",
+    "title": "2  Conditions",
     "section": "",
-    "text": "2.1 Introduction\nIn Python, numeric types are built-in data types used to store and manipulate numbers. There are three main numeric types:",
+    "text": "2.1 Comparing Numbers\nPython uses comparison operators to compare values.\nThese expressions return a Boolean value: True or False.\nYou can also store boolean values in variables:",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Numeric Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/02_numeric.html#introduction",
-    "href": "chapters/01Build-inDataType/02_numeric.html#introduction",
-    "title": "2  Numeric Type",
+    "objectID": "chapters/01helloPython/01_loop-condition.html#comparing-numbers",
+    "href": "chapters/01helloPython/01_loop-condition.html#comparing-numbers",
+    "title": "2  Conditions",
     "section": "",
-    "text": "Type\nDescription\nExample\n\n\n\n\nint\nInteger numbers\n10, -5, 0\n\n\nfloat\nFloating-point (decimal) numbers\n3.14, -0.01\n\n\ncomplex\nComplex numbers (real + imag part)\n2 + 3j, -1j\n\n\n\n\nint —Integer\n\nWhole numbers (no decimal point)\nUnlimited precision (arbitrary size)\n\nx = 42\nprint(type(x))  # &lt;class 'int'&gt;\n\nbig = 10**100   # Very large integer\nprint(type(big)) # &lt;class 'int'&gt;\n\n\nfloat — Floating-Point\n\nNumbers with a decimal point\nInternally based on IEEE 754 double-precision (64-bit)\n\npi = 3.14159\nprint(type(pi))  # &lt;class 'float'&gt;\ndiv = 1 / 3      \nprint(div)  # 0.333...\nSpecial float values:\nfloat('inf')     # ∞\nfloat('-inf')    # -∞\nfloat('nan')     # Not a Number\n\n\ncomplex —Complex Numbers\n\nNumbers with real and imaginary parts\nWritten as a + bj (use j, not i)\n\nz = 2 + 3j\nprint(type(z))     # &lt;class 'complex'&gt;\nprint(z.real)      # 2.0\nprint(z.imag)      # 3.0",
+    "text": "Operator\nMeaning\nExample\n\n\n\n\n==\nEqual to\n3 == 3 → True\n\n\n!=\nNot equal to\n3 != 4 → True\n\n\n&gt;\nGreater than\n5 &gt; 2 → True\n\n\n&lt;\nLess than\n2 &lt; 5 → True\n\n\n&gt;=\nGreater than or equal\n5 &gt;= 5 → True\n\n\n&lt;=\nLess than or equal\n4 &lt;= 3 → False\n\n\n\nx = 10\ny = 5\n\nprint(x &gt; y)      # True\nprint(x == y)     # False\n\nis_tall = True\nis_ready = False\nis_positive=30&gt;0",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Numeric Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/02_numeric.html#type-conversion",
-    "href": "chapters/01Build-inDataType/02_numeric.html#type-conversion",
-    "title": "2  Numeric Type",
-    "section": "2.2 Type Conversion",
-    "text": "2.2 Type Conversion\nYou can convert each type of number to another type by build-function int, float and complex:\nint(3.5)        # 3\nfloat(2)        # 2.0\ncomplex(1, 2)   # (1+2j)",
+    "objectID": "chapters/01helloPython/01_loop-condition.html#if-else-making-decisions",
+    "href": "chapters/01helloPython/01_loop-condition.html#if-else-making-decisions",
+    "title": "2  Conditions",
+    "section": "2.2 IF-ELSE: Making Decisions",
+    "text": "2.2 IF-ELSE: Making Decisions\nThese are used to control the flow of your program based on conditions.\n\nif Statement\nage = 18\n\nif age &gt;= 18:\n    print(\"You are an adult\")\n\n\nif-else Statement\nage = 16\n\nif age &gt;= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n\n\nif-elif-else Chain\nscore = 75\n\nif score &gt;= 90:\n    print(\"Grade: A\")\nelif score &gt;= 80:\n    print(\"Grade: B\")\nelif score &gt;= 70:\n    print(\"Grade: C\")\nelse:\n    print(\"Grade: F\")",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Numeric Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/02_numeric.html#numeric-operations",
-    "href": "chapters/01Build-inDataType/02_numeric.html#numeric-operations",
-    "title": "2  Numeric Type",
-    "section": "2.3 Numeric Operations",
-    "text": "2.3 Numeric Operations\nOperators Supported by All Numeric Types:\n\nArithmetic: +, -, *, /, //, %, **\nComparison: ==, !=, &lt;, &gt;, &lt;=, &gt;=\n\na = 5\nb = 2\nprint(a + b)    # 7\nprint(a / b)    # 2.5\nprint(a // b)   # 2 (floor division)\nHere’s a clean and complete table of numeric operations in Python, including their description, example result, and notes, based on the built-in types: int, float, and complex.\nNumeric Operations Table in Python\n\n\n\n\n\n\n\n\nOperation\nResult\nNotes\n\n\n\n\n-x\nNegation of x\n–\n\n\n+x\nx unchanged\nUnary plus\n\n\nx + y\nSum of x and y\nWorks for all numeric types\n\n\nx - y\nDifference of x and y\n–\n\n\nx * y\nProduct of x and y\n–\n\n\nx ** y or pow(x, y)\nx to the power y\nExponentiation (5)\n\n\nx / y\nQuotient of x and y (float)\nAlways returns float\n\n\nx // y\nFloored quotient of x and y\nDiscards fractional part\n\n\nx % y\nRemainder of x / y\nResult has same sign as y\n\n\ndivmod(x, y)\nReturns (x // y, x % y)\nTuple result -&gt; (x//y,x%y)\n\n\nabs(x)\nAbsolute value of x\nAlso works for complex numbers\n\n\nround(x,d)\nRounds x to the nearest integer\ne.g., round(2.337,2) -&gt; 2.34\n\n\nint(x)\nRemove decimal part of x\ne.g., int(-2.93) -&gt; -2\n\n\nc.conjugate()\nConjugate of complex number c\ne.g., (2+3j).conjugate() = 2-3j\n\n\n\nNotes:\n\n// performs floor division, e.g. 5 // 2 = 2, -5 // 2 = -3\n% uses Python’s modulus rule: the result has the same sign as the divisor (y)\nint(3.8) → 3; int('7') → 7; int('abc') → raises error\nfloat('3.14') → 3.14\npow(2, 3) → 8; works like 2 ** 3; can also do modular exponentiation: pow(2, 3, 5) → 3\nint(), float(), and complex() are constructors for their respective types\nYou can find official documentation on https://docs.python.org",
+    "objectID": "chapters/01helloPython/01_loop-condition.html#while-loop-condition",
+    "href": "chapters/01helloPython/01_loop-condition.html#while-loop-condition",
+    "title": "2  Conditions",
+    "section": "2.3 While: Loop Condition",
+    "text": "2.3 While: Loop Condition\nThe while loop keeps running as long as the condition is True.\ncount = 1\n\nwhile count &lt;= 5:\n    print(\"Count is:\", count)\n    count += 1  # Same as count = count + 1\nOutput:\nCount is: 1\nCount is: 2\nCount is: 3\nCount is: 4\nCount is: 5\n\nInfinite Loop\nIf you forget to change the condition, the loop can run forever!\n# WARNING: This loop never stops!\nwhile True:\n    print(\"Hello\")  # Press Ctrl + C to stop in terminal\n\n\nControlling\n\nbreak — Stop the Loop Early\nx = 1\n\nwhile x &lt;= 10:\n    if x == 5:\n        break  # Exit the loop when x is 5\n    print(x)\n    x += 1\nOutput:\n1\n2\n3\n4\n\n\n\ncontinue — Skip One Iteration\nx = 0\n\nwhile x &lt; 5:\n    x += 1\n    if x == 3:\n        continue  # Skip the rest of the loop for x = 3\n    print(x)\nOutput:\n1\n2\n4\n5",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Numeric Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/02_numeric.html#comparison-operators",
-    "href": "chapters/01Build-inDataType/02_numeric.html#comparison-operators",
-    "title": "2  Numeric Type",
-    "section": "2.4 Comparison Operators",
-    "text": "2.4 Comparison Operators\n\nComparison Operators in Python\nIn Python, comparison operators are used to compare values. These operators return Boolean values: True or False.\n\n\n\n\n\n\n\n\n\nOperator\nMeaning\nExample\nResult\n\n\n\n\n==\nEqual to\n3 == 3\nTrue\n\n\n!=\nNot equal to\n4 != 5\nTrue\n\n\n&gt;\nGreater than\n7 &gt; 2\nTrue\n\n\n&lt;\nLess than\n1 &lt; 0\nFalse\n\n\n&gt;=\nGreater than or equal to\n5 &gt;= 5\nTrue\n\n\n&lt;=\nLess than or equal to\n6 &lt;= 3\nFalse\n\n\nis\nObject identity\na is b\nTrue if same object\n\n\nis not\nNegated object identity\na is not b\nTrue if not same object\n\n\nin\nMembership\n'a' in 'abc'\nTrue\n\n\nnot in\nNegated membership\n'z' not in 'abc'\nTrue\n\n\n\nExample Code\nx = 10\ny = 20\n\nprint(x == y)     # False\nprint(x != y)     # True\nprint(x &lt; y)      # True\nprint(x &gt;= y)     # False\n\n\nChained Comparisons\nPython supports chaining of comparisons:\nx = 5\nprint(1 &lt; x &lt; 10)     # True\nprint(1 &lt; x and x &lt; 10)  # Same result, more verbose\nThis is equivalent to:\n(1 &lt; x) and (x &lt; 10)\n\n\n\nis vs ==\n\n\n\n==\nCompares values\n\n\n\n\nis\nCompares identity (memory address)\n\n\n\na = [1, 2]\nb = [1, 2]\nprint(a == b)    # True (same contents)\nprint(a is b)    # False (different objects)\n\n\nNone\nUse is and is not instead of == for None:\nx = None\ny = 2\nprint(x is None) # True\nprint(x is not None) # False\nprint(y is None) # True\nWhy? Because None is a singleton, and identity checks (is) are more precise than equality checks (==).\n\nBoolean as a Subclass of Integer\nTrue == 1     # True\nFalse == 0    # True\nTrue + True   # 2\nFalse + 3     # 3\nBut for readability, it’s best to use True and False explicitly for logical operations rather than numeric 1 and 0.",
+    "objectID": "chapters/01helloPython/01_loop-condition.html#summary-table",
+    "href": "chapters/01helloPython/01_loop-condition.html#summary-table",
+    "title": "2  Conditions",
+    "section": "2.4 Summary Table",
+    "text": "2.4 Summary Table\n\n\n\n\n\n\n\n\nConcept\nExample\nDescription\n\n\n\n\nComparison\nx &gt; y, x == y\nCompares values\n\n\nBoolean\nTrue, False\nLogical values\n\n\nif\nif x &gt; 0:\nRun code if condition is True\n\n\nelif\nelif x == 0:\nCheck another condition\n\n\nelse\nelse:\nRun if all above are False\n\n\nwhile\nRepeat while condition is true\nwhile x &lt; 5:\n\n\nbreak\nExit the loop immediately\nif x == 5: break\n\n\ncontinue\nSkip current loop and go to next one\nif x == 3: continue",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Numeric Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/03_string.html",
-    "href": "chapters/01Build-inDataType/03_string.html",
-    "title": "3  Text Sequence Type",
+    "objectID": "chapters/01helloPython/01_loop-condition.html#practice-tasks",
+    "href": "chapters/01helloPython/01_loop-condition.html#practice-tasks",
+    "title": "2  Conditions",
+    "section": "2.5 Practice Tasks",
+    "text": "2.5 Practice Tasks\n\nPractice Task 1\nWrite a program that:\n\nAsks the user to enter a number\nChecks if the number is:\n\nPositive\nZero\nNegative\n\n\nnumber = float(input(\"Enter a number: \"))\n\nif number &gt; 0:\n    print(\"The number is positive\")\nelif number == 0:\n    print(\"The number is zero\")\nelse:\n    print(\"The number is negative\")\n\n\nPractice Task 2\nWrite a program that:\n\nAsks the user to guess a secret number between 1 and 10\nRepeats until the user guesses correctly\n\nsecret = 7\nguess = None\n\nwhile guess != secret:\n    guess = int(input(\"Guess the number (1-10): \"))\n    if guess == secret:\n        print(\"Correct!\")\n    else:\n        print(\"Try again!\")",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/02dataTypes/01_simple.html",
+    "href": "chapters/02dataTypes/01_simple.html",
+    "title": "3  Simple Data Types",
     "section": "",
-    "text": "3.1 Introduction\nIn Python, the str type represents textual data — it’s one of the most commonly used built-in types. A str is an immutable sequence of Unicode characters.",
+    "text": "3.1 Boolean Type",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Text Sequence Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/03_string.html#introduction",
-    "href": "chapters/01Build-inDataType/03_string.html#introduction",
-    "title": "3  Text Sequence Type",
+    "objectID": "chapters/02dataTypes/01_simple.html#boolean-type",
+    "href": "chapters/02dataTypes/01_simple.html#boolean-type",
+    "title": "3  Simple Data Types",
     "section": "",
-    "text": "name = \"Samyar\"\nprint(type(name))  # &lt;class 'str'&gt;\n\nCreating Strings\ns1 = 'hello'\ns2 = \"world\"\n\n\nMultiline Strings\npoem = \"\"\"Roses are red,\nViolets are blue,\nPython is awesome,\nAnd so are you.\"\"\"",
+    "text": "Introduction\nIn Python, booleans are a built-in data type that represent one of two values:\n\nTrue\nFalse\n\nThese are the two built-in constant of the bool type. For showing the type of a value, you can use the type() function.\ntype(True)   # &lt;class 'bool'&gt;\ntype(False)  # &lt;class 'bool'&gt;\nBooleans are often used in:\n\nComparisons\nConditionals (if, while)\nLogical operations\n\n\nExample:\nprint(2 &lt; 5)  # True\nprint(3==13)  # False\n\n\n\nNone in Python\nIn Python, built-in constants are special predefined names that represent fixed values. They are always available and do not require an import. Until now, we have used two built-in constants: True and False.\nNone is another built-in constant in Python that\n\nrepresents the absence of a value or a null value.\nIt is a singleton object: there is only one instance of NoneType.\n\nIt is often used to:\n\nIndicate that a variable has no value yet\nRepresent the default return value of functions that don’t explicitly return anything\n\nx = None\nprint(type(x))  # &lt;class 'NoneType'&gt;\n\nComparison with None\nUse is and is not to test an variable is change to None or not. Teses are comparison operators.\nx = 2\nprint(x is None) # False\nprint(x is not None) # True",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Text Sequence Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/03_string.html#string-formatting",
-    "href": "chapters/01Build-inDataType/03_string.html#string-formatting",
-    "title": "3  Text Sequence Type",
-    "section": "3.2 String Formatting",
-    "text": "3.2 String Formatting\nname = \"John\"\nage = 30\n\n# .format()\nprint(\"My name is {} and I am {}\".format(name, age))\n\n# f-string (Python 3.6+)\nprint(f\"My name is {name} and I am {age}\")\nHere’s a clear explanation and example for each basic operation on strings in Python, organized in a readable table format:\n\n\nBasic Operations\n\n\n\n\n\n\n\n\n\nOperation\nDescription\nExample\nOutput\n\n\n\n\n+\nConcatenation – combines two strings\n'Hello' + ' World'\n'Hello World'\n\n\n*\nRepetition – repeats a string\n'Ha' * 3\n'HaHaHa'\n\n\nlen(s)\nReturns the length of the string\nlen('hello')\n5\n\n\ns[i]\nIndexing – gets character at index i\n'hello'[1]\n'e'\n\n\ns[start:end]\nSlicing – substring from start to end-1\n'hello'[1:4]\n'ell'\n\n\nin\nMembership test – checks if a substring exists\n'lo' in 'hello'\nTrue\n\n\nnot in\nNegated membership test\n'z' not in 'hello'\nTrue\n\n\n\n\n\nNotes:\n\nIndexing starts at 0, so 'hello'[1] is the second character, 'e'.\nSlicing does not include the character at the end index.\nThe in and not in operations are useful in conditionals and loops.",
+    "objectID": "chapters/02dataTypes/01_simple.html#numeric-type",
+    "href": "chapters/02dataTypes/01_simple.html#numeric-type",
+    "title": "3  Simple Data Types",
+    "section": "3.2 Numeric Type",
+    "text": "3.2 Numeric Type\nIn Python, numeric types are built-in data types used to store and manipulate numbers. There are three main numeric types:\n\n\n\n\n\n\n\n\nType\nDescription\nExample\n\n\n\n\nint\nInteger numbers\n10, -5, 0\n\n\nfloat\nFloating-point (decimal) numbers\n3.14, -0.01\n\n\ncomplex\nComplex numbers (real + imag part)\n2 + 3j, -1j\n\n\n\n\nint —Integer\n\nWhole numbers (no decimal point)\nUnlimited precision (arbitrary size)\n\nx = 42\nprint(type(x))  # &lt;class 'int'&gt;\n\nbig = 10**100   # Very large integer\nprint(type(big)) # &lt;class 'int'&gt;\n\n\nfloat — Floating-Point\n\nNumbers with a decimal point\nInternally based on IEEE 754 double-precision (64-bit)\n\npi = 3.14159\nprint(type(pi))  # &lt;class 'float'&gt;\ndiv = 1 / 3      \nprint(div)  # 0.333...\nSpecial float values:\nfloat('inf')     # ∞\nfloat('-inf')    # -∞\nfloat('nan')     # Not a Number\n\n\ncomplex —Complex Numbers\n\nNumbers with real and imaginary parts\nWritten as a + bj (use j, not i)\n\nz = 2 + 3j\nprint(type(z))     # &lt;class 'complex'&gt;\nprint(z.real)      # 2.0\nprint(z.imag)      # 3.0",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Text Sequence Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/03_string.html#common-string-methods",
-    "href": "chapters/01Build-inDataType/03_string.html#common-string-methods",
-    "title": "3  Text Sequence Type",
-    "section": "3.3 Common String Methods",
-    "text": "3.3 Common String Methods\n\n\n\n\n\n\n\n\nMethod\nDescription\nExample\n\n\n\n\n.lower()\nLowercase\n'Hello'.lower() → 'hello'\n\n\n.upper()\nUppercase\n'hi'.upper() → 'HI'\n\n\n.strip()\nRemove leading/trailing whitespace\n'  hi  '.strip() → 'hi'\n\n\n.replace(a, b)\nReplace substring\n'abc'.replace('a', 'x') → 'xbc'\n\n\n.split()\nSplit by spaces (or delimiter)\n'a,b,c'.split(',') → ['a','b','c']\n\n\n.join(list)\nJoin list into a string\n'-'.join(['a','b']) → 'a-b'\n\n\n.find('x')\nFind index of first occurrence\n'hello'.find('e') → 1\n\n\n.startswith(x)\nCheck if string starts with x\n'abc'.startswith('a')\n\n\n.endswith(x)\nCheck if string ends with x\n'abc'.endswith('c')",
+    "objectID": "chapters/02dataTypes/01_simple.html#text-sequence-type",
+    "href": "chapters/02dataTypes/01_simple.html#text-sequence-type",
+    "title": "3  Simple Data Types",
+    "section": "3.3 Text Sequence Type",
+    "text": "3.3 Text Sequence Type\nIn Python, the str type represents textual data — it’s one of the most commonly used built-in types. In fact in a str is an immutable sequence of Unicode characters.\nname = \"Sam\"\nprint(type(name))  # &lt;class 'str'&gt;\n\nCreating Strings\ns1 = 'hello'\ns2 = \"world\"\n\n\nMultiline Strings\npoem = \"\"\"Roses are red,\nViolets are blue,\nPython is awesome,\nAnd so are you.\"\"\"\n\n\nString Formatting\nWe can embed variabels in string and print it.\nname = \"Sam\"\nage = 30\n\n# .format()\nprint(\"My name is {} and I am {}\".format(name, age))\n\n# f-string (Python 3.6+)\nprint(f\"My name is {name} and I am {age}\")\n\n\nImmutability\nStrings are immutable. It means you can not modify (delete,add,update) any part of a string:\ns = \"hello\"\ns[0] = \"H\"  # TypeError\nTo modify a string, you must create a new one:\ns = \"hello\"\ns = \"H\" + s[1:]  # 'Hello'",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Text Sequence Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/03_string.html#immutability",
-    "href": "chapters/01Build-inDataType/03_string.html#immutability",
-    "title": "3  Text Sequence Type",
-    "section": "3.4 Immutability",
-    "text": "3.4 Immutability\nStrings are immutable. It means you can not modify (delete,add,update) any part of a string:\ns = \"hello\"\ns[0] = \"H\"  # TypeError\nTo modify a string, you must create a new one:\ns = \"hello\"\ns = \"H\" + s[1:]  # 'Hello'",
+    "objectID": "chapters/02dataTypes/01_simple.html#operations",
+    "href": "chapters/02dataTypes/01_simple.html#operations",
+    "title": "3  Simple Data Types",
+    "section": "3.4 Operations",
+    "text": "3.4 Operations\n\nString Operators\nHere’s a clear explanation and example for each basic operation on strings in Python, organized in a readable table format:\n\n\n\n\n\n\n\n\n\nOperation\nDescription\nExample\nOutput\n\n\n\n\n+\nConcatenation – combines two strings\n‘Hello’ + ’ World’\n‘Hello World’\n\n\n*\nRepetition – repeats a string\n‘Ha’ * 3\n‘HaHaHa’\n\n\nlen(s)\nReturns the length of the string\nlen(‘hello’)\n5\n\n\ns[i]\nIndexing – gets character at index i\n‘hello’[1]\n‘e’\n\n\ns[start:end]\nSlicing – substring from start to end-1\n‘hello’[1:4]\n‘ell’\n\n\nin\nMembership test – checks if a substring exists\n‘lo’ in ‘hello’\nTrue\n\n\nnot in\nNegated membership test\n‘z’ not in ‘hello’\nTrue\n\n\n\n\nNotes:\n\nIndexing starts at 0, so ‘hello’[1] is the second character, ‘e’.\nSlicing does not include the character at the end index.\nThe in and not in operations are useful in conditionals and loops.\n\n\n\n\nNumeric Operators\nOperators Supported by All Numeric Types:\n\nArithmetic: +, -, *****, /, //, %, ```\nComparison: ==, !=, &lt;, &gt;, &lt;=, &gt;=\n\na = 5\nb = 2\nprint(a + b)    # 7\nprint(a / b)    # 2.5\nprint(a // b)   # 2 (floor division)\nHere’s a clean and complete table of numeric operations in Python, including their description, example result, and notes, based on the built-in types: int, float, and complex.\nNumeric Operations Table in Python\n\n\n\n\n\n\n\n\nOperation\nResult\nNotes\n\n\n\n\n-x\nNegation of x\n–\n\n\n+x\nx unchanged\nUnary plus\n\n\nx + y\nSum of x and y\nWorks for all numeric types\n\n\nx - y\nDifference of x and y\n–\n\n\nx * y\nProduct of x and y\n–\n\n\nx ** y or pow(x, y)\nx to the power y\nExponentiation (5)\n\n\nx / y\nQuotient of x and y (float)\nAlways returns float\n\n\nx // y\nFloored quotient of x and y\nDiscards fractional part\n\n\nx % y\nRemainder of x / y\nResult has same sign as y\n\n\ndivmod(x, y)\nReturns (x // y, x % y)\nTuple result -&gt; (x//y,x%y)\n\n\nabs(x)\nAbsolute value of x\nAlso works for complex numbers\n\n\nround(x,d)\nRounds x to the nearest integer\ne.g., round(2.337,2) -&gt; 2.34\n\n\nint(x)\nRemove decimal part of x\ne.g., int(-2.93) -&gt; -2\n\n\nc.conjugate()\nConjugate of complex number c\ne.g., (2+3j).conjugate() = 2-3j\n\n\n\nNotes:\n\n// performs floor division, e.g. 5 // 2 = 2, -5 // 2 = -3\n% uses Python’s modulus rule: the result has the same sign as the divisor (y)\nint(3.8) → 3; int(‘7’) → 7; int(‘abc’) → raises error\nfloat(‘3.14’) → 3.14\npow(2, 3) → 8; works like 2  3; can also do modular exponentiation: pow(2, 3, 5)** → 3\nint(), float(), and complex() are constructors for their respective types\nYou can find official documentation on https://docs.python.org\n\n\n\nBoolian Operators\nIn Python, comparison operators are used to compare values. These operators return Boolean values: True or False.\n\n\n\n\n\n\n\n\n\nOperator\nMeaning\nExample\nResult\n\n\n\n\n==\nEqual to\n3 == 3\nTrue\n\n\n!=\nNot equal to\n4 != 5\nTrue\n\n\n&gt;\nGreater than\n7 &gt; 2\nTrue\n\n\n&lt;\nLess than\n1 &lt; 0\nFalse\n\n\n&gt;=\nGreater than or equal to\n5 &gt;= 5\nTrue\n\n\n&lt;=\nLess than or equal to\n6 &lt;= 3\nFalse\n\n\nis\nObject identity\na is b\nTrue if same object\n\n\nis not\nNegated object identity\na is not b\nTrue if not same object\n\n\nin\nMembership\n‘a’ in ‘abc’\nTrue\n\n\nnot in\nNegated membership\n‘z’ not in ‘abc’\nTrue\n\n\n\nYou can also combination of statments\n\n\n\nOperator\nDescription\nExample\n\n\n\n\nand\nLogical AND\nTrue and False → False\n\n\nor\nLogical OR\nTrue or False → True\n\n\nnot\nLogical NOT\nnot True → False\n\n\n\nExample Code\nx = 10\ny = 20\n\nprint(x == y)     # False\nprint(x != y)     # True\nprint(x &lt; y)      # True\nprint(x &gt;= y)     # False\n\nChained Comparisons\nPython supports chaining of comparisons:\nx = 5\nprint(1 &lt; x &lt; 10)     # True\nprint(1 &lt; x and x &lt; 10)  # Same result, more verbose\nThis is equivalent to:\n(1 &lt; x) and (x &lt; 10)\n\n\n\nis vs ==\n\n\n\n==\nCompares values\n\n\n\n\nis\nCompares identity (memory address)\n\n\n\na = [1, 2]\nb = [1, 2]\nprint(a == b)    # True (same contents)\nprint(a is b)    # False (different objects)\n\n\nNone\nUse is and is not instead of == for None:\nx = None\ny = 2\nprint(x is None) # True\nprint(x is not None) # False\nprint(y is None) # True\nWhy? Because None is a singleton, and identity checks (is) are more precise than equality checks (==).\n\n\nBoolean as a Subclass of Integer\nTrue == 1     # True\nFalse == 0    # True\nTrue + True   # 2\nFalse + 3     # 3\nBut for readability, it’s best to use True and False explicitly for logical operations rather than numeric 1 and 0.",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Text Sequence Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/03_string.html#all-string-methods",
-    "href": "chapters/01Build-inDataType/03_string.html#all-string-methods",
-    "title": "3  Text Sequence Type",
-    "section": "3.5 All String Methods",
-    "text": "3.5 All String Methods\nHere is a complete list of all standard string (str) methods in Python, along with a short description and example usage.\n\n\n\n\n\n\n\n\nMethod\nDescription\nExample\n\n\n\n\ncapitalize()\nCapitalizes first character\n\"hello\".capitalize() → 'Hello'\n\n\ncasefold()\nCase-insensitive lowercase (more aggressive than .lower())\n\"Straße\".casefold() → 'strasse'\n\n\ncenter(width, fill)\nCenters string with optional fill\n'hi'.center(6, '*') → '**hi**'\n\n\ncount(sub)\nCount occurrences of a substring\n'banana'.count('a') → 3\n\n\nencode()\nEncodes string to bytes\n'hello'.encode()\n\n\nendswith(suffix)\nChecks if string ends with suffix\n'file.txt'.endswith('.txt')\n\n\nexpandtabs(tabsize)\nExpands \\t into spaces\n'a\\tb'.expandtabs(4) → 'a   b'\n\n\nfind(sub)\nFirst index of sub, -1 if not found\n'hello'.find('e') → 1\n\n\nformat()\nFormats string\n\"{} {}\".format('Hi', 'Samyar')\n\n\nformat_map(mapping)\nLike format(), but uses a dict\n\"{name}\".format_map({'name': 'Samyar'})\n\n\nindex(sub)\nLike find(), but raises error if not found\n'hello'.index('e') → 1\n\n\nisalnum()\nReturns True if all chars are alphanumeric\n'abc123'.isalnum()\n\n\nisalpha()\nReturns True if all chars are letters\n'abc'.isalpha()\n\n\nisascii()\nTrue if all chars are ASCII\n'abc'.isascii()\n\n\nisdecimal()\nTrue if all chars are decimal numbers (e.g., '123')\n'123'.isdecimal()\n\n\nisdigit()\nTrue if all chars are digits\n'²3'.isdigit() → True\n\n\nisidentifier()\nTrue if string is a valid Python identifier\n'my_var'.isidentifier()\n\n\nislower()\nTrue if all letters are lowercase\n'abc'.islower()\n\n\nisnumeric()\nTrue if all chars are numeric (includes superscripts etc.)\n'Ⅻ'.isnumeric()\n\n\nisprintable()\nTrue if all chars are printable\n'hello'.isprintable()\n\n\nisspace()\nTrue if all chars are whitespace\n'   '.isspace()\n\n\nistitle()\nTrue if string is title-cased\n'Hello World'.istitle()\n\n\nisupper()\nTrue if all letters are uppercase\n'ABC'.isupper()\n\n\njoin(iterable)\nJoins elements with string as separator\n'-'.join(['a', 'b']) → 'a-b'\n\n\nljust(width)\nLeft-justify string\n'hi'.ljust(5) → 'hi   '\n\n\nlower()\nConverts to lowercase\n'HI'.lower()\n\n\nlstrip()\nRemoves leading whitespace or chars\n'  hello'.lstrip()\n\n\nmaketrans()\nCreate translation table for translate()\n–\n\n\npartition(sep)\nSplit into 3-part tuple at first sep\n'a=b'.partition('=') → ('a', '=', 'b')\n\n\nremoveprefix(prefix)\nRemoves the prefix if present (Python 3.9+)\n'unittest'.removeprefix('unit') → 'test'\n\n\nremovesuffix(suffix)\nRemoves the suffix if present (Python 3.9+)\n'filename.txt'.removesuffix('.txt')\n\n\nreplace(old, new)\nReplace substrings\n'abc'.replace('a', 'x')\n\n\nrfind(sub)\nLast index of sub, -1 if not found\n'hello'.rfind('l')\n\n\nrindex(sub)\nLike rfind(), but raises error if not found\n'hello'.rindex('l')\n\n\nrjust(width)\nRight-justify string\n'hi'.rjust(5)\n\n\nrpartition(sep)\nLike partition(), but splits at last occurrence\n'a=b=c'.rpartition('=') → ('a=b', '=', 'c')\n\n\nrsplit(sep, maxsplit)\nSplit from right\n'a,b,c'.rsplit(',', 1) → ['a,b', 'c']\n\n\nrstrip()\nRemove trailing whitespace or chars\n'hi  '.rstrip()\n\n\nsplit(sep, maxsplit)\nSplit string into list\n'a,b,c'.split(',')\n\n\nsplitlines()\nSplit at line boundaries\n'a\\nb'.splitlines() → ['a', 'b']\n\n\nstartswith(prefix)\nCheck if string starts with prefix\n'hello'.startswith('h')\n\n\nstrip()\nRemove leading/trailing whitespace or chars\n'  hi  '.strip()\n\n\nswapcase()\nSwap case of letters\n'Hello'.swapcase() → 'hELLO'\n\n\ntitle()\nConvert to title case\n'hello world'.title()\n\n\ntranslate(map)\nTranslate using str.maketrans() table\n–\n\n\nupper()\nConvert to uppercase\n'hi'.upper()\n\n\nzfill(width)\nPad string on the left with zeros\n'42'.zfill(5) → '00042'\n\n\n\nExample\ns = \" Hello World! \"\nprint(s.lower())         # \" hello world! \"\nprint(s.strip())         # \"Hello World!\"\nprint(s.replace(\"World\", \"Python\"))  # \" Hello Python! \"",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Text Sequence Type</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/04_list.html",
-    "href": "chapters/01Build-inDataType/04_list.html",
-    "title": "4  Sequence Type",
+    "objectID": "chapters/02dataTypes/02_structured.html",
+    "href": "chapters/02dataTypes/02_structured.html",
+    "title": "4  Structured Data Types",
     "section": "",
-    "text": "4.1 1. list\nIn Python, sequence types are data types that represent ordered collections of items. The main built-in sequence types are:",
+    "text": "4.1 Immutable Structured Types\nStructured data types let you store multiple values together (like collections or containers).\nOnce created, these cannot be changed (no item modification, addition, or deletion).",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Structured Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/04_list.html#list",
-    "href": "chapters/01Build-inDataType/04_list.html#list",
-    "title": "4  Sequence Type",
+    "objectID": "chapters/02dataTypes/02_structured.html#immutable-structured-types",
+    "href": "chapters/02dataTypes/02_structured.html#immutable-structured-types",
+    "title": "4  Structured Data Types",
     "section": "",
-    "text": "Mutable (can be changed after creation)\nCan hold mixed data types\nUses square brackets []\n\n\nExample\nmy_list = [1, 2, 3, 'a', True]\nmy_list[0] = 100        # Lists are mutable\nprint(my_list)          # [100, 2, 3, 'a', True]",
+    "text": "Type\nDescription\nExample\n\n\n\n\nstr\nText (sequence of characters)\n“hello”\n\n\ntuple\nOrdered, fixed-size collection\n(1, 2, 3)\n\n\nrange\nSequence of numbers\nrange(5)\n\n\n\n\nExamples:\n# String\ntext = \"hello\"\nprint(text[0])     # Output: h\n\n# Tuple\npoint = (3, 4)\nprint(point[1])    # Output: 4\n\n# Range\nnums = range(3)\nprint(list(nums))  # Output: [0, 1, 2]",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Structured Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/04_list.html#tuple",
-    "href": "chapters/01Build-inDataType/04_list.html#tuple",
-    "title": "4  Sequence Type",
-    "section": "4.2 2. tuple",
-    "text": "4.2 2. tuple\n\nImmutable (cannot be changed after creation)\nUses parentheses ()\n\n\nExample\nmy_tuple = (1, 2, 3, 'a', True)\n# my_tuple[0] = 100      ❌ This will raise an error\nprint(my_tuple[1])       # 2",
+    "objectID": "chapters/02dataTypes/02_structured.html#mutable-structured-types",
+    "href": "chapters/02dataTypes/02_structured.html#mutable-structured-types",
+    "title": "4  Structured Data Types",
+    "section": "4.2 Mutable Structured Types",
+    "text": "4.2 Mutable Structured Types\nThese can be changed after creation (add, remove, or update items).\n\n\n\n\n\n\n\n\nType\nDescription\nExample\n\n\n\n\nlist\nOrdered, changeable collection\n[1, 2, 3]\n\n\nset\nUnordered, unique items only\n{1, 2, 3}\n\n\ndict\nKey-value pairs\n{‘name’: ‘Ali’}\n\n\n\n\nExamples:\n# List\nfruits = [\"apple\", \"banana\"]\nfruits.append(\"cherry\")\nprint(fruits)  # ['apple', 'banana', 'cherry']\n\n# Set\nnums = {1, 2}\nnums.add(3)\nprint(nums)    # {1, 2, 3}\n\n# Dictionary\nperson = {\"name\": \"Ali\", \"age\": 25}\nperson[\"age\"] = 26\nprint(person)  # {'name': 'Ali', 'age': 26}",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Structured Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/04_list.html#range",
-    "href": "chapters/01Build-inDataType/04_list.html#range",
-    "title": "4  Sequence Type",
-    "section": "4.3 3. range",
-    "text": "4.3 3. range\n\nRepresents a sequence of numbers\nOften used in loops\nMemory efficient (generates values on demand)\n\n\nExample\nr = range(0, 10, 2)\nprint(list(r))           # [0, 2, 4, 6, 8]",
+    "objectID": "chapters/02dataTypes/02_structured.html#compare-table",
+    "href": "chapters/02dataTypes/02_structured.html#compare-table",
+    "title": "4  Structured Data Types",
+    "section": "4.3 Compare Table",
+    "text": "4.3 Compare Table\n\n\n\n\n\n\n\n\n\n\nCategory\nType\nMutable?\nOrdered?\nAllows Duplicates?\n\n\n\n\nSequence\nlist\n✅\n✅\n✅\n\n\nMapping\ndict\n✅\n✅ (3.7+)\n❌ (keys must be unique)\n\n\nSet\nset\n✅\n❌\n❌\n\n\nSequence\ntuple\n❌\n✅\n✅\n\n\nSequence\nrange\n❌\n✅\n✅\n\n\nText\nstr\n❌\n✅\n✅",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Structured Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/04_list.html#common-sequence-operations",
-    "href": "chapters/01Build-inDataType/04_list.html#common-sequence-operations",
-    "title": "4  Sequence Type",
-    "section": "4.4 Common Sequence Operations",
-    "text": "4.4 Common Sequence Operations\nHere are the common sequence operations in Python that apply to list, tuple, and range (and even str):\n\n1. Indexing\nAccess an element by position (starts from 0):\nseq = [10, 20, 30]\nprint(seq[1])  # 20\n\n\n2. Slicing\nExtract a portion of the sequence:\nseq = [0, 1, 2, 3, 4, 5]\nprint(seq[1:4])     # [1, 2, 3]\nprint(seq[:3])      # [0, 1, 2]\nprint(seq[::2])     # [0, 2, 4]\n\n\n3. Length\nGet the number of items:\nlen([1, 2, 3])  # 3\n\n\n4. Membership Test\nCheck if a value exists in the sequence:\n3 in [1, 2, 3]        # True\n'x' in ('a', 'b')     # False\n\n\n5. Iteration\nLoop through items:\nfor item in (1, 2, 3):\n    print(item)\n\n\n6. Concatenation\nCombine two sequences of the same type:\n[1, 2] + [3, 4]     # [1, 2, 3, 4]\n(1, 2) + (3, 4)     # (1, 2, 3, 4)\n\nrange does not support + directly.\n\n\n\n7. Repetition\nRepeat the sequence:\n[1, 2] * 3       # [1, 2, 1, 2, 1, 2]\n(1,) * 4         # (1, 1, 1, 1)\n\n\n8. Min, Max, Sum\nWork on sequences of numbers:\nmin([3, 1, 2])    # 1\nmax((3, 1, 2))    # 3\nsum(range(5))     # 0+1+2+3+4 = 10\n\n\n9. Count / Index (list & tuple only)\n[1, 2, 2, 3].count(2)    # 2\n(1, 2, 3).index(2)       # 1\n\n\n10. Type Conversion\nConvert between types:\ntuple([1, 2])     # (1, 2)\nlist((3, 4))      # [3, 4]\nlist(range(3))    # [0, 1, 2]",
+    "objectID": "chapters/02dataTypes/02_structured.html#practice-task",
+    "href": "chapters/02dataTypes/02_structured.html#practice-task",
+    "title": "4  Structured Data Types",
+    "section": "4.4 Practice Task",
+    "text": "4.4 Practice Task\nWrite a program that:\n\nCreates a list of numbers: [1, 2, 3]\nAdds 4 to the list\nConverts it to a tuple\nPrints both the list and the tuple\n\nnums = [1, 2, 3]\nnums.append(4)\nt = tuple(nums)\n\nprint(\"List:\", nums)\nprint(\"Tuple:\", t)",
     "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence Type</span>"
+      "Basics of Python",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Structured Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/01Build-inDataType/04_list.html#common-features-shared-by-all-three",
-    "href": "chapters/01Build-inDataType/04_list.html#common-features-shared-by-all-three",
-    "title": "4  Sequence Type",
-    "section": "4.5 Common Features (Shared by All Three)",
-    "text": "4.5 Common Features (Shared by All Three)\n\nIndexing: Access elements by index (seq[0])\nSlicing: Get sub-sequences (seq[1:4])\nIteration: You can loop through them (for x in seq)\nlen(): Get the number of items\nin keyword: Check membership (x in seq)\nConcatenation & repetition: Use + and * (except range)\n\n\nComparison\n\n\n\nFeature\nlist\ntuple\nrange\n\n\n\n\nMutable\n✅ Yes\n❌ No\n❌ No\n\n\nSyntax\n[1, 2]\n(1, 2)\nrange(2)\n\n\nIterable\n✅\n✅\n✅\n\n\nIndexable\n✅\n✅\n✅\n\n\nSliceable\n✅\n✅\n✅\n\n\nEfficient\nModerate\nMore\nMost (lazy)\n\n\nUse case\nGeneral use\nFixed data\nNumeric loops",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence Type</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/04_list.html#common-sequence-operations-table",
-    "href": "chapters/01Build-inDataType/04_list.html#common-sequence-operations-table",
-    "title": "4  Sequence Type",
-    "section": "4.6 Common Sequence Operations Table",
-    "text": "4.6 Common Sequence Operations Table\n\n\n\n\n\n\n\n\nOperation\nResult / Description\nNotes\n\n\n\n\nx in s\nTrue if an item of s is equal to x, else False\n(1)\n\n\nx not in s\nTrue if no item of s is equal to x, else False\n(1)\n\n\ns + t\nConcatenation of sequences s and t\n(6)(7)\n\n\ns * n or n * s\nRepeats sequence s n times\n(2)(7)\n\n\ns[i]\ni-th item of s, index starts at 0\n(3)(9)\n\n\ns[i:j]\nSlice from i to j (excluding j)\n(3)(4)\n\n\ns[i:j:k]\nSlice from i to j with step k\n(3)(5)\n\n\nlen(s)\nNumber of elements in s\n\n\n\nmin(s)\nSmallest item in s\n\n\n\nmax(s)\nLargest item in s\n\n\n\ns.index(x[, i[, j]])\nFirst index of x in s (optionally between i and j)\n(8)\n\n\ns.count(x)\nNumber of times x appears in s\n\n\n\n\n\nNotes:\n\n(1) Works for all sequence types (list, tuple, str, range)\n(2) s * 0 returns an empty sequence of the same type\n(3) Negative indices count from the end (s[-1] is the last item)\n(4) i is inclusive, j is exclusive: s[1:4] gives 3 elements (index 1, 2, 3)\n(5) k is the step (e.g. s[::2] gets every second element)\n(6) Sequences must be of the same type for + to work\n(7) range does not support + or * directly\n(8) Raises ValueError if x not found\n(9) Raises IndexError if i is out of range\n\n\n\nMutable Operations for list\n\n\n\n\n\n\n\nOperation\nDescription\n\n\n\n\ns.append(x)\nAdds x to the end of the list\n\n\ns.extend(iterable)\nAppends all elements from another iterable (like a list or tuple)\n\n\ns.insert(i, x)\nInserts x at index i (shifts other elements to the right)\n\n\ns.remove(x)\nRemoves first occurrence of x; raises ValueError if not found\n\n\ns.pop([i])\nRemoves and returns the item at index i (default: last item)\n\n\ns.clear()\nRemoves all items from the list\n\n\ns.index(x[, start[, end]])\nReturns the index of first occurrence of x (raises error if not found)\n\n\ns.count(x)\nReturns number of times x appears in the list\n\n\ns.reverse()\nReverses the list in-place\n\n\ns.sort(key=None, reverse=False)\nSorts the list in-place (can customize with key= and reverse=)\n\n\ndel s[i]\nDeletes the item at index i\n\n\ndel s[i:j]\nDeletes a slice of items from index i to j\n\n\n\n\n\nExample\nnumbers = [3, 1, 4]\nnumbers.append(2)        # [3, 1, 4, 2]\nnumbers.insert(1, 10)    # [3, 10, 1, 4, 2]\nnumbers.sort()           # [1, 2, 3, 4, 10]\nnumbers.pop()            # removes 10 → [1, 2, 3, 4]",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Sequence Type</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/05_set.html",
-    "href": "chapters/01Build-inDataType/05_set.html",
-    "title": "5  Set Type",
+    "objectID": "chapters/Practice/01/01-basic-and-string.html",
+    "href": "chapters/Practice/01/01-basic-and-string.html",
+    "title": "5  Basic and String",
     "section": "",
-    "text": "5.1 Introduction\nIn Python, set and frozenset are unordered collections of unique elements. Here’s a breakdown:",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Set Type</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/05_set.html#introduction",
-    "href": "chapters/01Build-inDataType/05_set.html#introduction",
-    "title": "5  Set Type",
-    "section": "",
-    "text": "Set\n\nMutable: You can add or remove elements.\nUnordered: Elements have no specific order.\nNo duplicates allowed.\n\n\nExample:\ns = {1, 2, 3, 2}\nprint(s)  # Output: {1, 2, 3}\n\n\nCommon methods:\ns.add(4)\ns.remove(2)\ns.discard(5)  # No error if not found\ns.pop()       # Removes a random element\ns.clear()     # Empties the set\n\n\nSet Operations:\na = {1, 2, 3}\nb = {3, 4, 5}\n\na | b   # Union → {1, 2, 3, 4, 5}\na & b   # Intersection → {3}\na - b   # Difference → {1, 2}\na ^ b   # Symmetric difference → {1, 2, 4, 5}\n\n\n\nFrozenset\n\nImmutable: Cannot change after creation.\nUseful as keys in dictionaries or elements of other sets.\nSupports the same set operations, but no add/remove.\n\n\nExample:\nfs = frozenset([1, 2, 3, 3])\nprint(fs)  # Output: frozenset({1, 2, 3})\n\n\n\nUse Cases and compate:\n\n\n\nType\nUse Case\n\n\n\n\nset\nWhen you need to modify elements\n\n\nfrozenset\nWhen you need immutability (e.g., dict keys)",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Set Type</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/05_set.html#methods",
-    "href": "chapters/01Build-inDataType/05_set.html#methods",
-    "title": "5  Set Type",
-    "section": "5.2 Methods",
-    "text": "5.2 Methods\nHere’s a complete list of methods and operations supported by set and frozenset in Python:\n\nSet Methods (mutable)\n\n\n\n\n\n\n\nMethod\nDescription\n\n\n\n\nadd(elem)\nAdds elem to the set\n\n\nremove(elem)\nRemoves elem; raises KeyError if not found\n\n\ndiscard(elem)\nRemoves elem if present; no error if not found\n\n\npop()\nRemoves and returns an arbitrary element\n\n\nclear()\nRemoves all elements\n\n\nupdate(*others)\nAdds elements from other sets/iterables (union in-place)\n\n\nintersection_update(*others)\nIntersects with other sets in-place\n\n\ndifference_update(*others)\nSubtracts elements found in others\n\n\nsymmetric_difference_update(other)\nKeeps elements in either set but not both\n\n\ncopy()\nReturns a shallow copy\n\n\n\n\n\nset & frozenset Common Methods (both support these)\n\n\n\n\n\n\n\nMethod\nDescription\n\n\n\n\nunion(*others)\nReturns the union (all unique elements)\n\n\nintersection(*others)\nReturns common elements\n\n\ndifference(*others)\nReturns elements in this set but not others\n\n\nsymmetric_difference(other)\nReturns elements in either but not both\n\n\nissubset(other)\nChecks if set is a subset\n\n\nissuperset(other)\nChecks if set is a superset\n\n\nisdisjoint(other)\nChecks if sets have no elements in common\n\n\n\n\n\nOnly frozenset lacks:\n\nadd(), remove(), discard(), pop(), clear(), and all *_update() methods — since it’s immutable.\n\n\n\nSet Operators\n\n\n\nOperator\nDescription\nExample\n\n\n\n\na | b\nUnion\n{1, 2} | {2, 3}→{1, 2, 3}\n\n\na & b\nIntersection\n{1, 2} & {2, 3} → {2}\n\n\na - b\nDifference\n{1, 2} - {2} → {1}\n\n\na ^ b\nSymmetric Difference\n{1, 2} ^ {2, 3} → {1, 3}\n\n\na &lt;= b\nSubset\n{1, 2} &lt;= {1, 2, 3}\n\n\na &gt;= b\nSuperset\n{1, 2, 3} &gt;= {1}\n\n\na == b\nEquality\n{1, 2} == {2, 1}\n\n\na != b\nNot Equal\n{1, 2} != {3}",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Set Type</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/05_set.html#examples",
-    "href": "chapters/01Build-inDataType/05_set.html#examples",
-    "title": "5  Set Type",
-    "section": "5.3 Examples",
-    "text": "5.3 Examples\n\nSet Examples (mutable)\nHere’s a list of Python set and frozenset methods with examples:\n# Create a set\ns = {1, 2, 3}\n\nAdd\ns.add(4)         # {1, 2, 3, 4}\n\n\nRemove\ns.remove(2)      # {1, 3, 4}\n# s.remove(99) → KeyError if not found\n\n\nDiscard (safe remove)\ns.discard(99)    # No error if 99 is not found\n\n\nPop (removes a random item)\nitem = s.pop()   # e.g., 1 → set becomes {3, 4}\n\n\nClear\ns.clear()        # set becomes {}\n\n\nUpdate (Union in-place)\na = {1, 2}\na.update([2, 3])     # {1, 2, 3}\n\n\nIntersection Update\na = {1, 2, 3}\na.intersection_update({2, 3, 4})   # {2, 3}\n\n\nDifference Update\na = {1, 2, 3}\na.difference_update({2})          # {1, 3}\n\n\nSymmetric Difference Update\na = {1, 2}\na.symmetric_difference_update({2, 3})  # {1, 3}\n\n\nSet Operations\na = {1, 2, 3}\nb = {3, 4, 5}\n\na.union(b)                 # {1, 2, 3, 4, 5}\na.intersection(b)          # {3}\na.difference(b)            # {1, 2}\na.symmetric_difference(b)  # {1, 2, 4, 5}\n\n\nSubset / Superset / Disjoint\na = {1, 2}\nb = {1, 2, 3}\n\na.issubset(b)        # True\nb.issuperset(a)      # True\na.isdisjoint({3, 4}) # True\n\n\n\nFrozenset Examples (immutable)\nfs1 = frozenset([1, 2, 3])\nfs2 = frozenset([2, 3, 4])\n\nfs1.union(fs2)                 # frozenset({1, 2, 3, 4})\nfs1.intersection(fs2)          # frozenset({2, 3})\nfs1.difference(fs2)            # frozenset({1})\nfs1.symmetric_difference(fs2)  # frozenset({1, 4})\nfs1.issubset(fs2)              # False\n\nFails (immutable):\nfs1.add(4)        # ❌ AttributeError\nfs1.remove(2)     # ❌ AttributeError",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Set Type</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/06_dict.html",
-    "href": "chapters/01Build-inDataType/06_dict.html",
-    "title": "6  Mapping Types",
-    "section": "",
-    "text": "6.1 Creating a Dictionary\nIn Python, a dict (dictionary) is the primary mapping type. It maps keys to values, allowing fast lookup, insertion, and deletion.",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mapping Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/06_dict.html#creating-a-dictionary",
-    "href": "chapters/01Build-inDataType/06_dict.html#creating-a-dictionary",
-    "title": "6  Mapping Types",
-    "section": "",
-    "text": "# Using curly braces\nperson = {'name': 'Alice', 'age': 30}\n\n# Using dict() constructor\ndata = dict(country='Germany', capital='Berlin')",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mapping Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/06_dict.html#dictionarys-feature",
-    "href": "chapters/01Build-inDataType/06_dict.html#dictionarys-feature",
-    "title": "6  Mapping Types",
-    "section": "6.2 Dictionary’s Feature",
-    "text": "6.2 Dictionary’s Feature\n\n\n\nFeature\nDescription\n\n\n\n\nType\ndict\n\n\nMutable\n✅ Yes\n\n\nOrdered\n✅ Yes (since Python 3.7+)\n\n\nKey uniqueness\n✅ Keys must be unique\n\n\nKey types\nMust be hashable (e.g., str, int, tuple)",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mapping Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/06_dict.html#accessing-and-modifying",
-    "href": "chapters/01Build-inDataType/06_dict.html#accessing-and-modifying",
-    "title": "6  Mapping Types",
-    "section": "6.3 Accessing and Modifying",
-    "text": "6.3 Accessing and Modifying\n# Access\nprint(person['name'])      # Alice\n\n# Add or update\nperson['age'] = 31\n\n# Add new key\nperson['city'] = 'Berlin'",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mapping Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/06_dict.html#common-methods",
-    "href": "chapters/01Build-inDataType/06_dict.html#common-methods",
-    "title": "6  Mapping Types",
-    "section": "6.4 Common Methods",
-    "text": "6.4 Common Methods\n\n\n\n\n\n\n\nMethod\nDescription\n\n\n\n\nd.get(key[, default])\nReturns value for key or default if key not found\n\n\nd.keys()\nReturns a view of keys\n\n\nd.values()\nReturns a view of values\n\n\nd.items()\nReturns a view of (key, value) pairs\n\n\nd.pop(key[, default])\nRemoves key and returns its value\n\n\nd.popitem()\nRemoves and returns the last inserted (key, value)\n\n\nd.update(other_dict)\nUpdates dictionary with key-value pairs from another dict\n\n\nd.clear()\nRemoves all items\n\n\nkey in d\nTests if a key exists in the dictionary",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mapping Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/06_dict.html#looping-through-a-dictionary",
-    "href": "chapters/01Build-inDataType/06_dict.html#looping-through-a-dictionary",
-    "title": "6  Mapping Types",
-    "section": "6.5 Looping Through a Dictionary",
-    "text": "6.5 Looping Through a Dictionary\nfor key in person:\n    print(key, person[key])\n\n# or\nfor key, value in person.items():\n    print(f\"{key}: {value}\")",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mapping Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/06_dict.html#dictionary-comprehension",
-    "href": "chapters/01Build-inDataType/06_dict.html#dictionary-comprehension",
-    "title": "6  Mapping Types",
-    "section": "6.6 Dictionary Comprehension",
-    "text": "6.6 Dictionary Comprehension\nsquares = {x: x*x for x in range(5)}\n# {0: 0, 1: 1, 2: 4, 3: 9, 4: 16}",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mapping Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/06_dict.html#notes",
-    "href": "chapters/01Build-inDataType/06_dict.html#notes",
-    "title": "6  Mapping Types",
-    "section": "6.7 Notes",
-    "text": "6.7 Notes\n\nDictionaries are not sequences (like lists or tuples), but they are iterable.\nKeys must be hashable (e.g., strings, numbers, tuples of immutable types).\nValues can be of any type and duplicated.",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Mapping Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/07_binary.html",
-    "href": "chapters/01Build-inDataType/07_binary.html",
-    "title": "7  Binary Sequence",
-    "section": "",
-    "text": "7.1 bytes\nIn Python, binary sequence types are used to handle binary data (as opposed to text). The three main types are:",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Binary Sequence</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/07_binary.html#bytes",
-    "href": "chapters/01Build-inDataType/07_binary.html#bytes",
-    "title": "7  Binary Sequence",
-    "section": "",
-    "text": "Immutable sequence of bytes.\nEach element is an integer between 0 and 255.\nLiteral form: prefix with b (e.g., b\"hello\").\nOften used for I/O operations, cryptographic operations, etc.\n\n\nExample:\nb = b\"hello\"\nprint(b[0])        # 104 (ASCII for 'h')\nprint(b[1:3])      # b'el'",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Binary Sequence</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/07_binary.html#bytearray",
-    "href": "chapters/01Build-inDataType/07_binary.html#bytearray",
-    "title": "7  Binary Sequence",
-    "section": "7.2 bytearray",
-    "text": "7.2 bytearray\n\nMutable version of bytes.\nUseful when you need to modify the binary data.\nCan be created from bytes, list, or string.\n\n\nExample:\nba = bytearray(b\"hello\")\nba[0] = ord('H')\nprint(ba)          # bytearray(b'Hello')",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Binary Sequence</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/07_binary.html#memoryview",
-    "href": "chapters/01Build-inDataType/07_binary.html#memoryview",
-    "title": "7  Binary Sequence",
-    "section": "7.3 memoryview",
-    "text": "7.3 memoryview\n\nA view object that references the data of another binary object (like bytes, bytearray, array.array, etc.).\nAvoids copying data, which improves performance for large datasets.\nSupports slicing and multi-dimensional data.\n\n\nExample:\nba = bytearray(b\"hello\")\nmv = memoryview(ba)\nmv[0] = ord('H')\nprint(ba)          # bytearray(b'Hello')",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Binary Sequence</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01Build-inDataType/07_binary.html#comparison-table",
-    "href": "chapters/01Build-inDataType/07_binary.html#comparison-table",
-    "title": "7  Binary Sequence",
-    "section": "7.4 Comparison Table",
-    "text": "7.4 Comparison Table\n\n\n\n\n\n\n\n\n\nFeature\nbytes\nbytearray\nmemoryview\n\n\n\n\nMutable\n❌ No\n✅ Yes\n⚠️ View depends\n\n\nIndexing\n✅ Yes\n✅ Yes\n✅ Yes\n\n\nSlicing\n✅ Yes\n✅ Yes\n✅ Yes\n\n\nUse case\nRead-only binary data\nModifiable binary data\nEfficient large data processing\n\n\nMemory copy\n✔️ Creates copy\n✔️ Creates copy\n❌ No copy\n\n\n\n\nBinary Sequence Type Conversion\nThe table shows how to convert between bytes, bytearray, and memoryview, along with examples:\n\n\n\n\n\n\n\n\nFrom → To\nCode Example\nResult Type\n\n\n\n\nbytes → bytearray\nbytearray(b\"abc\")\nbytearray(b'abc')\n\n\nbytearray → bytes\nbytes(bytearray(b\"abc\"))\nb'abc'\n\n\nbytes → memoryview\nmemoryview(b\"abc\")\n&lt;memory at ...&gt;\n\n\nbytearray → memoryview\nmemoryview(bytearray(b\"abc\"))\n&lt;memory at ...&gt;\n\n\nmemoryview → bytes\nbytes(memoryview(b\"abc\"))\nb'abc'\n\n\nmemoryview → bytearray\nbytearray(memoryview(b\"abc\"))\nbytearray(b'abc')\n\n\n\n\n\nExample Demonstration:\nb = b\"abc\"                            # bytes\nba = bytearray(b)                    # bytes → bytearray\nmv = memoryview(b)                   # bytes → memoryview\n\nb2 = bytes(ba)                       # bytearray → bytes\nmv2 = memoryview(ba)                 # bytearray → memoryview\n\nb3 = bytes(mv)                       # memoryview → bytes\nba3 = bytearray(mv)                  # memoryview → bytearray",
-    "crumbs": [
-      "Built-in Data Types",
-      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Binary Sequence</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01/01-basic-and-string.html",
-    "href": "chapters/01/01-basic-and-string.html",
-    "title": "8  Basic and String",
-    "section": "",
-    "text": "8.1 Basic",
+    "text": "5.1 Basic",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Basic and String</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic and String</span>"
     ]
   },
   {
-    "objectID": "chapters/01/01-basic-and-string.html#basic",
-    "href": "chapters/01/01-basic-and-string.html#basic",
-    "title": "8  Basic and String",
+    "objectID": "chapters/Practice/01/01-basic-and-string.html#basic",
+    "href": "chapters/Practice/01/01-basic-and-string.html#basic",
+    "title": "5  Basic and String",
     "section": "",
     "text": "Hello World!\n\n#Print Hello \nprint('Hello world')\n\n#Case sensetive\n# Print('Hello world')\n\nHello world\n\n\ninput\n\nname=input(\"Give me your name: \")\nprint(\"Hello,\", name)\n\nHello, \n\n\nvariable\n\nmessage='Hello world!'\n# print(message)\n# type(message)\n# len(message)\n\n\na=b=c='Hello'\nprint(a,b,c)\n\nHello Hello Hello\n\n\n\nfirst_name='Sara'\n\n#Wrong syntax\n# first-name ='Sara'\n# 5_name ='Sara'\n# first name ='Sara'\n\nSingle qoutes and duble qoutes\n\nmessage1=\"He's my friend.\"\n\nmessage2='His name is \"Milad\".'\n#  He's \"Milad\"\nmessage3='He\\'s an \"Artist\".\\n New line'\n\nprint(message1)\nprint(message2)\nprint(message3)\n\nHe's my friend.\nHis name is \"Milad\".\nHe's an \"Artist\".\n New line\n\n\nMulti line\n\nmessage4=\"\"\"Hello Milad\nI am intereted to learn Python.\nCould you teach me?\nSincerely,\nSohrab\n\"\"\"\nprint(message4)\n\nHello Milad\nI am intereted to learn Python.\nCould you teach me?\nSincerely,\nSohrab\n\n\n\nIndexing and Slicing\n\nmessage5='Hi. Where are you nowdays?'\n\n## one element\nprint(message5[0])\n\n\n# Interval\nprint(message5[0:4])\nprint(message5[:4])\nprint(message5[4:])\nprint(message5[19:25])\nprint(message5[0:25:2])\n\n## Negetive\nprint(message5[-1])\nprint(message5[-7])\n\nprint(message5[8:-7])\nprint(message5[-2:2:-1])\nprint(message5[::-1])\n\nH\nHi. \nHi. \nWhere are you nowdays?\nowdays\nH.Weeaeyunwas\n?\no\ne are you n\nsyadwon uoy era erehW \n?syadwon uoy era erehW .iH\n\n\nlower, UPPER\n\nmessage6='thanks dear Saam.'\nprint(message6.lower())\nprint(message6.upper())\nprint(message6.capitalize())\n\nprint(message6.count('s'))\nprint(message6.count('aa'))\n\nprint(message6.find('Saam'))\nprint(message6.find('Sam'))\n\nthanks dear saam.\nTHANKS DEAR SAAM.\nThanks dear saam.\n1\n1\n12\n-1\n\n\nreplace\n\nmessage7='I am intereted to learn Python.'\nedited=message7.replace('e','_')\nprint(edited)\n\nprint(message7)\n\nmessage7=message7.replace('e','_')\nprint(message7)\n\nI am int_r_t_d to l_arn Python.\nI am intereted to learn Python.\nI am int_r_t_d to l_arn Python.\n\n\n\nmessage7='I am intereted to learn Python.'\nedited=message7.replace('e','_',2)\nprint(edited)\n\nI am int_r_ted to learn Python.\n\n\nconcat\n\nname='Ramin'\nwelcome='Welcome, dear'\n\nmessage8=welcome+ ' ' + name+'!'\nprint(message8)\n\nWelcome, dear Ramin!\n\n\nformat and f\n\nname='Armin'\nunread_messages=23\n\nprint('Dear {}, you have {} unreaded message(s).'.format(name,unread_messages))\n\nprint(f'Dear {name}, you have {unread_messages} unreaded message(s).') #python 3.6+\n\nprint(f'Dear {name.upper()}, you have {unread_messages:3d} unreaded message(s).') #python 3.6+\n\nDear Armin, you have 23 unreaded message(s).\nDear Armin, you have 23 unreaded message(s).\nDear ARMIN, you have  23 unreaded message(s).\n\n\ndir and help\n\nmessage10='bye'\n\n# print(dir(message10))\n# print(help(str))\nprint(help(str.find))\n\nHelp on method_descriptor:\n\nfind(self, sub[, start[, end]], /) unbound builtins.str method\n    Return the lowest index in S where substring sub is found, such that sub is contained within S[start:end].\n\n    Optional arguments start and end are interpreted as in slice notation.\n    Return -1 on failure.\n\nNone",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Basic and String</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic and String</span>"
     ]
   },
   {
-    "objectID": "chapters/01/01-basic-and-string.html#methods",
-    "href": "chapters/01/01-basic-and-string.html#methods",
-    "title": "8  Basic and String",
-    "section": "8.2 Methods",
-    "text": "8.2 Methods\nIn Python strings are immutable. This means that for instance the following assignment is not legal:\ns=\"text\" s[0] = \"a\"    # This is not legal in Python\nBecause of the immutability of the strings, the string methods work by returning a value; they don’t have any side-effects.\nIn the rest of this section we briefly describe several of these methods. The methods are here divided into five groups.\n1. Classification of strings:\nAll the following methods will take no parameters and return a truth value. An empty string will always result in False.\n\ns=' All the following Methods.'\n\n# s.isalpha() #True if all characters are letters\n# s.isdigit() #True if all characters are digits\n# s.isalnum() #True if all characters are letters or digits\n\n# s.islower() #True if contains letters, and all are lowercase\n# s.isupper() #True if contains letters, and all are uppercase\n#s.isspace() #True if all characters are whitespace\n#s.istitle() #True if uppercase in the beginning of word, elsewhere lowercase\n\nFalse\n\n\n2. String transformations:\nThe following methods do conversions between lower and uppercase characters in the string. All these methods return a new string.\n\ns=' All the following Methods.'\nprint('main srting:',s)\n\nsl=s.lower() #Change all letters to lowercase\nprint('lower:',sl)\n\nsu=s.upper() #Change all letters to uppercase\nprint('upper:',su)\n\nsc=s.capitalize() #Change all letters to capitalcase\nprint('capitalize:',sc)\n\nst=s.title() #Change to titlecase\nprint('title:',st)\n\nss=s.swapcase() #Change all uppercase letters to lowercase, and vice versa\nprint('swapcase:',ss)\n\nmain srting:  All the following Methods.\nlower:  all the following methods.\nupper:  ALL THE FOLLOWING METHODS.\ncapitalize:  all the following methods.\ntitle:  All The Following Methods.\nswapcase:  aLL THE FOLLOWING mETHODS.\n\n\n3. Searching for substrings:\nAll the following methods get the wanted substring as the parameter, except the replace method, which also gets the replacing string as a parameter\n\ns=' All the following methods'\nsubstr='ll'\nm=s.count(substr) #Counts the number of occurences of a substring\nprint(f'sc:{m}')\n\nsf=s.find(substr) #Finds index of the first occurence of a substring, or -1\nsr=s.rfind(substr) #Finds index of the last occurence of a substring, or -1\nprint(f'sf:{sf} sr:{sr}')\n\n##ValueError\nsi=s.index(substr) #Like find, except ValueError is raised if not found\nsri=s.rindex(substr) #Like rfind, except ValueError is raised if not found\nprint(f'si:{si} sri:{sri}')\n\ntarget='All'\nstart=s.startswith(target) #Returns True if string starts with a given substring\nend=s.endswith(target) #Returns True if string ends with a given substring\nprint(f'start:{start} end:{end}')\n\nreplacement='-'\nsn=s.replace(substr, replacement) #Returns a string where occurences of one string are replaced by another\nprint(f'sn:{sn}')\n\nsc:2\nsf:2 sr:11\nsi:2 sri:11\nstart:False end:False\nsn: A- the fo-owing methods\n\n\n4. Trimming and adjusting\n\ns='  Removes   leading and   '\nx='s'\ns.strip() #Removes leading and trailing whitespace by default, or characters found in string x\n#s.lstrip(x) #Same as strip but only leading characters are removed\n#s.rstrip(x) #Same as strip but only trailing characters are removed\nn=20\n#s.ljust(n) #Left justifies string inside a field of length n\n#s.rjust(n) #Right justifies string inside a field of length n\ns.center(n) #Centers string inside a field of length n\n\n5. Joining and splitting:\nThe join(seq) method joins the strings of the sequence seq. The string itself is used as a delimitter. An example:\n\nallStr=\"*\".join([\"abc\", \"def\", \"ghi\"])\nprint(allStr)\n\nabc*def*ghi\n\n\n\ns='method joins the strings of the sequence'\nsp=s.split()\nprint(sp)\n\n['method', 'joins', 'the', 'strings', 'of', 'the', 'sequence']",
+    "objectID": "chapters/Practice/01/01-basic-and-string.html#methods",
+    "href": "chapters/Practice/01/01-basic-and-string.html#methods",
+    "title": "5  Basic and String",
+    "section": "5.2 Methods",
+    "text": "5.2 Methods\nIn Python strings are immutable. This means that for instance the following assignment is not legal:\ns=\"text\" s[0] = \"a\"    # This is not legal in Python\nBecause of the immutability of the strings, the string methods work by returning a value; they don’t have any side-effects.\nIn the rest of this section we briefly describe several of these methods. The methods are here divided into five groups.\n1. Classification of strings:\nAll the following methods will take no parameters and return a truth value. An empty string will always result in False.\n\ns=' All the following Methods.'\n\n# s.isalpha() #True if all characters are letters\n# s.isdigit() #True if all characters are digits\n# s.isalnum() #True if all characters are letters or digits\n\n# s.islower() #True if contains letters, and all are lowercase\n# s.isupper() #True if contains letters, and all are uppercase\n#s.isspace() #True if all characters are whitespace\n#s.istitle() #True if uppercase in the beginning of word, elsewhere lowercase\n\nFalse\n\n\n2. String transformations:\nThe following methods do conversions between lower and uppercase characters in the string. All these methods return a new string.\n\ns=' All the following Methods.'\nprint('main srting:',s)\n\nsl=s.lower() #Change all letters to lowercase\nprint('lower:',sl)\n\nsu=s.upper() #Change all letters to uppercase\nprint('upper:',su)\n\nsc=s.capitalize() #Change all letters to capitalcase\nprint('capitalize:',sc)\n\nst=s.title() #Change to titlecase\nprint('title:',st)\n\nss=s.swapcase() #Change all uppercase letters to lowercase, and vice versa\nprint('swapcase:',ss)\n\nmain srting:  All the following Methods.\nlower:  all the following methods.\nupper:  ALL THE FOLLOWING METHODS.\ncapitalize:  all the following methods.\ntitle:  All The Following Methods.\nswapcase:  aLL THE FOLLOWING mETHODS.\n\n\n3. Searching for substrings:\nAll the following methods get the wanted substring as the parameter, except the replace method, which also gets the replacing string as a parameter\n\ns=' All the following methods'\nsubstr='ll'\nm=s.count(substr) #Counts the number of occurences of a substring\nprint(f'sc:{m}')\n\nsf=s.find(substr) #Finds index of the first occurence of a substring, or -1\nsr=s.rfind(substr) #Finds index of the last occurence of a substring, or -1\nprint(f'sf:{sf} sr:{sr}')\n\n##ValueError\nsi=s.index(substr) #Like find, except ValueError is raised if not found\nsri=s.rindex(substr) #Like rfind, except ValueError is raised if not found\nprint(f'si:{si} sri:{sri}')\n\ntarget='All'\nstart=s.startswith(target) #Returns True if string starts with a given substring\nend=s.endswith(target) #Returns True if string ends with a given substring\nprint(f'start:{start} end:{end}')\n\nreplacement='-'\nsn=s.replace(substr, replacement) #Returns a string where occurences of one string are replaced by another\nprint(f'sn:{sn}')\n\nsc:2\nsf:2 sr:11\nsi:2 sri:11\nstart:False end:False\nsn: A- the fo-owing methods\n\n\n4. Trimming and adjusting\n\ns='  Removes   leading and   '\nx='s'\ns.strip() #Removes leading and trailing whitespace by default, or characters found in string x\n#s.lstrip(x) #Same as strip but only leading characters are removed\n#s.rstrip(x) #Same as strip but only trailing characters are removed\nn=20\n#s.ljust(n) #Left justifies string inside a field of length n\n#s.rjust(n) #Right justifies string inside a field of length n\ns.center(n) #Centers string inside a field of length n\n\n5. Joining and splitting:\nThe join(seq) method joins the strings of the sequence seq. The string itself is used as a delimitter. An example:\n\nallStr=\"*\".join([\"abc\", \"def\", \"ghi\"])\nprint(allStr)\n\nabc*def*ghi\n\n\n\ns='method joins the strings of the sequence'\nsp=s.split()\nprint(sp)\n\n['method', 'joins', 'the', 'strings', 'of', 'the', 'sequence']",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Basic and String</span>"
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Basic and String</span>"
     ]
   },
   {
-    "objectID": "chapters/02/02-integers-and-float.html",
-    "href": "chapters/02/02-integers-and-float.html",
-    "title": "9  Integers and Float",
+    "objectID": "chapters/Practice/02/02-integers-and-float.html",
+    "href": "chapters/Practice/02/02-integers-and-float.html",
+    "title": "6  Integers and Float",
     "section": "",
-    "text": "9.1 Numbers\ntypes\nnum1=19\nnum2=3.14\nnum3=2+3j\nprint(type(num1))\nprint(type(num2))\nprint(type(num3))\n\n&lt;class 'int'&gt;\n&lt;class 'float'&gt;\n&lt;class 'complex'&gt;\nbasic operators\nnum1=19\nnum2=7\n\n\nprint('Addition:',num1+num2)\nprint('Subtraction:',num1-num2)\n\nprint('Multiplication:',num1*num2)\nprint('Exponent:',num1**num2)\n\nprint('Division:',num1/num2)\nprint('Floor Division:',num1//num2)\nprint('Modulus:',num1%num2)\n\n\ntype(num1)\n\nAddition: 26\nSubtraction: 12\nMultiplication: 133\nExponent: 893871739\nDivision: 2.7142857142857144\nFloor Division: 2\nModulus: 5\n\n\nint\nnum=19\n# num=num%2\n\nnum-=2 ## It can be + - * / % num=num%2\nprint(num)\n\n17\nnum1=-3\nprint(abs(num1))\n\nnum2=3.14\nprint(int(num2))\n\nnum3=16\nprint(num3**(1/2))\n\n3\n3\n4.0\nnum1=19.19\nprint(round(num1))\nnum1=19.99\nprint(round(num1))\n\nnum1=19.19\nprint(round(num1,1))\nnum1=19.99\nprint(round(num1,1))\n\nnum1=-19.19\nprint(round(num1))\nnum1=-19.99\nprint(round(num1))\n\n\n19\n20\n19.2\n20.0\n-19\n-20",
+    "text": "6.1 Numbers\ntypes\nnum1=19\nnum2=3.14\nnum3=2+3j\nprint(type(num1))\nprint(type(num2))\nprint(type(num3))\n\n&lt;class 'int'&gt;\n&lt;class 'float'&gt;\n&lt;class 'complex'&gt;\nbasic operators\nnum1=19\nnum2=7\n\n\nprint('Addition:',num1+num2)\nprint('Subtraction:',num1-num2)\n\nprint('Multiplication:',num1*num2)\nprint('Exponent:',num1**num2)\n\nprint('Division:',num1/num2)\nprint('Floor Division:',num1//num2)\nprint('Modulus:',num1%num2)\n\n\ntype(num1)\n\nAddition: 26\nSubtraction: 12\nMultiplication: 133\nExponent: 893871739\nDivision: 2.7142857142857144\nFloor Division: 2\nModulus: 5\n\n\nint\nnum=19\n# num=num%2\n\nnum-=2 ## It can be + - * / % num=num%2\nprint(num)\n\n17\nnum1=-3\nprint(abs(num1))\n\nnum2=3.14\nprint(int(num2))\n\nnum3=16\nprint(num3**(1/2))\n\n3\n3\n4.0\nnum1=19.19\nprint(round(num1))\nnum1=19.99\nprint(round(num1))\n\nnum1=19.19\nprint(round(num1,1))\nnum1=19.99\nprint(round(num1,1))\n\nnum1=-19.19\nprint(round(num1))\nnum1=-19.99\nprint(round(num1))\n\n\n19\n20\n19.2\n20.0\n-19\n-20",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Integers and Float</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Integers and Float</span>"
     ]
   },
   {
-    "objectID": "chapters/02/02-integers-and-float.html#logic",
-    "href": "chapters/02/02-integers-and-float.html#logic",
-    "title": "9  Integers and Float",
-    "section": "9.2 Logic",
-    "text": "9.2 Logic\n\np=True\nq=False\n\nprint(p and q)\nprint(p or q)\nprint(not q)\n\nprint(p is True)\nprint(q is not True)\n\nprint(None is False)\nprint(0 is False)\n\ntype(print)\n\nFalse\nTrue\nTrue\nTrue\nTrue\nFalse\nFalse\n\n\n&lt;&gt;:12: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?\n&lt;&gt;:12: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?\n&lt;ipython-input-4-43b64229a9fc&gt;:12: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?\n  print(0 is False)\n\n\nbuiltin_function_or_method",
+    "objectID": "chapters/Practice/02/02-integers-and-float.html#logic",
+    "href": "chapters/Practice/02/02-integers-and-float.html#logic",
+    "title": "6  Integers and Float",
+    "section": "6.2 Logic",
+    "text": "6.2 Logic\n\np=True\nq=False\n\nprint(p and q)\nprint(p or q)\nprint(not q)\n\nprint(p is True)\nprint(q is not True)\n\nprint(None is False)\nprint(0 is False)\n\ntype(print)\n\nFalse\nTrue\nTrue\nTrue\nTrue\nFalse\nFalse\n\n\n&lt;&gt;:12: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?\n&lt;&gt;:12: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?\n&lt;ipython-input-4-43b64229a9fc&gt;:12: SyntaxWarning: \"is\" with a literal. Did you mean \"==\"?\n  print(0 is False)\n\n\nbuiltin_function_or_method",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Integers and Float</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Integers and Float</span>"
     ]
   },
   {
-    "objectID": "chapters/02/02-integers-and-float.html#compare-numbers",
-    "href": "chapters/02/02-integers-and-float.html#compare-numbers",
-    "title": "9  Integers and Float",
-    "section": "9.3 Compare numbers",
-    "text": "9.3 Compare numbers\n\nnum1=19\nnum2=7\n\nprint(f'{num1} is equal {num2}?', num1==num2)\nprint(f'{num1} is not equal {num2}?', num1!=num2)\n\nprint(f'{num1} is greater than {num2}?', num1&gt;num2)\nprint(f'{num1} is less than {num2}?', num1&lt;num2)\n\nprint(f'{num1} is greater than or equal {num2}?', num1&gt;=num2)\nprint(f'{num1} is less than or equal {num2}?', num1&lt;=num2)\n\nresult= num1==num3\nprint('Result:',result)\n\n19 is equal 7? False\n19 is not equal 7? True\n19 is greater than 7? True\n19 is less than 7? False\n19 is greater than or equal 7? True\n19 is less than or equal 7? False\nResult: False\n\n\n\nnot num1!=num2\n\nFalse",
+    "objectID": "chapters/Practice/02/02-integers-and-float.html#compare-numbers",
+    "href": "chapters/Practice/02/02-integers-and-float.html#compare-numbers",
+    "title": "6  Integers and Float",
+    "section": "6.3 Compare numbers",
+    "text": "6.3 Compare numbers\n\nnum1=19\nnum2=7\n\nprint(f'{num1} is equal {num2}?', num1==num2)\nprint(f'{num1} is not equal {num2}?', num1!=num2)\n\nprint(f'{num1} is greater than {num2}?', num1&gt;num2)\nprint(f'{num1} is less than {num2}?', num1&lt;num2)\n\nprint(f'{num1} is greater than or equal {num2}?', num1&gt;=num2)\nprint(f'{num1} is less than or equal {num2}?', num1&lt;=num2)\n\nresult= num1==num3\nprint('Result:',result)\n\n19 is equal 7? False\n19 is not equal 7? True\n19 is greater than 7? True\n19 is less than 7? False\n19 is greater than or equal 7? True\n19 is less than or equal 7? False\nResult: False\n\n\n\nnot num1!=num2\n\nFalse",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Integers and Float</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Integers and Float</span>"
     ]
   },
   {
-    "objectID": "chapters/02/02-integers-and-float.html#convert",
-    "href": "chapters/02/02-integers-and-float.html#convert",
-    "title": "9  Integers and Float",
-    "section": "9.4 Convert",
-    "text": "9.4 Convert\n\nprint(int(-2.8))\nprint(float(2))\nprint(int(\"123\"))\nprint(bool(-2), bool(0))  # Zero is interpreted as False\nprint(str(234))\n\n-2\n2.0\n123\nTrue False\n234\n\n\n\nnum1='19'\nnum2='7'\n\n# print(num1+num2)\n\nprint(int(num1)+int(num2))\n\n26\n\n\n\nTrue or True and False #  == True or (True and False)\n\nTrue\n\n\n\n(True or True) and False\n\nFalse\n\n\n\n\n\nTrue\n\n\n\nnot False and False # == (not False) and True\n\nFalse\n\n\n\nnot (False and False)\n\nTrue",
+    "objectID": "chapters/Practice/02/02-integers-and-float.html#convert",
+    "href": "chapters/Practice/02/02-integers-and-float.html#convert",
+    "title": "6  Integers and Float",
+    "section": "6.4 Convert",
+    "text": "6.4 Convert\n\nprint(int(-2.8))\nprint(float(2))\nprint(int(\"123\"))\nprint(bool(-2), bool(0))  # Zero is interpreted as False\nprint(str(234))\n\n-2\n2.0\n123\nTrue False\n234\n\n\n\nnum1='19'\nnum2='7'\n\n# print(num1+num2)\n\nprint(int(num1)+int(num2))\n\n26\n\n\n\nTrue or True and False #  == True or (True and False)\n\nTrue\n\n\n\n(True or True) and False\n\nFalse\n\n\n\n\n\nTrue\n\n\n\nnot False and False # == (not False) and True\n\nFalse\n\n\n\nnot (False and False)\n\nTrue",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Integers and Float</span>"
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Integers and Float</span>"
     ]
   },
   {
-    "objectID": "chapters/03/03-data-structures.html",
-    "href": "chapters/03/03-data-structures.html",
-    "title": "10  Data structures",
+    "objectID": "chapters/Practice/03/03-data-structures.html",
+    "href": "chapters/Practice/03/03-data-structures.html",
+    "title": "7  Data structures",
     "section": "",
-    "text": "10.1 Introduction\nData type * int * complex * float * boolian\nData structures\nThe main data structures in Python divided to two categories: * A. Sequences: strings, list, tuples",
+    "text": "7.1 Introduction\nData type * int * complex * float * boolian\nData structures\nThe main data structures in Python divided to two categories: * A. Sequences: strings, list, tuples",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data structures</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data structures</span>"
     ]
   },
   {
-    "objectID": "chapters/03/03-data-structures.html#introduction",
-    "href": "chapters/03/03-data-structures.html#introduction",
-    "title": "10  Data structures",
+    "objectID": "chapters/Practice/03/03-data-structures.html#introduction",
+    "href": "chapters/Practice/03/03-data-structures.html#introduction",
+    "title": "7  Data structures",
     "section": "",
     "text": "Non-sequences: dictionaries, sets",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data structures</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data structures</span>"
     ]
   },
   {
-    "objectID": "chapters/03/03-data-structures.html#a.-sequences-list-tuples-and-strings-have-several-commonalities",
-    "href": "chapters/03/03-data-structures.html#a.-sequences-list-tuples-and-strings-have-several-commonalities",
-    "title": "10  Data structures",
-    "section": "10.2 A. Sequences (List, tuples, and strings) have several commonalities:",
-    "text": "10.2 A. Sequences (List, tuples, and strings) have several commonalities:\n\nTheir length can be queried with the len function.\nThet are immutable.\nThey can be concatenated with the + operator.\nThey repeated with the * operator.\nSince they are ordered, we can refer to the elements by integers using the indexing notation.\n\n\ns='A list contains arbitrary number of elements.'\n\n# len(s)\n# s[0]='a'\n# s+s\n# 'Arash '*10\n# s[3]\ns[-1]\n\n'.'",
+    "objectID": "chapters/Practice/03/03-data-structures.html#a.-sequences-list-tuples-and-strings-have-several-commonalities",
+    "href": "chapters/Practice/03/03-data-structures.html#a.-sequences-list-tuples-and-strings-have-several-commonalities",
+    "title": "7  Data structures",
+    "section": "7.2 A. Sequences (List, tuples, and strings) have several commonalities:",
+    "text": "7.2 A. Sequences (List, tuples, and strings) have several commonalities:\n\nTheir length can be queried with the len function.\nThet are immutable.\nThey can be concatenated with the + operator.\nThey repeated with the * operator.\nSince they are ordered, we can refer to the elements by integers using the indexing notation.\n\n\ns='A list contains arbitrary number of elements.'\n\n# len(s)\n# s[0]='a'\n# s+s\n# 'Arash '*10\n# s[3]\ns[-1]\n\n'.'",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data structures</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data structures</span>"
     ]
   },
   {
-    "objectID": "chapters/03/03-data-structures.html#a.-sequences-list",
-    "href": "chapters/03/03-data-structures.html#a.-sequences-list",
-    "title": "10  Data structures",
-    "section": "10.3 A. Sequences: List",
-    "text": "10.3 A. Sequences: List\nA list contains arbitrary number of elements (even zero) that are stored in sequential order. The elements are separated by commas and written between brackets. The elements don’t need to be of the same type. An example of a list with four values:\n\nmylist1=[2, 100, \"hello\", 1.0]\nprint(mylist1)\nprint(id(mylist1))\n\nmylist2=[2, 100, \"hello\", 1.0]\nprint(id(mylist2))\n\n\n# print(mylist1==mylist2)\nprint(mylist1 is mylist2) # print(id(mylist1() == id(mylist2))\n\n[2, 100, 'hello', 1.0]\n2371224743872\n2371224757440\nFalse\n\n\nIndexing and Slicing\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n# print(courses)\n\n# print(courses[2])\n# print(courses[-1])\n\n# print(courses[2:4])\n# print(courses[2:])\n# print(courses[:2])\n\nprint(courses[0:4:2])\n# print(courses[-1:0:-1])\n\n# print(courses[::2])\nprint(courses[1:-2])\n\n['Calcules', 'Computer']\n['Physics', 'Computer']\n\n\nModifying\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n# print(courses)\n#Modifying element of a lists\ncourses[0]='Calcules1'\n# print(courses)\n# #Modifying any slice of a lists\ncourses[0:2]=['Calcules1','Calcules2','Physics1','Physics2']\n# print(courses)\ncourses.remove('Calcules2')\ncourses.remove('Physics2')\n# print(courses)\ncourses.append('Analysis')\n# print(courses)\ncourses.insert(4,'Logic')\n# print(courses)\nnewCourses=['Geometry','ODE','PDE']\ncourses.extend(newCourses)\n# print(courses)\npoped=courses.pop(-2) # pop()==pop(-1)\nprint(courses)\nprint(poped)\n\n['Calcules1', 'Physics1', 'Computer', 'Statistic', 'Logic', 'Algebra', 'Analysis', 'Geometry', 'PDE']\nODE\n\n\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n\ndelete=courses.pop(1)\nprint(courses)\n\n['Calcules', 'Computer', 'Statistic', 'Algebra']\n\n\n\ndelete\n\n'Physics'\n\n\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n\n# courses.reverse()\n# print(courses)\n\n# courses.sort()\n# print(courses)\n\n# courses.sort(reverse=True)\n# print(courses)\n\n# after_sorted=sorted(courses)\n# print(after_sorted)\n# print(courses)\n\n# marks=[-5,-4,3,2,6]\n# simple_sorted=sorted(marks)\n# print(simple_sorted)\n\nabs_sorted=sorted(marks, key=abs)\nprint(abs_sorted)\n\n[2, 3, -4, -5, 6]\n\n\n\nscores=[12, 17, 14, 10, 3, 9, 20, 18]\nprint(min(scores))\nprint(max(scores))\nprint(sum(scores))\nprint(len(scores))\n\n3\n20\n103\n8\n\n\n\ncourses=['Calcules1','Physics1','Computer','Statistic','Algebra']\n\n# print(courses.index('Statistic'))\n# print('Computer' in courses)\n\n# tostring=' '.join(courses)\n# print(tostring)\n\nmy_st='A list contains arbitrary number of elements'\nwords_list=my_st.split(' ')\nprint(words_list)\n\n['A', 'list', 'contains', 'arbitrary', 'number', 'of', 'elements']\n\n\nRange Function\nTrivial lists can be tedious to write: [0,1,2,3,4,5,6]. The function range creates numeric ranges automatically.\n\nThen end value is not included in the sequence.\nconsumes less memory than the corresponding list.\n\nThis is because in a list all the elements are stored in the memory, whereas the range generates the requested elements only when needed. For example, when the for loop asks for the next element from the range at each iteration, only a single element from the range exists in memory at the same time. This makes a big difference when using large ranges, like range(1000000).\n\nrange1=range(7)\n# print(type(range1)) # Note that L is not a list!\n# print(list(range1))\n\n# range2=range(3,7)\n# print(list(range2))\n\nrange3=range(0,20,3)\nprint(list(range3))\n\n[0, 3, 6, 9, 12, 15, 18]\n\n\n\nlist(range1)\nint('123')\n\n123",
+    "objectID": "chapters/Practice/03/03-data-structures.html#a.-sequences-list",
+    "href": "chapters/Practice/03/03-data-structures.html#a.-sequences-list",
+    "title": "7  Data structures",
+    "section": "7.3 A. Sequences: List",
+    "text": "7.3 A. Sequences: List\nA list contains arbitrary number of elements (even zero) that are stored in sequential order. The elements are separated by commas and written between brackets. The elements don’t need to be of the same type. An example of a list with four values:\n\nmylist1=[2, 100, \"hello\", 1.0]\nprint(mylist1)\nprint(id(mylist1))\n\nmylist2=[2, 100, \"hello\", 1.0]\nprint(id(mylist2))\n\n\n# print(mylist1==mylist2)\nprint(mylist1 is mylist2) # print(id(mylist1() == id(mylist2))\n\n[2, 100, 'hello', 1.0]\n2371224743872\n2371224757440\nFalse\n\n\nIndexing and Slicing\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n# print(courses)\n\n# print(courses[2])\n# print(courses[-1])\n\n# print(courses[2:4])\n# print(courses[2:])\n# print(courses[:2])\n\nprint(courses[0:4:2])\n# print(courses[-1:0:-1])\n\n# print(courses[::2])\nprint(courses[1:-2])\n\n['Calcules', 'Computer']\n['Physics', 'Computer']\n\n\nModifying\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n# print(courses)\n#Modifying element of a lists\ncourses[0]='Calcules1'\n# print(courses)\n# #Modifying any slice of a lists\ncourses[0:2]=['Calcules1','Calcules2','Physics1','Physics2']\n# print(courses)\ncourses.remove('Calcules2')\ncourses.remove('Physics2')\n# print(courses)\ncourses.append('Analysis')\n# print(courses)\ncourses.insert(4,'Logic')\n# print(courses)\nnewCourses=['Geometry','ODE','PDE']\ncourses.extend(newCourses)\n# print(courses)\npoped=courses.pop(-2) # pop()==pop(-1)\nprint(courses)\nprint(poped)\n\n['Calcules1', 'Physics1', 'Computer', 'Statistic', 'Logic', 'Algebra', 'Analysis', 'Geometry', 'PDE']\nODE\n\n\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n\ndelete=courses.pop(1)\nprint(courses)\n\n['Calcules', 'Computer', 'Statistic', 'Algebra']\n\n\n\ndelete\n\n'Physics'\n\n\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n\n# courses.reverse()\n# print(courses)\n\n# courses.sort()\n# print(courses)\n\n# courses.sort(reverse=True)\n# print(courses)\n\n# after_sorted=sorted(courses)\n# print(after_sorted)\n# print(courses)\n\n# marks=[-5,-4,3,2,6]\n# simple_sorted=sorted(marks)\n# print(simple_sorted)\n\nabs_sorted=sorted(marks, key=abs)\nprint(abs_sorted)\n\n[2, 3, -4, -5, 6]\n\n\n\nscores=[12, 17, 14, 10, 3, 9, 20, 18]\nprint(min(scores))\nprint(max(scores))\nprint(sum(scores))\nprint(len(scores))\n\n3\n20\n103\n8\n\n\n\ncourses=['Calcules1','Physics1','Computer','Statistic','Algebra']\n\n# print(courses.index('Statistic'))\n# print('Computer' in courses)\n\n# tostring=' '.join(courses)\n# print(tostring)\n\nmy_st='A list contains arbitrary number of elements'\nwords_list=my_st.split(' ')\nprint(words_list)\n\n['A', 'list', 'contains', 'arbitrary', 'number', 'of', 'elements']\n\n\nRange Function\nTrivial lists can be tedious to write: [0,1,2,3,4,5,6]. The function range creates numeric ranges automatically.\n\nThen end value is not included in the sequence.\nconsumes less memory than the corresponding list.\n\nThis is because in a list all the elements are stored in the memory, whereas the range generates the requested elements only when needed. For example, when the for loop asks for the next element from the range at each iteration, only a single element from the range exists in memory at the same time. This makes a big difference when using large ranges, like range(1000000).\n\nrange1=range(7)\n# print(type(range1)) # Note that L is not a list!\n# print(list(range1))\n\n# range2=range(3,7)\n# print(list(range2))\n\nrange3=range(0,20,3)\nprint(list(range3))\n\n[0, 3, 6, 9, 12, 15, 18]\n\n\n\nlist(range1)\nint('123')\n\n123",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data structures</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data structures</span>"
     ]
   },
   {
-    "objectID": "chapters/03/03-data-structures.html#a.-sequences-tuple",
-    "href": "chapters/03/03-data-structures.html#a.-sequences-tuple",
-    "title": "10  Data structures",
-    "section": "10.4 A. Sequences: Tuple",
-    "text": "10.4 A. Sequences: Tuple\nA tuple is fixed length, immutable, and ordered container. Elements of tuple are separated by commas and written between parentheses. Examples of tuples:\n\nsingleton=(3,)               # a singleton\npair=(1,3)              # a pair\ntriple=(1, \"hello\", 1.0); # a triple\ntype(singleton)\n\ntuple\n\n\n\ntriple[2]\n\n1.0\n\n\nNote the difference between (3) and (3,). Because the parentheses can also be used to group expressions, the first one defines an integer, but the second one defines a tuple with single element. As we can see, both lists and tuples can contain values of different type.\nWe can also modify a list by using mutating methods of the list class, namely the methods append, extend, insert, remove, pop, reverse, and sort.\nNote that we cannot perform these modifications on tuples or strings since they are immutable",
+    "objectID": "chapters/Practice/03/03-data-structures.html#a.-sequences-tuple",
+    "href": "chapters/Practice/03/03-data-structures.html#a.-sequences-tuple",
+    "title": "7  Data structures",
+    "section": "7.4 A. Sequences: Tuple",
+    "text": "7.4 A. Sequences: Tuple\nA tuple is fixed length, immutable, and ordered container. Elements of tuple are separated by commas and written between parentheses. Examples of tuples:\n\nsingleton=(3,)               # a singleton\npair=(1,3)              # a pair\ntriple=(1, \"hello\", 1.0); # a triple\ntype(singleton)\n\ntuple\n\n\n\ntriple[2]\n\n1.0\n\n\nNote the difference between (3) and (3,). Because the parentheses can also be used to group expressions, the first one defines an integer, but the second one defines a tuple with single element. As we can see, both lists and tuples can contain values of different type.\nWe can also modify a list by using mutating methods of the list class, namely the methods append, extend, insert, remove, pop, reverse, and sort.\nNote that we cannot perform these modifications on tuples or strings since they are immutable",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data structures</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data structures</span>"
     ]
   },
   {
-    "objectID": "chapters/03/03-data-structures.html#b.-non-sequences-sets",
-    "href": "chapters/03/03-data-structures.html#b.-non-sequences-sets",
-    "title": "10  Data structures",
-    "section": "10.5 B. Non-Sequences: Sets",
-    "text": "10.5 B. Non-Sequences: Sets\nA set is a dynamic, unordered container.\n\nsemester1={'Calcules1','Physics','Computer','Statistic'}\nsemester2={'Calcules2','Computer','Algebra'}\n\n# print(semester1)\n# print('Algebra' in semester1)\n\n# print(semester1.intersection(semester2))\n# print(semester1.difference(semester2))\n# print(semester1.union(semester2))\n\nempty_set=set() # Not {}\ntype(empty_set)\n\nset",
+    "objectID": "chapters/Practice/03/03-data-structures.html#b.-non-sequences-sets",
+    "href": "chapters/Practice/03/03-data-structures.html#b.-non-sequences-sets",
+    "title": "7  Data structures",
+    "section": "7.5 B. Non-Sequences: Sets",
+    "text": "7.5 B. Non-Sequences: Sets\nA set is a dynamic, unordered container.\n\nsemester1={'Calcules1','Physics','Computer','Statistic'}\nsemester2={'Calcules2','Computer','Algebra'}\n\n# print(semester1)\n# print('Algebra' in semester1)\n\n# print(semester1.intersection(semester2))\n# print(semester1.difference(semester2))\n# print(semester1.union(semester2))\n\nempty_set=set() # Not {}\ntype(empty_set)\n\nset",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data structures</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data structures</span>"
     ]
   },
   {
-    "objectID": "chapters/03/03-data-structures.html#b.-non-sequences-dictionaries",
-    "href": "chapters/03/03-data-structures.html#b.-non-sequences-dictionaries",
-    "title": "10  Data structures",
-    "section": "10.6 B. Non-Sequences: Dictionaries",
-    "text": "10.6 B. Non-Sequences: Dictionaries\nA dictionary is a dynamic, unordered container.\nInstead of using integers to access the elements of the container, the dictionary uses keys to access the stored values.\nThe dictionary can be created by listing the comma separated key-value pairs in braces. Keys and values are separated by a colon.\nA tuple (key,value) is called an item of the dictionary.\n\nstudent1={'name':'Sara', \n          'age':23, \n          'student_id':2020121110, \n          'courses':{'Calcules2','Computer','Algebra'}\n         }\n\nstudent2=dict([\n    ('name', 'Danial'), \n    ('age', 22), \n    ('student_id', 2019121002)\n]) \n\nstudent3=dict(\n    name='Arman', \n    age=18, \n    courses=set()\n);\n\n\nprint(student1['name'])\nprint(student1.pop('age'))\nprint(student1.get('student_id'))\n\n#print(student1['phone']) # Error\nprint(student1.get('phone'))\nprint(student1.get('phone','I can Not Found'))\n\n#Add a key-value\nstudent1['phone']='222-2222-2222'\nprint(student1['phone'])\n\nstudent2.clear()\n\nSara\n23\n2020121110\nNone\nI can Not Found\n222-2222-2222\n\n\n\nstudent1={'name':'Sara', \n          'age':23, \n          'student_id':2020121110, \n          'courses':{'Calcules2','Computer','Algebra'}\n         }\n# print(student1)\n\n# student1.update({'age':24,'courses':{'Logic','Linear Algebra'}})\n# print(student1)\n\n# del student1['courses']\n# print(student1)\n\n\n# print(len(student1))\n# print(student1.keys())\n# print(student1.values())\n# print(student1.items())\n\n# for key,value in student1.items():\n#     print(key,value)\n\nstudent1.clear()\nprint(student1)\n\n{}\n\n\n\nstudent4={}\nprint(student4)\nprint(type(student4))\n\n{}\n&lt;class 'dict'&gt;",
+    "objectID": "chapters/Practice/03/03-data-structures.html#b.-non-sequences-dictionaries",
+    "href": "chapters/Practice/03/03-data-structures.html#b.-non-sequences-dictionaries",
+    "title": "7  Data structures",
+    "section": "7.6 B. Non-Sequences: Dictionaries",
+    "text": "7.6 B. Non-Sequences: Dictionaries\nA dictionary is a dynamic, unordered container.\nInstead of using integers to access the elements of the container, the dictionary uses keys to access the stored values.\nThe dictionary can be created by listing the comma separated key-value pairs in braces. Keys and values are separated by a colon.\nA tuple (key,value) is called an item of the dictionary.\n\nstudent1={'name':'Sara', \n          'age':23, \n          'student_id':2020121110, \n          'courses':{'Calcules2','Computer','Algebra'}\n         }\n\nstudent2=dict([\n    ('name', 'Danial'), \n    ('age', 22), \n    ('student_id', 2019121002)\n]) \n\nstudent3=dict(\n    name='Arman', \n    age=18, \n    courses=set()\n);\n\n\nprint(student1['name'])\nprint(student1.pop('age'))\nprint(student1.get('student_id'))\n\n#print(student1['phone']) # Error\nprint(student1.get('phone'))\nprint(student1.get('phone','I can Not Found'))\n\n#Add a key-value\nstudent1['phone']='222-2222-2222'\nprint(student1['phone'])\n\nstudent2.clear()\n\nSara\n23\n2020121110\nNone\nI can Not Found\n222-2222-2222\n\n\n\nstudent1={'name':'Sara', \n          'age':23, \n          'student_id':2020121110, \n          'courses':{'Calcules2','Computer','Algebra'}\n         }\n# print(student1)\n\n# student1.update({'age':24,'courses':{'Logic','Linear Algebra'}})\n# print(student1)\n\n# del student1['courses']\n# print(student1)\n\n\n# print(len(student1))\n# print(student1.keys())\n# print(student1.values())\n# print(student1.items())\n\n# for key,value in student1.items():\n#     print(key,value)\n\nstudent1.clear()\nprint(student1)\n\n{}\n\n\n\nstudent4={}\nprint(student4)\nprint(type(student4))\n\n{}\n&lt;class 'dict'&gt;",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Data structures</span>"
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>Data structures</span>"
     ]
   },
   {
-    "objectID": "chapters/04/04-conditions-and-loops.html",
-    "href": "chapters/04/04-conditions-and-loops.html",
-    "title": "11  Conditions and Loops",
+    "objectID": "chapters/Practice/04/04-conditions-and-loops.html",
+    "href": "chapters/Practice/04/04-conditions-and-loops.html",
+    "title": "8  Conditions and Loops",
     "section": "",
-    "text": "11.1 if, elif, else\n# a='sara' #23\n# b='saara' #22\na =[2,3,5,8]\nb= [2,3,7]\n\nif a==b:\n    print(f'{a} is equal {b}.')\nelif a&gt;b:\n    print(f'{a} is greater than {b}.')\nelif a&lt;b:     \n    print(f'{a} is less than {b}.')\nelse:\n    print('Non of theme')\n\n[2, 3, 5, 8] is less than [2, 3, 7].",
+    "text": "8.1 if, elif, else\n# a='sara' #23\n# b='saara' #22\na =[2,3,5,8]\nb= [2,3,7]\n\nif a==b:\n    print(f'{a} is equal {b}.')\nelif a&gt;b:\n    print(f'{a} is greater than {b}.')\nelif a&lt;b:     \n    print(f'{a} is less than {b}.')\nelse:\n    print('Non of theme')\n\n[2, 3, 5, 8] is less than [2, 3, 7].",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Conditions and Loops</span>"
     ]
   },
   {
-    "objectID": "chapters/04/04-conditions-and-loops.html#if-elif-else",
-    "href": "chapters/04/04-conditions-and-loops.html#if-elif-else",
-    "title": "11  Conditions and Loops",
+    "objectID": "chapters/Practice/04/04-conditions-and-loops.html#if-elif-else",
+    "href": "chapters/Practice/04/04-conditions-and-loops.html#if-elif-else",
+    "title": "8  Conditions and Loops",
     "section": "",
     "text": "Logic operators\n\nuser='Admin'\nlogged_in=False\n\nif user=='Admin' and logged_in:\n    print ('Admin Page')\nelif not logged_in:\n    print('Login Page')\n\nLogin Page\n\n\n\n\nFalse Value\n\nFalse\nNone\nZero\nEmpty structure: ’’, [], (), {}\n\n\nif None or 0 or [] or () or {} or '':\n    print('One of them is True')\nelse:\n    print('All of them are False')\n\nAll of them are False",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Conditions and Loops</span>"
     ]
   },
   {
-    "objectID": "chapters/04/04-conditions-and-loops.html#for",
-    "href": "chapters/04/04-conditions-and-loops.html#for",
-    "title": "11  Conditions and Loops",
-    "section": "11.2 For",
-    "text": "11.2 For\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n\nfor c in courses:\n    print(c)\n\nCalcules\nPhysics\nComputer\nStatistic\nAlgebra\n\n\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n\nfor _ in courses:\n    print('*')\n\n*\n*\n*\n*\n*\n\n\n\nlist(range(7))\n\n[0, 1, 2, 3, 4, 5, 6]\n\n\n\nfor i in range(7):\n    if i%2==0:\n        print(f'{i} is Even.')\n    else:\n        print(f'{i} is Odd.')\n\n0 is Even.\n1 is Odd.\n2 is Even.\n3 is Odd.\n4 is Even.\n5 is Odd.\n6 is Even.\n\n\n\nlimit=3\n\nfor i in range(1,7):\n    if i&lt;limit:\n        print(f'Your password is not correct. {i}/{limit}.')\n    else:\n        print(f'You input incorrected password {i} times. Your card is blocked.')\n        break\n\nYour password is not correct. 1/3.\nYour password is not correct. 2/3.\nYou input incorrected password 3 times. Your card is blocked.\n\n\n\nfor i in range(20):\n    if i%3==0:\n        continue\n    print(i)\n\n1\n2\n4\n5\n7\n8\n10\n11\n13\n14\n16\n17\n19\n\n\n\nfor i in range(3):\n    for j in 'abc':\n        print(i,j)\n\n0 a\n0 b\n0 c\n1 a\n1 b\n1 c\n2 a\n2 b\n2 c",
+    "objectID": "chapters/Practice/04/04-conditions-and-loops.html#for",
+    "href": "chapters/Practice/04/04-conditions-and-loops.html#for",
+    "title": "8  Conditions and Loops",
+    "section": "8.2 For",
+    "text": "8.2 For\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n\nfor c in courses:\n    print(c)\n\nCalcules\nPhysics\nComputer\nStatistic\nAlgebra\n\n\n\ncourses=['Calcules','Physics','Computer','Statistic','Algebra']\n\nfor _ in courses:\n    print('*')\n\n*\n*\n*\n*\n*\n\n\n\nlist(range(7))\n\n[0, 1, 2, 3, 4, 5, 6]\n\n\n\nfor i in range(7):\n    if i%2==0:\n        print(f'{i} is Even.')\n    else:\n        print(f'{i} is Odd.')\n\n0 is Even.\n1 is Odd.\n2 is Even.\n3 is Odd.\n4 is Even.\n5 is Odd.\n6 is Even.\n\n\n\nlimit=3\n\nfor i in range(1,7):\n    if i&lt;limit:\n        print(f'Your password is not correct. {i}/{limit}.')\n    else:\n        print(f'You input incorrected password {i} times. Your card is blocked.')\n        break\n\nYour password is not correct. 1/3.\nYour password is not correct. 2/3.\nYou input incorrected password 3 times. Your card is blocked.\n\n\n\nfor i in range(20):\n    if i%3==0:\n        continue\n    print(i)\n\n1\n2\n4\n5\n7\n8\n10\n11\n13\n14\n16\n17\n19\n\n\n\nfor i in range(3):\n    for j in 'abc':\n        print(i,j)\n\n0 a\n0 b\n0 c\n1 a\n1 b\n1 c\n2 a\n2 b\n2 c",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Conditions and Loops</span>"
     ]
   },
   {
-    "objectID": "chapters/04/04-conditions-and-loops.html#while",
-    "href": "chapters/04/04-conditions-and-loops.html#while",
-    "title": "11  Conditions and Loops",
-    "section": "11.3 while",
-    "text": "11.3 while\n\nx = 0\n\nwhile x&lt;=10:\n    x+=1\n    print(x)\n    \n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n\n\n\nx\n\n11\n\n\n\nu=[2 ,3,6,8,5]\nv=[-1,5,0,6,7]\n\ns=0\nn=len(u)\n\nfor i in range(n):\n    s+=u[i]*v[i]\n    \ns\n\n96\n\n\n\nu=[2 ,3,6,8,5,4,2,5,2]\nv=[-1,5,0,6,7,-1,8,6,5]\n\ns=0\nn=len(u)\n\nif len(u)!=len(v):\n    print(f'dim is not equal: {len(u)} , {len(v)}')\nelse:\n    for i in range(n):\n        s+=u[i]*v[i]\n    \ns\n\n148\n\n\n\nu=[2 ,3,6,8,5,4,2,5,2]\nv=[-1,5,0,6,7,-1,8,6,5]\n\ns=0\nn=len(u)\n\nif len(u)==len(v):\n    for i in range(n):\n        s+=u[i]*v[i]\nelse:\n    print(f'dim is not equal: {len(u)} , {len(v)}')\n    \n    \ns\n\n148\n\n\n\ndef inner_product(a,b):\n    m=len(a)\n    n=len(b)\n    s=0\n    if m==n :\n        for i in range(m):\n            s+=a[i]*b[i]\n    else:\n        return 'Dimentions are not equal'\n    return s\n\n\ninner_product(u,v)\n\n148\n\n\n\nu1=[2,3,6]\nu2=[0,5,9]\ninner_product(u1,u2)\n\n69\n\n\n\nu1=[2,3,6,3]\nu2=[0,5,9]\ninner_product(u1,u2)\n\n'Dimentions are not equal'\n\n\n\na=[1,2,3,4,5,6,7,8,9]\n\n\n# 1 2 3\n# 4 5 6\n# 7 8 9\n\n\n\nlist(range(1,26))\n\n[1,\n 2,\n 3,\n 4,\n 5,\n 6,\n 7,\n 8,\n 9,\n 10,\n 11,\n 12,\n 13,\n 14,\n 15,\n 16,\n 17,\n 18,\n 19,\n 20,\n 21,\n 22,\n 23,\n 24,\n 25]",
+    "objectID": "chapters/Practice/04/04-conditions-and-loops.html#while",
+    "href": "chapters/Practice/04/04-conditions-and-loops.html#while",
+    "title": "8  Conditions and Loops",
+    "section": "8.3 while",
+    "text": "8.3 while\n\nx = 0\n\nwhile x&lt;=10:\n    x+=1\n    print(x)\n    \n\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n\n\n\nx\n\n11\n\n\n\nu=[2 ,3,6,8,5]\nv=[-1,5,0,6,7]\n\ns=0\nn=len(u)\n\nfor i in range(n):\n    s+=u[i]*v[i]\n    \ns\n\n96\n\n\n\nu=[2 ,3,6,8,5,4,2,5,2]\nv=[-1,5,0,6,7,-1,8,6,5]\n\ns=0\nn=len(u)\n\nif len(u)!=len(v):\n    print(f'dim is not equal: {len(u)} , {len(v)}')\nelse:\n    for i in range(n):\n        s+=u[i]*v[i]\n    \ns\n\n148\n\n\n\nu=[2 ,3,6,8,5,4,2,5,2]\nv=[-1,5,0,6,7,-1,8,6,5]\n\ns=0\nn=len(u)\n\nif len(u)==len(v):\n    for i in range(n):\n        s+=u[i]*v[i]\nelse:\n    print(f'dim is not equal: {len(u)} , {len(v)}')\n    \n    \ns\n\n148\n\n\n\ndef inner_product(a,b):\n    m=len(a)\n    n=len(b)\n    s=0\n    if m==n :\n        for i in range(m):\n            s+=a[i]*b[i]\n    else:\n        return 'Dimentions are not equal'\n    return s\n\n\ninner_product(u,v)\n\n148\n\n\n\nu1=[2,3,6]\nu2=[0,5,9]\ninner_product(u1,u2)\n\n69\n\n\n\nu1=[2,3,6,3]\nu2=[0,5,9]\ninner_product(u1,u2)\n\n'Dimentions are not equal'\n\n\n\na=[1,2,3,4,5,6,7,8,9]\n\n\n# 1 2 3\n# 4 5 6\n# 7 8 9\n\n\n\nlist(range(1,26))\n\n[1,\n 2,\n 3,\n 4,\n 5,\n 6,\n 7,\n 8,\n 9,\n 10,\n 11,\n 12,\n 13,\n 14,\n 15,\n 16,\n 17,\n 18,\n 19,\n 20,\n 21,\n 22,\n 23,\n 24,\n 25]",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>11</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>Conditions and Loops</span>"
     ]
   },
   {
-    "objectID": "chapters/05/05-functions.html",
-    "href": "chapters/05/05-functions.html",
-    "title": "12  Function",
+    "objectID": "chapters/Practice/05/05-functions.html",
+    "href": "chapters/Practice/05/05-functions.html",
+    "title": "9  Function",
     "section": "",
-    "text": "12.1 Define a Function\ndef hello_func():\n    '''Doc string: This function print a string'''\n    print('Hello User')\nhello_func()\n\nHello User\nhello_func()\n\nHello User\nhello_func?\nlist?\ndef login_msg(name):\n    print(f'Hello {name}, you login now!')\nlogin_msg('Samyar')\n\nHello Samyar, you login now!\nlogin_msg('Arash')\n\nHello Arash, you login now!\ndef login_msg(user):\n    return f'Hello {user}, you login now!'\n    print('Hi')\nmsg=login_msg('Samyar')\n# print(msg)\nmsg\n\n'Hello Samyar, you login now!'\ndef user_age(name,age):\n    return f'{name} is {age} years old.'\n# print(user_age('Parviz',28))\nuser_age(28,'Parviz')\n\n'28 is Parviz years old.'\nuser_age(age=28,name='Parviz')\n\n'Parviz is 28 years old.'\nuser_age(28)\n\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n&lt;ipython-input-20-f65f0252b944&gt; in &lt;module&gt;\n----&gt; 1 user_age(28)\n\nTypeError: user_age() missing 1 required positional argument: 'age'\ndef user_age(name='User name',age=19):\n    return f'{name} is {age} years old.'\nprint(user_age())\n\nUser name is 19 years old.\nuser_age('Reza',32)\n\n'Reza is 32 years old.'\ndef user_age(name='User',age=19):\n    return f'{name} is {age} years old.'\nuser_age(age=18)\n\n'User is 18 years old.'",
+    "text": "9.1 Define a Function\ndef hello_func():\n    '''Doc string: This function print a string'''\n    print('Hello User')\nhello_func()\n\nHello User\nhello_func()\n\nHello User\nhello_func?\nlist?\ndef login_msg(name):\n    print(f'Hello {name}, you login now!')\nlogin_msg('Samyar')\n\nHello Samyar, you login now!\nlogin_msg('Arash')\n\nHello Arash, you login now!\ndef login_msg(user):\n    return f'Hello {user}, you login now!'\n    print('Hi')\nmsg=login_msg('Samyar')\n# print(msg)\nmsg\n\n'Hello Samyar, you login now!'\ndef user_age(name,age):\n    return f'{name} is {age} years old.'\n# print(user_age('Parviz',28))\nuser_age(28,'Parviz')\n\n'28 is Parviz years old.'\nuser_age(age=28,name='Parviz')\n\n'Parviz is 28 years old.'\nuser_age(28)\n\n\n---------------------------------------------------------------------------\nTypeError                                 Traceback (most recent call last)\n&lt;ipython-input-20-f65f0252b944&gt; in &lt;module&gt;\n----&gt; 1 user_age(28)\n\nTypeError: user_age() missing 1 required positional argument: 'age'\ndef user_age(name='User name',age=19):\n    return f'{name} is {age} years old.'\nprint(user_age())\n\nUser name is 19 years old.\nuser_age('Reza',32)\n\n'Reza is 32 years old.'\ndef user_age(name='User',age=19):\n    return f'{name} is {age} years old.'\nuser_age(age=18)\n\n'User is 18 years old.'",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Function</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Function</span>"
     ]
   },
   {
-    "objectID": "chapters/05/05-functions.html#args-kwargs",
-    "href": "chapters/05/05-functions.html#args-kwargs",
-    "title": "12  Function",
-    "section": "12.2 args, kwargs",
-    "text": "12.2 args, kwargs\nPass ARRAY and DICTIONARY as arguments of a function.\n\ndef student_courses(*courses):\n    print(courses)\nstudent_courses('Calcules1','Algebra1','Logic')\n\n('Calcules1', 'Algebra1', 'Logic')\n\n\n\ndef student_details(**details):\n    print(details)\nstudent_details(neme='Parviz',age=28, is_active=True)\n\n{'neme': 'Parviz', 'age': 28, 'is_active': True}\n\n\n\ndef student_info(*courses,**details):\n    print(courses)\n    print(details)\nstudent_courses('Calcules1','Algebra1','Logic',neme='Parviz',age=28)\n\n('Calcules1', 'Algebra1', 'Logic')\n{'neme': 'Parviz', 'age': 28}\n\n\n\ndef student_info(*courses,**details):\n    print(courses)\n    print(details)\n    \ncourses=['Calcules1', 'Algebra1', 'Logic']\ndetails={'neme': 'Parviz', 'age': 28}\nstudent_courses(*courses,**details)\n\n('Calcules1', 'Algebra1', 'Logic')\n{'neme': 'Parviz', 'age': 28}",
+    "objectID": "chapters/Practice/05/05-functions.html#args-kwargs",
+    "href": "chapters/Practice/05/05-functions.html#args-kwargs",
+    "title": "9  Function",
+    "section": "9.2 args, kwargs",
+    "text": "9.2 args, kwargs\nPass ARRAY and DICTIONARY as arguments of a function.\n\ndef student_courses(*courses):\n    print(courses)\nstudent_courses('Calcules1','Algebra1','Logic')\n\n('Calcules1', 'Algebra1', 'Logic')\n\n\n\ndef student_details(**details):\n    print(details)\nstudent_details(neme='Parviz',age=28, is_active=True)\n\n{'neme': 'Parviz', 'age': 28, 'is_active': True}\n\n\n\ndef student_info(*courses,**details):\n    print(courses)\n    print(details)\nstudent_courses('Calcules1','Algebra1','Logic',neme='Parviz',age=28)\n\n('Calcules1', 'Algebra1', 'Logic')\n{'neme': 'Parviz', 'age': 28}\n\n\n\ndef student_info(*courses,**details):\n    print(courses)\n    print(details)\n    \ncourses=['Calcules1', 'Algebra1', 'Logic']\ndetails={'neme': 'Parviz', 'age': 28}\nstudent_courses(*courses,**details)\n\n('Calcules1', 'Algebra1', 'Logic')\n{'neme': 'Parviz', 'age': 28}",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Function</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Function</span>"
     ]
   },
   {
-    "objectID": "chapters/05/05-functions.html#function-in-function",
-    "href": "chapters/05/05-functions.html#function-in-function",
-    "title": "12  Function",
-    "section": "12.3 Function in Function",
-    "text": "12.3 Function in Function\n\ndef inc(x):\n    return x + 1\n\n\ndef dec(x):\n    return x - 1\n\n\ndef operate(func, x):\n    result = func(x)\n    return result\n\noperate(inc,3)\n\n4\n\n\n\ndef list_courses(courses):\n    print('The courses:')\n    for course in courses:\n        print(course)\n        \ndef student_des(*courses,**details):\n    for key,value in details.items():\n        print(f'{key}:{value}')\n    list_courses(courses)\n    \ncourses=['Calcules1', 'Algebra1', 'Logic']\ndetails={'neme': 'Parviz', 'age': 28}\nstudent_des(*courses,**details)\n\nneme:Parviz\nage:28\nThe courses:\nCalcules1\nAlgebra1\nLogic",
+    "objectID": "chapters/Practice/05/05-functions.html#function-in-function",
+    "href": "chapters/Practice/05/05-functions.html#function-in-function",
+    "title": "9  Function",
+    "section": "9.3 Function in Function",
+    "text": "9.3 Function in Function\n\ndef inc(x):\n    return x + 1\n\n\ndef dec(x):\n    return x - 1\n\n\ndef operate(func, x):\n    result = func(x)\n    return result\n\noperate(inc,3)\n\n4\n\n\n\ndef list_courses(courses):\n    print('The courses:')\n    for course in courses:\n        print(course)\n        \ndef student_des(*courses,**details):\n    for key,value in details.items():\n        print(f'{key}:{value}')\n    list_courses(courses)\n    \ncourses=['Calcules1', 'Algebra1', 'Logic']\ndetails={'neme': 'Parviz', 'age': 28}\nstudent_des(*courses,**details)\n\nneme:Parviz\nage:28\nThe courses:\nCalcules1\nAlgebra1\nLogic",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Function</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Function</span>"
     ]
   },
   {
-    "objectID": "chapters/05/05-functions.html#scope-legb",
-    "href": "chapters/05/05-functions.html#scope-legb",
-    "title": "12  Function",
-    "section": "12.4 Scope (LEGB)",
-    "text": "12.4 Scope (LEGB)\nLocal, Enclosing, Global, Built-in\n\nx='global x'\ndef test():\n    y='local y'\n    #print(y)\n    print(x)\ntest()\n#print(y) ##Error\n\nglobal x\n\n\n\nx='global x'\ndef test():\n    x='local x'\n    print(x)\ntest()\nprint(x) \n\nlocal x\nglobal x\n\n\n\nx='global x'\ndef test():\n    global x\n    x='local x'\n    print(x)\ntest()\nprint(x) \n\nlocal x\nlocal x\n\n\n\ndef test(z):\n    print(z)\ntest('local z')\n#print(z) ##Eror\n\nlocal z\n\n\n\nimport builtins\nprint(dir(builtins))\n\n['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError', '__IPYTHON__', '__build_class__', '__debug__', '__doc__', '__import__', '__loader__', '__name__', '__package__', '__spec__', 'abs', 'all', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'display', 'divmod', 'enumerate', 'eval', 'exec', 'filter', 'float', 'format', 'frozenset', 'get_ipython', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']\n\n\n\nm=abs(-10)\nprint(m)\n\n10\n\n\n\n# You can overwrite bult-in functions\ndef abs(x):\n    if x&gt;0:\n        return x\n    else:\n        return 0\n\nm=abs(-10)\nprint(m)\n\n0",
+    "objectID": "chapters/Practice/05/05-functions.html#scope-legb",
+    "href": "chapters/Practice/05/05-functions.html#scope-legb",
+    "title": "9  Function",
+    "section": "9.4 Scope (LEGB)",
+    "text": "9.4 Scope (LEGB)\nLocal, Enclosing, Global, Built-in\n\nx='global x'\ndef test():\n    y='local y'\n    #print(y)\n    print(x)\ntest()\n#print(y) ##Error\n\nglobal x\n\n\n\nx='global x'\ndef test():\n    x='local x'\n    print(x)\ntest()\nprint(x) \n\nlocal x\nglobal x\n\n\n\nx='global x'\ndef test():\n    global x\n    x='local x'\n    print(x)\ntest()\nprint(x) \n\nlocal x\nlocal x\n\n\n\ndef test(z):\n    print(z)\ntest('local z')\n#print(z) ##Eror\n\nlocal z\n\n\n\nimport builtins\nprint(dir(builtins))\n\n['ArithmeticError', 'AssertionError', 'AttributeError', 'BaseException', 'BlockingIOError', 'BrokenPipeError', 'BufferError', 'BytesWarning', 'ChildProcessError', 'ConnectionAbortedError', 'ConnectionError', 'ConnectionRefusedError', 'ConnectionResetError', 'DeprecationWarning', 'EOFError', 'Ellipsis', 'EnvironmentError', 'Exception', 'False', 'FileExistsError', 'FileNotFoundError', 'FloatingPointError', 'FutureWarning', 'GeneratorExit', 'IOError', 'ImportError', 'ImportWarning', 'IndentationError', 'IndexError', 'InterruptedError', 'IsADirectoryError', 'KeyError', 'KeyboardInterrupt', 'LookupError', 'MemoryError', 'ModuleNotFoundError', 'NameError', 'None', 'NotADirectoryError', 'NotImplemented', 'NotImplementedError', 'OSError', 'OverflowError', 'PendingDeprecationWarning', 'PermissionError', 'ProcessLookupError', 'RecursionError', 'ReferenceError', 'ResourceWarning', 'RuntimeError', 'RuntimeWarning', 'StopAsyncIteration', 'StopIteration', 'SyntaxError', 'SyntaxWarning', 'SystemError', 'SystemExit', 'TabError', 'TimeoutError', 'True', 'TypeError', 'UnboundLocalError', 'UnicodeDecodeError', 'UnicodeEncodeError', 'UnicodeError', 'UnicodeTranslateError', 'UnicodeWarning', 'UserWarning', 'ValueError', 'Warning', 'WindowsError', 'ZeroDivisionError', '__IPYTHON__', '__build_class__', '__debug__', '__doc__', '__import__', '__loader__', '__name__', '__package__', '__spec__', 'abs', 'all', 'any', 'ascii', 'bin', 'bool', 'breakpoint', 'bytearray', 'bytes', 'callable', 'chr', 'classmethod', 'compile', 'complex', 'copyright', 'credits', 'delattr', 'dict', 'dir', 'display', 'divmod', 'enumerate', 'eval', 'exec', 'filter', 'float', 'format', 'frozenset', 'get_ipython', 'getattr', 'globals', 'hasattr', 'hash', 'help', 'hex', 'id', 'input', 'int', 'isinstance', 'issubclass', 'iter', 'len', 'license', 'list', 'locals', 'map', 'max', 'memoryview', 'min', 'next', 'object', 'oct', 'open', 'ord', 'pow', 'print', 'property', 'range', 'repr', 'reversed', 'round', 'set', 'setattr', 'slice', 'sorted', 'staticmethod', 'str', 'sum', 'super', 'tuple', 'type', 'vars', 'zip']\n\n\n\nm=abs(-10)\nprint(m)\n\n10\n\n\n\n# You can overwrite bult-in functions\ndef abs(x):\n    if x&gt;0:\n        return x\n    else:\n        return 0\n\nm=abs(-10)\nprint(m)\n\n0",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Function</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Function</span>"
     ]
   },
   {
-    "objectID": "chapters/05/05-functions.html#enclosing",
-    "href": "chapters/05/05-functions.html#enclosing",
-    "title": "12  Function",
-    "section": "12.5 Enclosing",
-    "text": "12.5 Enclosing\n\nx='global x'\ndef outer():\n    #x='outer x'\n    def inner():\n        #x='inner x'\n        print(x)\n    inner()\n\nouter()\n\nglobal x",
+    "objectID": "chapters/Practice/05/05-functions.html#enclosing",
+    "href": "chapters/Practice/05/05-functions.html#enclosing",
+    "title": "9  Function",
+    "section": "9.5 Enclosing",
+    "text": "9.5 Enclosing\n\nx='global x'\ndef outer():\n    #x='outer x'\n    def inner():\n        #x='inner x'\n        print(x)\n    inner()\n\nouter()\n\nglobal x",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Function</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Function</span>"
     ]
   },
   {
-    "objectID": "chapters/05/05-functions.html#return-a-function",
-    "href": "chapters/05/05-functions.html#return-a-function",
-    "title": "12  Function",
-    "section": "12.6 Return a Function",
-    "text": "12.6 Return a Function\n\ndef outer():\n    message='Hello'\n    def inner():\n        print(message)\n    return inner()\n\nouter()\n\nHello\n\n\n\ndef outer():\n    message='Hello'\n    def inner():\n        print(message)\n    return inner # not Exe\n\nmy_func = outer()\nmy_func()\n\nHello\n\n\n\ndef outer(message):\n    def inner():\n        print(message)\n    return inner # not Exe\n\nhi_func = outer('Hi')\nbye_func= outer('Bye')\nhi_func()\nbye_func()\n\nHi\nBye",
+    "objectID": "chapters/Practice/05/05-functions.html#return-a-function",
+    "href": "chapters/Practice/05/05-functions.html#return-a-function",
+    "title": "9  Function",
+    "section": "9.6 Return a Function",
+    "text": "9.6 Return a Function\n\ndef outer():\n    message='Hello'\n    def inner():\n        print(message)\n    return inner()\n\nouter()\n\nHello\n\n\n\ndef outer():\n    message='Hello'\n    def inner():\n        print(message)\n    return inner # not Exe\n\nmy_func = outer()\nmy_func()\n\nHello\n\n\n\ndef outer(message):\n    def inner():\n        print(message)\n    return inner # not Exe\n\nhi_func = outer('Hi')\nbye_func= outer('Bye')\nhi_func()\nbye_func()\n\nHi\nBye",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Function</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Function</span>"
     ]
   },
   {
-    "objectID": "chapters/05/05-functions.html#decorator-function",
-    "href": "chapters/05/05-functions.html#decorator-function",
-    "title": "12  Function",
-    "section": "12.7 Decorator Function",
-    "text": "12.7 Decorator Function\nA decorator takes in a function, adds some functionality and returns it.\n\ndef make_pretty(func):\n    def inner():\n        print(\"I got decorated\")\n        func()\n    return inner\n\n\ndef ordinary():\n    print(\"I am ordinary\")    \npretty = make_pretty(ordinary)\npretty()\n\nI got decorated\nI am ordinary\n\n\n\n@make_pretty\ndef ordinary():\n    print(\"I am ordinary\")\nordinary()\n\nI got decorated\nI am ordinary\n\n\n\nExample\n\ndef divide(a, b):\n    return a/b\n#divide(2,0)\n\n\ndef smart_divide(func):\n    def inner(a, b):\n        print(\"I am going to divide\", a, \"and\", b)\n        if b == 0:\n            print(\"Whoops! cannot divide\")\n            return\n        return func(a, b)\n    return inner\n\n\n@smart_divide\ndef divide(a, b):\n    print(a/b)\ndivide(2,0)\n\nI am going to divide 2 and 0\nWhoops! cannot divide\n\n\n\n\nMultiple decorators can be chained in Python.\n\ndef star(func):\n    def inner(*args, **kwargs):\n        print(\"*\" * 30)\n        func(*args, **kwargs)\n        print(\"*\" * 30)\n    return inner\n\n\ndef percent(func):\n    def inner(*args, **kwargs):\n        print(\"%\" * 30)\n        func(*args, **kwargs)\n        print(\"%\" * 30)\n    return inner\n\n\n\n******************************\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\nHello\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n******************************\n\n\n\n@star\n@percent\ndef printer(msg):\n    print(msg)\n#printer = star(percent(printer)) we should use this if we dont use decorations\nprinter(\"Hello\")\n\n\n@percent\n@star\ndef printer(msg):\n    print(msg)\n\nprinter(\"Hello\")\n\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n******************************\nHello\n******************************\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
+    "objectID": "chapters/Practice/05/05-functions.html#decorator-function",
+    "href": "chapters/Practice/05/05-functions.html#decorator-function",
+    "title": "9  Function",
+    "section": "9.7 Decorator Function",
+    "text": "9.7 Decorator Function\nA decorator takes in a function, adds some functionality and returns it.\n\ndef make_pretty(func):\n    def inner():\n        print(\"I got decorated\")\n        func()\n    return inner\n\n\ndef ordinary():\n    print(\"I am ordinary\")    \npretty = make_pretty(ordinary)\npretty()\n\nI got decorated\nI am ordinary\n\n\n\n@make_pretty\ndef ordinary():\n    print(\"I am ordinary\")\nordinary()\n\nI got decorated\nI am ordinary\n\n\n\nExample\n\ndef divide(a, b):\n    return a/b\n#divide(2,0)\n\n\ndef smart_divide(func):\n    def inner(a, b):\n        print(\"I am going to divide\", a, \"and\", b)\n        if b == 0:\n            print(\"Whoops! cannot divide\")\n            return\n        return func(a, b)\n    return inner\n\n\n@smart_divide\ndef divide(a, b):\n    print(a/b)\ndivide(2,0)\n\nI am going to divide 2 and 0\nWhoops! cannot divide\n\n\n\n\nMultiple decorators can be chained in Python.\n\ndef star(func):\n    def inner(*args, **kwargs):\n        print(\"*\" * 30)\n        func(*args, **kwargs)\n        print(\"*\" * 30)\n    return inner\n\n\ndef percent(func):\n    def inner(*args, **kwargs):\n        print(\"%\" * 30)\n        func(*args, **kwargs)\n        print(\"%\" * 30)\n    return inner\n\n\n\n******************************\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\nHello\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n******************************\n\n\n\n@star\n@percent\ndef printer(msg):\n    print(msg)\n#printer = star(percent(printer)) we should use this if we dont use decorations\nprinter(\"Hello\")\n\n\n@percent\n@star\ndef printer(msg):\n    print(msg)\n\nprinter(\"Hello\")\n\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n******************************\nHello\n******************************\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%",
     "crumbs": [
       "Practice",
-      "<span class='chapter-number'>12</span>  <span class='chapter-title'>Function</span>"
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Function</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/01_condition.html",
+    "href": "chapters/01helloPython/01_condition.html",
+    "title": "2  Conditions",
+    "section": "",
+    "text": "2.1 Comparing Numbers\nPython uses comparison operators to compare values.\nThese expressions return a Boolean value: True or False.\nYou can also store boolean values in variables:",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/01_condition.html#comparing-numbers",
+    "href": "chapters/01helloPython/01_condition.html#comparing-numbers",
+    "title": "2  Conditions",
+    "section": "",
+    "text": "Operator\nMeaning\nExample\n\n\n\n\n==\nEqual to\n3 == 3 → True\n\n\n!=\nNot equal to\n3 != 4 → True\n\n\n&gt;\nGreater than\n5 &gt; 2 → True\n\n\n&lt;\nLess than\n2 &lt; 5 → True\n\n\n&gt;=\nGreater than or equal\n5 &gt;= 5 → True\n\n\n&lt;=\nLess than or equal\n4 &lt;= 3 → False\n\n\n\nx = 10\ny = 5\n\nprint(x &gt; y)      # True\nprint(x == y)     # False\n\nis_tall = True\nis_ready = False\nis_positive=30&gt;0",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/01_condition.html#if-else-making-decisions",
+    "href": "chapters/01helloPython/01_condition.html#if-else-making-decisions",
+    "title": "2  Conditions",
+    "section": "2.2 IF-ELSE: Making Decisions",
+    "text": "2.2 IF-ELSE: Making Decisions\nThese are used to control the flow of your program based on conditions.\n\nif Statement\nage = 18\n\nif age &gt;= 18:\n    print(\"You are an adult\")\n\n\nif-else Statement\nage = 16\n\nif age &gt;= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n\n\nif-elif-else Chain\nscore = 75\n\nif score &gt;= 90:\n    print(\"Grade: A\")\nelif score &gt;= 80:\n    print(\"Grade: B\")\nelif score &gt;= 70:\n    print(\"Grade: C\")\nelse:\n    print(\"Grade: F\")",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/01_condition.html#while-loop-condition",
+    "href": "chapters/01helloPython/01_condition.html#while-loop-condition",
+    "title": "2  Conditions",
+    "section": "2.3 While: Loop Condition",
+    "text": "2.3 While: Loop Condition\nThe while loop keeps running as long as the condition is True.\ncount = 1\n\nwhile count &lt;= 5:\n    print(\"Count is:\", count)\n    count += 1  # Same as count = count + 1\nOutput:\nCount is: 1\nCount is: 2\nCount is: 3\nCount is: 4\nCount is: 5\n\nInfinite Loop\nIf you forget to change the condition, the loop can run forever!\n# WARNING: This loop never stops!\nwhile True:\n    print(\"Hello\")  # Press Ctrl + C to stop in terminal\n\n\nControlling\n\nbreak — Stop the Loop Early\nx = 1\n\nwhile x &lt;= 10:\n    if x == 5:\n        break  # Exit the loop when x is 5\n    print(x)\n    x += 1\nOutput:\n1\n2\n3\n4\n\n\n\ncontinue — Skip One Iteration\nx = 0\n\nwhile x &lt; 5:\n    x += 1\n    if x == 3:\n        continue  # Skip the rest of the loop for x = 3\n    print(x)\nOutput:\n1\n2\n4\n5",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/01_condition.html#summary-table",
+    "href": "chapters/01helloPython/01_condition.html#summary-table",
+    "title": "2  Conditions",
+    "section": "2.4 Summary Table",
+    "text": "2.4 Summary Table\n\n\n\n\n\n\n\n\nConcept\nExample\nDescription\n\n\n\n\nComparison\nx &gt; y, x == y\nCompares values\n\n\nBoolean\nTrue, False\nLogical values\n\n\nif\nif x &gt; 0:\nRun code if condition is True\n\n\nelif\nelif x == 0:\nCheck another condition\n\n\nelse\nelse:\nRun if all above are False\n\n\nwhile\nRepeat while condition is true\nwhile x &lt; 5:\n\n\nbreak\nExit the loop immediately\nif x == 5: break\n\n\ncontinue\nSkip current loop and go to next one\nif x == 3: continue",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01helloPython/01_condition.html#practice-tasks",
+    "href": "chapters/01helloPython/01_condition.html#practice-tasks",
+    "title": "2  Conditions",
+    "section": "2.5 Practice Tasks",
+    "text": "2.5 Practice Tasks\n\nPractice Task 1\nWrite a program that:\n\nAsks the user to enter a number\nChecks if the number is:\n\nPositive\nZero\nNegative\n\n\nnumber = float(input(\"Enter a number: \"))\n\nif number &gt; 0:\n    print(\"The number is positive\")\nelif number == 0:\n    print(\"The number is zero\")\nelse:\n    print(\"The number is negative\")\n\n\nPractice Task 2\nWrite a program that:\n\nAsks the user to guess a secret number between 1 and 10\nRepeats until the user guesses correctly\n\nsecret = 7\nguess = None\n\nwhile guess != secret:\n    guess = int(input(\"Guess the number (1-10): \"))\n    if guess == secret:\n        print(\"Correct!\")\n    else:\n        print(\"Try again!\")",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions</span>"
     ]
   }
 ]
