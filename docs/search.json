@@ -10,228 +10,228 @@
     ]
   },
   {
-    "objectID": "chapters/01helloPython/00_input-output.html",
-    "href": "chapters/01helloPython/00_input-output.html",
+    "objectID": "chapters/01basic/00_input-output.html",
+    "href": "chapters/01basic/00_input-output.html",
     "title": "1  Basic Concepts",
     "section": "",
-    "text": "1.1 Variables\nA variable holds a value. You can store strings, numbers, or any data.",
+    "text": "1.1 Variables\nA variable holds a value. You can store strings, numbers, or any data.\nPython is case-sensitive. This means that variable names, function names, and identifiers with different capitalizations are treated as completely different",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**Basic Concepts**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/00_input-output.html#variables",
-    "href": "chapters/01helloPython/00_input-output.html#variables",
+    "objectID": "chapters/01basic/00_input-output.html#variables",
+    "href": "chapters/01basic/00_input-output.html#variables",
     "title": "1  Basic Concepts",
     "section": "",
-    "text": "city = \"Berlin\"\npopulation = 3850000\narea = 891.8        \nis_capital = True\nrivers=None\n\nNone represents the absence of a value. This is useful when you want to define a variable before assigning a real value.\nPython is case-sensitive. This means that variable names, function names, and identifiers with different capitalizations are treated as completely different.\n\n\n\ncommon Python data types\nHere’s a table of common Python data types with their descriptions and examples:\n\n\n\n\n\n\n\n\n\nType\nClass Name\nDescription\nExample\n\n\n\n\nString\nstr\nsequence of characters\n“hello”, ‘Python’\n\n\nInteger\nint\nWhole numbers\n42, -3\n\n\nFloating-point\nfloat\nDecimal numbers\n3.14, -0.01\n\n\nBoolean\nbool\nLogical values\nTrue, False\n\n\nNone\nNoneType\nRepresents no value\nNone",
+    "text": "city = \"Berlin\"\npopulation = 3850000\narea = 891.8        \nis_capital = True\nrivers=None",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**Basic Concepts**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/00_input-output.html#comments",
-    "href": "chapters/01helloPython/00_input-output.html#comments",
+    "objectID": "chapters/01basic/00_input-output.html#built-in-constants",
+    "href": "chapters/01basic/00_input-output.html#built-in-constants",
     "title": "1  Basic Concepts",
-    "section": "1.2 Comments",
-    "text": "1.2 Comments\nIn Python, comments are used to explain the code and are ignored during execution.\n\nSingle-line comment\n\n# This prints \"Hello\"\n\nInline comment\n\nx = 5  # Store 5 in x\n\nMulti-line comment\n\n\"\"\"\nThis is a multi-line comment\nor documentation block.\n\"\"\"",
+    "section": "1.2 Built-in Constants",
+    "text": "1.2 Built-in Constants\n\nIn Python, built-in constants are special predefined names that represent fixed values. They are always available and do not require an import.\nNone represents the absence of a value. This is useful when you want to define a variable before assigning a real value.\nNone is a singleton object: there is only one instance of NoneType.\nTrue and False is two boolean constant.\n\n\nCommon Python Data Types\nHere’s a table of common Python data types with their descriptions and examples:\n\n\n\n\n\n\n\n\n\nType\nClass Name\nDescription\nExample\n\n\n\n\nString\nstr\nsequence of characters\n“hello”, ‘Python’\n\n\nInteger\nint\nWhole numbers\n42, -3\n\n\nFloating-point\nfloat\nDecimal numbers\n3.14, -0.01\n\n\nBoolean\nbool\nLogical values\nTrue, False\n\n\nNone\nNoneType\nRepresents no value\nNone",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**Basic Concepts**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/00_input-output.html#display-output",
-    "href": "chapters/01helloPython/00_input-output.html#display-output",
+    "objectID": "chapters/01basic/00_input-output.html#comments",
+    "href": "chapters/01basic/00_input-output.html#comments",
     "title": "1  Basic Concepts",
-    "section": "1.3 Display Output",
-    "text": "1.3 Display Output\nIn Python, print() is a built-in function used to display output on the screen (usually in the terminal or console). The basic syntax is\nprint(object1, object2, ..., sep=' ', end='\\n')\n\nCommon Uses\n\nPrint one or multiple items or variable\n\nprint(\"Hello, world!\")\nprint(42)\nprint(\"Age:\", 25) # Print one or multiple items\ncity = \"Berlin\"\nprint(\"City: \", city) # Print variable\n\n\nChange separator\n\nprint(\"A\", \"B\", \"C\", sep=\"-\") # Output: A-B-C\n\nChange end character\n\nprint(\"Hello\", end=\" \")\nprint(\"World\")\n# Output: Hello World\n\n\n\nFormatted output\n\n\n1. Using f-string (Recommended)\nprint(f\"{city} is with a population of {population:,} and an area of {area:.1f} km².\")\n\n\n2. Using str.format()\nprint(\"{} is with a population of {:,} and an area of {:.1f} km².\".format(city, population, area))\n\n\n3. Using % formatting (old style)\nprint(\"%s is with a population of %,d and an area of %.1f km².\" % (city, population, area))\nOutput:\nBerlin is with a population of 3,850,000 and an area of 891.8 km².",
+    "section": "1.3 Comments",
+    "text": "1.3 Comments\n\nIn Python, comments are used to explain the code and are ignored during execution.\n\nSingle-line comment\n\n# This is a single-line comment\n\nInline comment\n\nx = 5  # Store 5 in x\n\nMulti-line comment\n\n\"\"\"\nThis is a multi-line comment\nor documentation block.\n\"\"\"",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**Basic Concepts**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/00_input-output.html#check-data-type",
-    "href": "chapters/01helloPython/00_input-output.html#check-data-type",
+    "objectID": "chapters/01basic/00_input-output.html#display-output",
+    "href": "chapters/01basic/00_input-output.html#display-output",
     "title": "1  Basic Concepts",
-    "section": "1.4 Check Data Type",
-    "text": "1.4 Check Data Type\n\nThe type() function in Python is used to check the data type of a variable or value.The Syntax is\ntype(object)\n\nExamples\nprint(type(42))           # &lt;class 'int'&gt;\nprint(type(3.14))         # &lt;class 'float'&gt;\nprint(type(\"hello\"))      # &lt;class 'str'&gt;\nprint(type(None))         # &lt;class 'NoneType'&gt;\nprint(type(True))         # &lt;class 'bool'&gt;\nprint(type(print))        # &lt;class 'builtin_function_or_method'&gt;\n\nThe isinstance() function in Python is used to check if a value is an instance of a specific type or class. The Syntax is\nisinstance(object, &lt;class_name&gt;)\n\n\nExamples\nx = 42\ns = \"hello\"\nprint(isinstance(x, int))     # True\nprint(isinstance(x, float))   # False\nprint(isinstance(s, str))     # True\nprint(isinstance(s, bool))    # False",
+    "section": "1.4 Display Output",
+    "text": "1.4 Display Output\n\nIn Python, print() is a built-in function used to display output on the screen (usually in the terminal or console). The basic syntax is\nprint(object1, object2, ..., sep=' ', end='\\n')\n\n\nCommon Uses\n\nPrint one or multiple items or variable\n\nprint(\"Hello, world!\")  # Print one item\nprint(\"Age:\", 25)       # Print multiple items\ncity = \"Berlin\"\nprint(\"City: \", city)   # Print variable\n\nChange separator\n\nprint(\"A\", \"B\", \"C\", sep=\"-\") # Output: A-B-C\n\nChange end character\n\nprint(\"Hello\", end=\" \")\nprint(\"World\")\n# Output: Hello World\n\n\n\nFormatted output\n\n1. Using f-string (Recommended)\nprint(f\"{city} has {population:,} million people and an area of {area:.1f} km².\")\n\n\n2. Using str.format()\nprint(\"{} has {:,} million people and an area of {:.1f} km².\".format(city, population, area))\n\n\n3. Using % formatting (old style)\nprint(\"%s has %,d million people and an area of %.1f km².\" % (city, population, area))\nOutput:\nBerlin has 3.85 million people and an area of 891.8 km².",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**Basic Concepts**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/00_input-output.html#type-conversion",
-    "href": "chapters/01helloPython/00_input-output.html#type-conversion",
+    "objectID": "chapters/01basic/00_input-output.html#check-data-type",
+    "href": "chapters/01basic/00_input-output.html#check-data-type",
     "title": "1  Basic Concepts",
-    "section": "1.5 Type Conversion",
-    "text": "1.5 Type Conversion\nIn Python, Type Conversion means converting a value from one data type to another. Two Types of Type Conversion are:\n\n\n\nType\nDescription\n\n\n\n\nImplicit\nDone automatically by Python\n\n\nExplicit\nDone manually using functions (casting)\n\n\n\n\n\n1. Implicit Type Conversion\nPython automatically converts types during expressions:\nx = 5      # int\ny = 2.0    # float\nz = x + y  # int + float → float\nprint(z)   # 7.0\nprint(type(z))  # &lt;class 'float'&gt;\n\n\n\n2. Explicit Type Conversion (Casting)\nYou can use built-in functions (class name):\n\n\n\nFunction\nConverts to\nExample\n\n\n\n\nint()\nInteger\nint(“5”) → 5\n\n\nfloat()\nFloat\nfloat(“3.14”) → 3.14\n\n\nstr()\nString\nstr(10) → “10”\n\n\nbool()\nBoolean\nbool(0) → False\n\n\n\n\n\n\nExamples\na = \"123\"\nb = int(a)       # Now b is 123 as int\n\nc = 3.99\nd = int(c)       # → 3 (truncates decimal)\n\ne = 0\nprint(bool(e))   # False",
+    "section": "1.5 Check Data Type",
+    "text": "1.5 Check Data Type\n\nThe type() function in Python is used to check the data type of a variable or value.The Syntax is\ntype(object)\n\nExamples\nprint(type(42))           # &lt;class 'int'&gt;\nprint(type(3.14))         # &lt;class 'float'&gt;\nprint(type(\"hello\"))      # &lt;class 'str'&gt;\nprint(type(None))         # &lt;class 'NoneType'&gt;\nprint(type(True))         # &lt;class 'bool'&gt;\nprint(type(print))        # &lt;class 'builtin_function_or_method'&gt;\n\nThe isinstance() function in Python is used to check if a value is an instance of a specific type or class. The Syntax is\nisinstance(object, &lt;class_name&gt;)\n\nExamples\nx = 42\ns = \"hello\"\nprint(isinstance(x, int))     # True\nprint(isinstance(x, float))   # False\nprint(isinstance(s, str))     # True\nprint(isinstance(s, bool))    # False",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**Basic Concepts**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/00_input-output.html#get-user-input",
-    "href": "chapters/01helloPython/00_input-output.html#get-user-input",
+    "objectID": "chapters/01basic/00_input-output.html#type-conversion",
+    "href": "chapters/01basic/00_input-output.html#type-conversion",
     "title": "1  Basic Concepts",
-    "section": "1.6 Get User Input",
-    "text": "1.6 Get User Input\nThe input() function in Python is used to take input from the user as a string.\n\nSyntax\nvariable = input(\"Prompt message\")\n\nThe message inside input() is optional and is shown to the user.\nThe return value is always a string (str), even if the user types a number.\n\n\n\n\nExamples\n\n1. Get user’s name\nname = input(\"What is your name? \")\nprint(\"Hello, \" + name)\n\n\n2. Get number input\nage = input(\"Enter your age: \")\nprint(type(age))   # &lt;class 'str'&gt;\n\n\n\n3. Convert input to integer\nage = int(input(\"Enter your age: \"))\nprint(age + 5)\n\n\n4. Multiple inputs\nx, y = input(\"Enter two numbers separated by space: \").split()\nprint(x, y)\n\n\n\n\nCommon Mistake\nAlways validate or cast carefully.\n# This will cause an error if input is not a number\nnum = int(input(\"Enter a number: \"))",
+    "section": "1.6 Type Conversion",
+    "text": "1.6 Type Conversion\n\nIn Python, Type Conversion means converting a value from one data type to another. Two Types of Type Conversion are:\n\n\n\nType\nDescription\n\n\n\n\nImplicit\nDone automatically by Python\n\n\nExplicit\nDone manually using functions (casting)\n\n\n\n\n\n1. Implicit Type Conversion\nPython automatically converts types during expressions:\nx = 5      # int\ny = 2.0    # float\nz = x + y  # int + float → float\nprint(z)   # 7.0\nprint(type(z))  # &lt;class 'float'&gt;\n\n\n\n2. Explicit Type Conversion (Casting)\nYou can use built-in functions (class name):\n\n\n\nFunction\nConverts to\nExample\n\n\n\n\nint()\nInteger\nint(“5”) → 5\n\n\nfloat()\nFloat\nfloat(“3.14”) → 3.14\n\n\nstr()\nString\nstr(10) → “10”\n\n\nbool()\nBoolean\nbool(0) → False",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**Basic Concepts**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/00_input-output.html#practice-task",
-    "href": "chapters/01helloPython/00_input-output.html#practice-task",
+    "objectID": "chapters/01basic/00_input-output.html#get-user-input",
+    "href": "chapters/01basic/00_input-output.html#get-user-input",
     "title": "1  Basic Concepts",
-    "section": "1.7 Practice Task",
-    "text": "1.7 Practice Task\n# Define a constant for the value of Pi (used in circle area calculation)\nPI = 3.14159\n\n# Ask the user to enter their name and store it as a string\nname = input(\"Enter your name: \")\n\n# Ask the user to enter the radius, convert the input from string to float\nradius = float(input(\"Enter the radius of a circle: \"))\n\n# Calculate the area of the circle using the formula: area = π * r^2\narea = PI * radius * radius\n\n# Greet the user by name\nprint(\"Hello\", name)\n\n# Display the calculated area of the circle\nprint(\"Circle area is:\", area)",
+    "section": "1.7 Get User Input",
+    "text": "1.7 Get User Input\n\nThe input() function in Python is used to take input from the user as a string. The syntax is\nvariable = input(\"Prompt message\")\n\nThe message inside input() is optional and is shown to the user.\nThe return value is always a string (str), even if the user types a number.\n\nname = input(\"What is your name? \")\nprint(\"Hello, \" , name)\n\n\nCommon Mistake\nAlways validate or cast carefully. The input should convert to integer by int.\n# This will cause an error if input is not a number\nage = int(input(\"Enter your age: \"))\nprint(age + 5)",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**Basic Concepts**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html",
-    "href": "chapters/01helloPython/01_condition.html",
+    "objectID": "chapters/01basic/00_input-output.html#practice-task",
+    "href": "chapters/01basic/00_input-output.html#practice-task",
+    "title": "1  Basic Concepts",
+    "section": "1.8 Practice Task",
+    "text": "1.8 Practice Task\n\n\nPractice Task 1\n# Define a constant for the value of Pi (used in circle area calculation)\nPI = 3.14159\n\n# Ask the user to enter their name and store it as a string\nname = input(\"Enter your name: \")\n\n# Ask the user to enter the radius, convert the input from string to float\nradius = float(input(\"Enter the radius of a circle: \"))\n\n# Calculate the area of the circle using the formula: area = π * r^2\narea = PI * radius * radius\n\n# Greet the user by name\nprint(\"Hello\", name)\n\n# Display the calculated area of the circle\nprint(\"Circle area is:\", area)",
+    "crumbs": [
+      "Basics of Python",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>**Basic Concepts**</span>"
+    ]
+  },
+  {
+    "objectID": "chapters/01basic/01_condition.html",
+    "href": "chapters/01basic/01_condition.html",
     "title": "2  Conditions and Loops",
     "section": "",
-    "text": "2.1 Comparing Numbers\nPython uses comparison operators to compare values.\nThese expressions return a Boolean value: True or False.",
+    "text": "2.1 Boolean Type",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**Conditions and Loops**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#comparing-numbers",
-    "href": "chapters/01helloPython/01_condition.html#comparing-numbers",
+    "objectID": "chapters/01basic/01_condition.html#boolean-type",
+    "href": "chapters/01basic/01_condition.html#boolean-type",
     "title": "2  Conditions and Loops",
     "section": "",
-    "text": "Operator\nMeaning\nExample\n\n\n\n\n==\nEqual to\n3 == 3 → True\n\n\n!=\nNot equal to\n3 != 4 → True\n\n\n&gt;\nGreater than\n5 &gt; 2 → True\n\n\n&lt;\nLess than\n2 &lt; 5 → True\n\n\n&gt;=\nGreater than or equal\n5 &gt;= 5 → True\n\n\n&lt;=\nLess than or equal\n4 &lt;= 3 → False\n\n\n\n\n\nExample\nx = 10\ny = 5\n\nprint(x &gt; y)      # True\nprint(x == y)     # False\nYou can also store boolean values in variables:\nis_tall = True\nis_ready = False\nis_positive=30&gt;0",
+    "text": "Introduction\nIn Python, booleans are a built-in data type that represent one of two values: True and False\nThese are the two built-in constant of the bool type.\ntype(True)   # &lt;class 'bool'&gt;\ntype(False)  # &lt;class 'bool'&gt;\nBooleans are often used in:\n\nComparisons\nConditionals (if, while)\nLogical operations\n\n\n\n\nComparison Operators\nIn Python, comparison operators are used to compare values. These operators return Boolean values: True or False.\n\n\n\n\n\n\n\n\n\nOperator\nMeaning\nExample\nResult\n\n\n\n\n==\nEqual to\n3 == 3\nTrue\n\n\n!=\nNot equal to\n4 != 5\nTrue\n\n\n&gt;\nGreater than\n7 &gt; 2\nTrue\n\n\n&lt;\nLess than\n1 &lt; 0\nFalse\n\n\n&gt;=\nGreater than or equal to\n5 &gt;= 5\nTrue\n\n\n&lt;=\nLess than or equal to\n6 &lt;= 3\nFalse\n\n\n\n\n\n\nExample\nx = 10\ny = 5\n\nprint(x &gt; y)      # True\nprint(x == y)     # False\nYou can also store boolean values in variables:\nis_tall = True\nis_ready = False\nis_positive=30&gt;0\n\n\n\nOperator on Objects\n\n\n\n\n\n\n\n\n\nOperator\nMeaning\nExample\nResult\n\n\n\n\nis\nObject identity\na is b\nTrue if same object\n\n\nis not\nNegated object identity\na is not b\nTrue if not same object\n\n\nin\nMembership\n‘a’ in ‘abc’\nTrue\n\n\nnot in\nNegated membership\n‘z’ not in ‘abc’\nTrue\n\n\n\n\n\nComparison with None\nUse is and is not instead of == for None in order to test an variable is change to None or not. Because None is a singleton, and identity checks (is) are more precise than equality checks (==)\nx = None\ny = 2\nprint(x is None) # True\nprint(x is not None) # False\nprint(y is None) # True\n\n\n\nCompare is vs ==\n\n\n\n==\nCompares values\n\n\n\n\nis\nCompares identity (memory address)\n\n\n\na = 1\nb = 1\nprint(a == b)    # True (same contents)\nprint(a is b)    # False (different objects)\n\n\n\n\ncombination of statments\nYou can also combination of statments\n\n\n\nOperator\nDescription\nExample\n\n\n\n\nand\nLogical AND\nTrue and False → False\n\n\nor\nLogical OR\nTrue or False → True\n\n\nnot\nLogical NOT\nnot True → False\n\n\n\n\nExample Code\nx = 10\ny = 20\nz = 30\nprint(x == y and z&gt;y)     # False\nprint(x != y or y&lt;z)     # True\nprint(not x &gt;= y)     # True\n\n\n\nChained Comparisons\nPython supports chaining of comparisons:\nx = 5\nprint(1 &lt; x &lt; 10)     # True\nprint(1 &lt; x and x &lt; 10)  # Same result, more verbose\n\n\n\nBoolean as a Subclass of Integer\nTrue == 1     # True\nFalse == 0    # True\nTrue + True   # 2\nFalse + 3     # 3\nBut for readability, it’s best to use True and False explicitly for logical operations rather than numeric 1 and 0.",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**Conditions and Loops**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#if-elif-else-making-decisions",
-    "href": "chapters/01helloPython/01_condition.html#if-elif-else-making-decisions",
+    "objectID": "chapters/01basic/01_condition.html#if-elif-else-making-decisions",
+    "href": "chapters/01basic/01_condition.html#if-elif-else-making-decisions",
     "title": "2  Conditions and Loops",
     "section": "2.2 if-elif-else: Making Decisions",
-    "text": "2.2 if-elif-else: Making Decisions\n\nBuild-in keywords if, elif and else are used to control the flow of your program based on conditions.\n\nif Statement\nage = 18\n\nif age &gt;= 18:\n    print(\"You are an adult\")\n\nIn Python, curly braces {} are not used for blocks like in some other languages (e.g., C, Java, JavaScript). Instead, Python uses colen and indentation.\n\n\n\n\nif-else Statement\nage = 16\n\nif age &gt;= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n\n\n\nif-elif-else Chain\nscore = 75\n\nif score &gt;= 90:\n    print(\"Grade: A\")\nelif score &gt;= 80:\n    print(\"Grade: B\")\nelif score &gt;= 70:\n    print(\"Grade: C\")\nelse:\n    print(\"Grade: F\")",
+    "text": "2.2 if-elif-else: Making Decisions\n\nBuild-in keywords if, elif and else are used to control the flow of your program based on conditions.\n\nif Statement\nage = 18\n\nif age &gt;= 18:\n    print(\"You are an adult\")\nIn Python, curly braces {} are not used for blocks like in some other languages (e.g., C, Java, JavaScript). Instead, Python uses colen and indentation.\n\n\n\nif-else Statement\nage = 16\n\nif age &gt;= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n\n\n\nif-elif-else Chain\nscore = 75\n\nif score &gt;= 90:\n    print(\"Grade: A\")\nelif score &gt;= 80:\n    print(\"Grade: B\")\nelif score &gt;= 70:\n    print(\"Grade: C\")\nelse:\n    print(\"Grade: F\")",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**Conditions and Loops**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#while---loop-condition",
-    "href": "chapters/01helloPython/01_condition.html#while---loop-condition",
+    "objectID": "chapters/01basic/01_condition.html#while---loop-condition",
+    "href": "chapters/01basic/01_condition.html#while---loop-condition",
     "title": "2  Conditions and Loops",
     "section": "2.3 while - Loop Condition",
     "text": "2.3 while - Loop Condition\nThe while loop keeps running as long as the condition is True.\ncount = 1\n\nwhile count &lt;= 5:\n    print(\"Count is:\", count)\n    count += 1  # Same as count = count + 1\nOutput:\nCount is: 1\nCount is: 2\nCount is: 3\nCount is: 4\nCount is: 5\n\n\nInfinite Loop\nIf you forget to change the condition, the loop can run forever!\n# WARNING: This loop never stops!\nwhile True:\n    print(\"Hello\")  # Press Ctrl + C to stop in terminal\n\n\n\nControlling a loop\n\nbreak — Stop the Loop Early\nx = 1\n\nwhile x &lt;= 10:\n    if x == 5:\n        break  # Exit the loop when x is 5\n    print(x)\n    x += 1\nOutput:\n1\n2\n3\n4\n\n\n\n\ncontinue — Skip One Iteration\nx = 0\n\nwhile x &lt; 5:\n    x += 1\n    if x == 3:\n        continue  # Skip the rest of the loop for x = 3\n    print(x)\nOutput:\n1\n2\n4\n5",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**Conditions and Loops**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#for---loop",
-    "href": "chapters/01helloPython/01_condition.html#for---loop",
+    "objectID": "chapters/01basic/01_condition.html#for---loop",
+    "href": "chapters/01basic/01_condition.html#for---loop",
     "title": "2  Conditions and Loops",
     "section": "2.4 for - Loop",
     "text": "2.4 for - Loop\nIn Python, the for loop is used to iterate over a sequence (like a str that is a sequence of charechtors). Here’s how it works:\nfor variable in iterable:\n    # code block\n\n\nExamples\n\n1. For through a string\nfor letter in \"hello\":\n    print(letter)\n\n\n\n2. Build a reversed string\ntext = \"hello\"\nreversed_text = \"\"\n\nfor char in text:\n    reversed_text = char + reversed_text\n\nprint(reversed_text) # Output: olleh\n\n\n3. for with break and continue\nword = \"Python\"\nfor char in word:\n    if char == \"y\":\n        break  \n    print(char, end=\"_\") # P_\nword = \"Python\"\nfor char in word:\n    if char == \"y\":\n        continue  \n    print(char, end=\"_\") # P_t_h_o_n_",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**Conditions and Loops**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#summary-table",
-    "href": "chapters/01helloPython/01_condition.html#summary-table",
+    "objectID": "chapters/01basic/01_condition.html#summary-table",
+    "href": "chapters/01basic/01_condition.html#summary-table",
     "title": "2  Conditions and Loops",
     "section": "2.5 Summary Table",
     "text": "2.5 Summary Table\n\n\n\n\n\n\n\n\nConcept\nExample\nDescription\n\n\n\n\nComparison\nx &gt; y, x == y\nCompares values\n\n\nBoolean\nTrue, False\nLogical values\n\n\nif\nif x &gt; 0:\nRun code if condition is True\n\n\nelif\nelif x == 0:\nCheck another condition\n\n\nelse\nelse:\nRun if all above are False\n\n\nwhile\nRepeat while condition is true\nwhile x &lt; 5:\n\n\nbreak\nExit the loop immediately\nif x == 5: break\n\n\ncontinue\nSkip current loop and go to next one\nif x == 3: continue",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**Conditions and Loops**</span>"
     ]
   },
   {
-    "objectID": "chapters/01helloPython/01_condition.html#practice-tasks",
-    "href": "chapters/01helloPython/01_condition.html#practice-tasks",
+    "objectID": "chapters/01basic/01_condition.html#practice-tasks",
+    "href": "chapters/01basic/01_condition.html#practice-tasks",
     "title": "2  Conditions and Loops",
     "section": "2.6 Practice Tasks",
-    "text": "2.6 Practice Tasks\n\n\nPractice Task 1\nWrite a program that:\n\nAsks the user to enter a number\nChecks if the number is: Positive, Zero or Negative\n\nnumber = float(input(\"Enter a number: \"))\n\nif number &gt; 0:\n    print(\"The number is positive\")\nelif number == 0:\n    print(\"The number is zero\")\nelse:\n    print(\"The number is negative\")\n\n\n\nPractice Task 2\nWrite a program that:\n\nAsks the user to guess a secret number between 1 and 10\nRepeats until the user guesses correctly\n\nsecret = 7\nguess = None\n\nwhile guess != secret:\n    guess = int(input(\"Guess the number (1-10): \"))\n    if guess == secret:\n        print(\"Correct!\")\n    else:\n        print(\"Try again!\")\n\n\n\nPractice Task 3\nWrite a program that:\n\nAsks the user to enter a number\nCount the number of “o”s or “O”s in a given text\n\ntext = str(input(\"Enter a text: \"))\ncount = 0\n\nfor char in text:\n    if char == \"o\":\n        count = count + 1\n    elif char == \"O\":\n        count = count + 1\n\nprint(f'Number of \"o\": {count}')\n\n\nPractice Task 4\nWrite a program to:\n\nAsks the user to enter a number\nclassify someone as child, adult, or old based on their age:\n\n\nIf age is less than 18, print “child”. If age is between 18 and 64 (inclusive of 18), print “adult”. Otherwise (65 and above), print “old”.\n\nage = int(input(\"Enter your age: \")) \n\nif age &lt; 18:\n    print(\"You are a child.\")\nelif 18 &lt;= age &lt; 65:\n    print(\"You are an adult.\")\nelse:\n    print(\"You are old.\")",
+    "text": "2.6 Practice Tasks\n\n\nPractice Task 1\nWrite a program that:\n\nAsks the user to enter a number\nChecks if the number is: Positive, Zero or Negative\n\nnumber = float(input(\"Enter a number: \"))\n\nif number &gt; 0:\n    print(\"The number is positive\")\nelif number == 0:\n    print(\"The number is zero\")\nelse:\n    print(\"The number is negative\")\n\n\n\nPractice Task 2\nWrite a program that:\n\nAsks the user to guess a secret number between 1 and 10\nRepeats until the user guesses correctly\n\nsecret = 7\nguess = None\n\nwhile guess != secret:\n    guess = int(input(\"Guess the number (1-10): \"))\n    if guess == secret:\n        print(\"Correct!\")\n    else:\n        print(\"Try again!\")\n\n\n\nPractice Task 3\nWrite a program that:\n\nAsks the user to enter a number\nCount the number of “o”s or “O”s in a given text\n\ntext = str(input(\"Enter a text: \"))\ncount = 0\n\nfor char in text:\n    if char == \"o\":\n        count = count + 1\n    elif char == \"O\":\n        count = count + 1\n\nprint(f'Number of \"o\": {count}')\n\n\nPractice Task 4\nWrite a program to:\n\nAsks the user to enter a number\nclassify someone as child, adult, or old based on their age: If age is less than 18, print “child”. If age is between 18 and 64 (inclusive of 18), print “adult”. Otherwise (65 and above), print “old”.\n\nage = int(input(\"Enter your age: \")) \n\nif age &lt; 18:\n    print(\"You are a child.\")\nelif 18 &lt;= age &lt; 65:\n    print(\"You are an adult.\")\nelse:\n    print(\"You are old.\")",
     "crumbs": [
       "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>**Conditions and Loops**</span>"
     ]
   },
   {
-    "objectID": "chapters/02dataTypes/01_simple.html",
-    "href": "chapters/02dataTypes/01_simple.html",
+    "objectID": "chapters/01basic/02_simple-data.html",
+    "href": "chapters/01basic/02_simple-data.html",
     "title": "3  Simple Data Types",
     "section": "",
-    "text": "3.1 Boolean Type",
+    "text": "3.1 Numeric Type\nIn Python, numeric types are built-in data types used to store and manipulate numbers. There are three main numeric types:",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/02dataTypes/01_simple.html#boolean-type",
-    "href": "chapters/02dataTypes/01_simple.html#boolean-type",
+    "objectID": "chapters/01basic/02_simple-data.html#numeric-type",
+    "href": "chapters/01basic/02_simple-data.html#numeric-type",
     "title": "3  Simple Data Types",
     "section": "",
-    "text": "Introduction\nIn Python, booleans are a built-in data type that represent one of two values:\n\nTrue\nFalse\n\nThese are the two built-in constant of the bool type. For showing the type of a value, you can use the type() function.\ntype(True)   # &lt;class 'bool'&gt;\ntype(False)  # &lt;class 'bool'&gt;\nBooleans are often used in:\n\nComparisons\nConditionals (if, while)\nLogical operations\n\n\nExample:\nprint(2 &lt; 5)  # True\nprint(3==13)  # False\n\n\n\nNone in Python\nIn Python, built-in constants are special predefined names that represent fixed values. They are always available and do not require an import. Until now, we have used two built-in constants: True and False.\nNone is another built-in constant in Python that\n\nrepresents the absence of a value or a null value.\nIt is a singleton object: there is only one instance of NoneType.\n\nIt is often used to:\n\nIndicate that a variable has no value yet\nRepresent the default return value of functions that don’t explicitly return anything\n\nx = None\nprint(type(x))  # &lt;class 'NoneType'&gt;\n\nComparison with None\nUse is and is not to test an variable is change to None or not. Teses are comparison operators.\nx = 2\nprint(x is None) # False\nprint(x is not None) # True",
+    "text": "Type\nDescription\nExample\n\n\n\n\nint\nInteger numbers\n10, -5, 0\n\n\nfloat\nFloating-point (decimal) numbers\n3.14, -0.01\n\n\ncomplex\nComplex numbers (real + imag part)\n2 + 3j, -1j\n\n\n\n\n\nint —Integer\n\nWhole numbers (no decimal point)\nUnlimited precision (arbitrary size)\n\nx = 42\nprint(type(x))  # &lt;class 'int'&gt;\n\nbig = 10**100   # Very large integer\nprint(type(big)) # &lt;class 'int'&gt;\n\n\n\nfloat — Floating-Point\n\nNumbers with a decimal point\nInternally based on IEEE 754 double-precision (64-bit)\n\npi = 3.14159\nprint(type(pi))  # &lt;class 'float'&gt;\ndiv = 1 / 3      \nprint(div)  # 0.333...\nSpecial float values:\nfloat('inf')     # ∞\nfloat('-inf')    # -∞\nfloat('nan')     # Not a Number\n\n\n\ncomplex —Complex Numbers\n\nNumbers with real and imaginary parts\nWritten as a + bj (use j, not i)\n\nz = 2 + 3j\nprint(type(z))     # &lt;class 'complex'&gt;\nprint(z.real)      # 2.0\nprint(z.imag)      # 3.0",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/02dataTypes/01_simple.html#numeric-type",
-    "href": "chapters/02dataTypes/01_simple.html#numeric-type",
+    "objectID": "chapters/01basic/02_simple-data.html#text-sequence-type",
+    "href": "chapters/01basic/02_simple-data.html#text-sequence-type",
     "title": "3  Simple Data Types",
-    "section": "3.2 Numeric Type",
-    "text": "3.2 Numeric Type\nIn Python, numeric types are built-in data types used to store and manipulate numbers. There are three main numeric types:\n\n\n\n\n\n\n\n\nType\nDescription\nExample\n\n\n\n\nint\nInteger numbers\n10, -5, 0\n\n\nfloat\nFloating-point (decimal) numbers\n3.14, -0.01\n\n\ncomplex\nComplex numbers (real + imag part)\n2 + 3j, -1j\n\n\n\n\nint —Integer\n\nWhole numbers (no decimal point)\nUnlimited precision (arbitrary size)\n\nx = 42\nprint(type(x))  # &lt;class 'int'&gt;\n\nbig = 10**100   # Very large integer\nprint(type(big)) # &lt;class 'int'&gt;\n\n\nfloat — Floating-Point\n\nNumbers with a decimal point\nInternally based on IEEE 754 double-precision (64-bit)\n\npi = 3.14159\nprint(type(pi))  # &lt;class 'float'&gt;\ndiv = 1 / 3      \nprint(div)  # 0.333...\nSpecial float values:\nfloat('inf')     # ∞\nfloat('-inf')    # -∞\nfloat('nan')     # Not a Number\n\n\ncomplex —Complex Numbers\n\nNumbers with real and imaginary parts\nWritten as a + bj (use j, not i)\n\nz = 2 + 3j\nprint(type(z))     # &lt;class 'complex'&gt;\nprint(z.real)      # 2.0\nprint(z.imag)      # 3.0",
+    "section": "3.2 Text Sequence Type",
+    "text": "3.2 Text Sequence Type\nIn Python, the str type represents textual data — it’s one of the most commonly used built-in types. In fact in a str is an immutable sequence of Unicode characters.\nname = \"Sam\"\nprint(type(name))  # &lt;class 'str'&gt;\n\nCreating Strings\ns1 = 'hello'\ns2 = \"world\"\n\n\n\nMultiline Strings\npoem = \"\"\"Roses are red,\nViolets are blue,\nPython is awesome,\nAnd so are you.\"\"\"\n\n\n\nString Formatting\nWe can embed variabels in string and print it.\nname = \"Sam\"\nage = 30\n\n# .format()\nprint(\"My name is {} and I am {}\".format(name, age))\n\n# f-string (Python 3.6+)\nprint(f\"My name is {name} and I am {age}\")\n\n\n\nImmutability\nStrings are immutable. It means you can not modify (delete,add,update) any part of a string:\ns = \"hello\"\ns[0] = \"H\"  # TypeError\nTo modify a string, you must create a new one:\ns = \"hello\"\ns = \"H\" + s[1:]  # 'Hello'",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/02dataTypes/01_simple.html#text-sequence-type",
-    "href": "chapters/02dataTypes/01_simple.html#text-sequence-type",
+    "objectID": "chapters/01basic/02_simple-data.html#operations",
+    "href": "chapters/01basic/02_simple-data.html#operations",
     "title": "3  Simple Data Types",
-    "section": "3.3 Text Sequence Type",
-    "text": "3.3 Text Sequence Type\nIn Python, the str type represents textual data — it’s one of the most commonly used built-in types. In fact in a str is an immutable sequence of Unicode characters.\nname = \"Sam\"\nprint(type(name))  # &lt;class 'str'&gt;\n\nCreating Strings\ns1 = 'hello'\ns2 = \"world\"\n\n\nMultiline Strings\npoem = \"\"\"Roses are red,\nViolets are blue,\nPython is awesome,\nAnd so are you.\"\"\"\n\n\nString Formatting\nWe can embed variabels in string and print it.\nname = \"Sam\"\nage = 30\n\n# .format()\nprint(\"My name is {} and I am {}\".format(name, age))\n\n# f-string (Python 3.6+)\nprint(f\"My name is {name} and I am {age}\")\n\n\nImmutability\nStrings are immutable. It means you can not modify (delete,add,update) any part of a string:\ns = \"hello\"\ns[0] = \"H\"  # TypeError\nTo modify a string, you must create a new one:\ns = \"hello\"\ns = \"H\" + s[1:]  # 'Hello'",
+    "section": "3.3 Operations",
+    "text": "3.3 Operations\n\n\nString Operators\nHere’s a basic operation on strings in Python, organized in a readable table format:\n\n\n\n\n\n\n\n\n\nOperation\nDescription\nExample\nOutput\n\n\n\n\n+\nConcatenation – combines two strings\n‘Hello’ + ’ World’\n‘Hello World’\n\n\n*\nRepetition – repeats a string\n‘Ha’ * 3\n‘HaHaHa’\n\n\nlen(s)\nReturns the length of the string\nlen(‘hello’)\n5\n\n\ns[i]\nIndexing – gets character at index i\n‘hello’[1]\n‘e’\n\n\ns[start:end]\nSlicing – substring from start to end-1\n‘hello’[1:4]\n‘ell’\n\n\nin\nMembership test – checks if a substring exists\n‘lo’ in ‘hello’\nTrue\n\n\nnot in\nNegated membership test\n‘z’ not in ‘hello’\nTrue\n\n\n\n\n\nNotes:\n\nIndexing starts at 0, so ‘hello’[1] is the second character, ‘e’.\nSlicing does not include the character at the end index.\nThe in and not in operations are useful in conditionals and loops.\n\n\n\n\n\nNumeric Operators\nOperators Supported by All Numeric Types:\n\nArithmetic: +, -, *****, /, //, %, ```\nComparison: ==, !=, &lt;, &gt;, &lt;=, &gt;=\n\na = 5\nb = 2\nprint(a + b)    # 7\nprint(a / b)    # 2.5\nprint(a // b)   # 2 (floor division)\nHere’s a clean and complete table of numeric operations in Python, including their description, example result, and notes, based on the built-in types: int, float, and complex.\n\n\nNumeric Operations Table in Python\n\n\n\n\n\n\n\n\nOperation\nResult\nNotes\n\n\n\n\n-x\nNegation of x\n–\n\n\n+x\nx unchanged\nUnary plus\n\n\nx + y\nSum of x and y\nWorks for all numeric types\n\n\nx - y\nDifference of x and y\n–\n\n\nx * y\nProduct of x and y\n–\n\n\nx ** y or pow(x, y)\nx to the power y\nExponentiation (5)\n\n\nx / y\nQuotient of x and y (float)\nAlways returns float\n\n\nx // y\nFloored quotient of x and y\nDiscards fractional part\n\n\nx % y\nRemainder of x / y\nResult has same sign as y\n\n\ndivmod(x, y)\nReturns (x // y, x % y)\nTuple result -&gt; (x//y,x%y)\n\n\nabs(x)\nAbsolute value of x\nAlso works for complex numbers\n\n\nround(x,d)\nRounds x to the nearest integer\ne.g., round(2.337,2) -&gt; 2.34\n\n\nint(x)\nRemove decimal part of x\ne.g., int(-2.93) -&gt; -2\n\n\nc.conjugate()\nConjugate of complex number c\ne.g., (2+3j).conjugate() = 2-3j\n\n\n\n\nNotes:\n\n// performs floor division, e.g. 5 // 2 = 2, -5 // 2 = -3\n% uses Python’s modulus rule: the result has the same sign as the divisor (y)\nint(3.8) → 3; int(‘7’) → 7; int(‘abc’) → raises error\nfloat(‘3.14’) → 3.14\npow(2, 3) → 8; works like 2  3; can also do modular exponentiation: pow(2, 3, 5)** → 3\nint(), float(), and complex() are constructors for their respective types\nYou can find official documentation on https://docs.python.org",
     "crumbs": [
       "Basics of Python",
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
     ]
   },
   {
-    "objectID": "chapters/02dataTypes/01_simple.html#operations",
-    "href": "chapters/02dataTypes/01_simple.html#operations",
-    "title": "3  Simple Data Types",
-    "section": "3.4 Operations",
-    "text": "3.4 Operations\n\nString Operators\nHere’s a clear explanation and example for each basic operation on strings in Python, organized in a readable table format:\n\n\n\n\n\n\n\n\n\nOperation\nDescription\nExample\nOutput\n\n\n\n\n+\nConcatenation – combines two strings\n‘Hello’ + ’ World’\n‘Hello World’\n\n\n*\nRepetition – repeats a string\n‘Ha’ * 3\n‘HaHaHa’\n\n\nlen(s)\nReturns the length of the string\nlen(‘hello’)\n5\n\n\ns[i]\nIndexing – gets character at index i\n‘hello’[1]\n‘e’\n\n\ns[start:end]\nSlicing – substring from start to end-1\n‘hello’[1:4]\n‘ell’\n\n\nin\nMembership test – checks if a substring exists\n‘lo’ in ‘hello’\nTrue\n\n\nnot in\nNegated membership test\n‘z’ not in ‘hello’\nTrue\n\n\n\n\nNotes:\n\nIndexing starts at 0, so ‘hello’[1] is the second character, ‘e’.\nSlicing does not include the character at the end index.\nThe in and not in operations are useful in conditionals and loops.\n\n\n\n\nNumeric Operators\nOperators Supported by All Numeric Types:\n\nArithmetic: +, -, *****, /, //, %, ```\nComparison: ==, !=, &lt;, &gt;, &lt;=, &gt;=\n\na = 5\nb = 2\nprint(a + b)    # 7\nprint(a / b)    # 2.5\nprint(a // b)   # 2 (floor division)\nHere’s a clean and complete table of numeric operations in Python, including their description, example result, and notes, based on the built-in types: int, float, and complex.\nNumeric Operations Table in Python\n\n\n\n\n\n\n\n\nOperation\nResult\nNotes\n\n\n\n\n-x\nNegation of x\n–\n\n\n+x\nx unchanged\nUnary plus\n\n\nx + y\nSum of x and y\nWorks for all numeric types\n\n\nx - y\nDifference of x and y\n–\n\n\nx * y\nProduct of x and y\n–\n\n\nx ** y or pow(x, y)\nx to the power y\nExponentiation (5)\n\n\nx / y\nQuotient of x and y (float)\nAlways returns float\n\n\nx // y\nFloored quotient of x and y\nDiscards fractional part\n\n\nx % y\nRemainder of x / y\nResult has same sign as y\n\n\ndivmod(x, y)\nReturns (x // y, x % y)\nTuple result -&gt; (x//y,x%y)\n\n\nabs(x)\nAbsolute value of x\nAlso works for complex numbers\n\n\nround(x,d)\nRounds x to the nearest integer\ne.g., round(2.337,2) -&gt; 2.34\n\n\nint(x)\nRemove decimal part of x\ne.g., int(-2.93) -&gt; -2\n\n\nc.conjugate()\nConjugate of complex number c\ne.g., (2+3j).conjugate() = 2-3j\n\n\n\nNotes:\n\n// performs floor division, e.g. 5 // 2 = 2, -5 // 2 = -3\n% uses Python’s modulus rule: the result has the same sign as the divisor (y)\nint(3.8) → 3; int(‘7’) → 7; int(‘abc’) → raises error\nfloat(‘3.14’) → 3.14\npow(2, 3) → 8; works like 2  3; can also do modular exponentiation: pow(2, 3, 5)** → 3\nint(), float(), and complex() are constructors for their respective types\nYou can find official documentation on https://docs.python.org\n\n\n\nBoolian Operators\nIn Python, comparison operators are used to compare values. These operators return Boolean values: True or False.\n\n\n\n\n\n\n\n\n\nOperator\nMeaning\nExample\nResult\n\n\n\n\n==\nEqual to\n3 == 3\nTrue\n\n\n!=\nNot equal to\n4 != 5\nTrue\n\n\n&gt;\nGreater than\n7 &gt; 2\nTrue\n\n\n&lt;\nLess than\n1 &lt; 0\nFalse\n\n\n&gt;=\nGreater than or equal to\n5 &gt;= 5\nTrue\n\n\n&lt;=\nLess than or equal to\n6 &lt;= 3\nFalse\n\n\nis\nObject identity\na is b\nTrue if same object\n\n\nis not\nNegated object identity\na is not b\nTrue if not same object\n\n\nin\nMembership\n‘a’ in ‘abc’\nTrue\n\n\nnot in\nNegated membership\n‘z’ not in ‘abc’\nTrue\n\n\n\nYou can also combination of statments\n\n\n\nOperator\nDescription\nExample\n\n\n\n\nand\nLogical AND\nTrue and False → False\n\n\nor\nLogical OR\nTrue or False → True\n\n\nnot\nLogical NOT\nnot True → False\n\n\n\nExample Code\nx = 10\ny = 20\n\nprint(x == y)     # False\nprint(x != y)     # True\nprint(x &lt; y)      # True\nprint(x &gt;= y)     # False\n\nChained Comparisons\nPython supports chaining of comparisons:\nx = 5\nprint(1 &lt; x &lt; 10)     # True\nprint(1 &lt; x and x &lt; 10)  # Same result, more verbose\nThis is equivalent to:\n(1 &lt; x) and (x &lt; 10)\n\n\n\nis vs ==\n\n\n\n==\nCompares values\n\n\n\n\nis\nCompares identity (memory address)\n\n\n\na = [1, 2]\nb = [1, 2]\nprint(a == b)    # True (same contents)\nprint(a is b)    # False (different objects)\n\n\nNone\nUse is and is not instead of == for None:\nx = None\ny = 2\nprint(x is None) # True\nprint(x is not None) # False\nprint(y is None) # True\nWhy? Because None is a singleton, and identity checks (is) are more precise than equality checks (==).\n\n\nBoolean as a Subclass of Integer\nTrue == 1     # True\nFalse == 0    # True\nTrue + True   # 2\nFalse + 3     # 3\nBut for readability, it’s best to use True and False explicitly for logical operations rather than numeric 1 and 0.",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/02dataTypes/02_structured.html",
-    "href": "chapters/02dataTypes/02_structured.html",
+    "objectID": "chapters/01basic/03_structured-data.html",
+    "href": "chapters/01basic/03_structured-data.html",
     "title": "4  Structured Data Types",
     "section": "",
     "text": "4.1 Immutable Structured Types\nStructured data types let you store multiple values together (like collections or containers).\nOnce created, these cannot be changed (no item modification, addition, or deletion).",
@@ -241,8 +241,8 @@
     ]
   },
   {
-    "objectID": "chapters/02dataTypes/02_structured.html#immutable-structured-types",
-    "href": "chapters/02dataTypes/02_structured.html#immutable-structured-types",
+    "objectID": "chapters/01basic/03_structured-data.html#immutable-structured-types",
+    "href": "chapters/01basic/03_structured-data.html#immutable-structured-types",
     "title": "4  Structured Data Types",
     "section": "",
     "text": "Type\nDescription\nExample\n\n\n\n\nstr\nText (sequence of characters)\n“hello”\n\n\ntuple\nOrdered, fixed-size collection\n(1, 2, 3)\n\n\nrange\nSequence of numbers\nrange(5)\n\n\n\n\nExamples:\n# String\ntext = \"hello\"\nprint(text[0])     # Output: h\n\n# Tuple\npoint = (3, 4)\nprint(point[1])    # Output: 4\n\n# Range\nnums = range(3)\nprint(list(nums))  # Output: [0, 1, 2]",
@@ -252,8 +252,8 @@
     ]
   },
   {
-    "objectID": "chapters/02dataTypes/02_structured.html#mutable-structured-types",
-    "href": "chapters/02dataTypes/02_structured.html#mutable-structured-types",
+    "objectID": "chapters/01basic/03_structured-data.html#mutable-structured-types",
+    "href": "chapters/01basic/03_structured-data.html#mutable-structured-types",
     "title": "4  Structured Data Types",
     "section": "4.2 Mutable Structured Types",
     "text": "4.2 Mutable Structured Types\nThese can be changed after creation (add, remove, or update items).\n\n\n\n\n\n\n\n\nType\nDescription\nExample\n\n\n\n\nlist\nOrdered, changeable collection\n[1, 2, 3]\n\n\nset\nUnordered, unique items only\n{1, 2, 3}\n\n\ndict\nKey-value pairs\n{‘name’: ‘Ali’}\n\n\n\n\nExamples:\n# List\nfruits = [\"apple\", \"banana\"]\nfruits.append(\"cherry\")\nprint(fruits)  # ['apple', 'banana', 'cherry']\n\n# Set\nnums = {1, 2}\nnums.add(3)\nprint(nums)    # {1, 2, 3}\n\n# Dictionary\nperson = {\"name\": \"Ali\", \"age\": 25}\nperson[\"age\"] = 26\nprint(person)  # {'name': 'Ali', 'age': 26}",
@@ -263,8 +263,8 @@
     ]
   },
   {
-    "objectID": "chapters/02dataTypes/02_structured.html#compare-table",
-    "href": "chapters/02dataTypes/02_structured.html#compare-table",
+    "objectID": "chapters/01basic/03_structured-data.html#compare-table",
+    "href": "chapters/01basic/03_structured-data.html#compare-table",
     "title": "4  Structured Data Types",
     "section": "4.3 Compare Table",
     "text": "4.3 Compare Table\n\n\n\n\n\n\n\n\n\n\nCategory\nType\nMutable?\nOrdered?\nAllows Duplicates?\n\n\n\n\nSequence\nlist\n✅\n✅\n✅\n\n\nMapping\ndict\n✅\n✅ (3.7+)\n❌ (keys must be unique)\n\n\nSet\nset\n✅\n❌\n❌\n\n\nSequence\ntuple\n❌\n✅\n✅\n\n\nSequence\nrange\n❌\n✅\n✅\n\n\nText\nstr\n❌\n✅\n✅",
@@ -274,8 +274,8 @@
     ]
   },
   {
-    "objectID": "chapters/02dataTypes/02_structured.html#practice-task",
-    "href": "chapters/02dataTypes/02_structured.html#practice-task",
+    "objectID": "chapters/01basic/03_structured-data.html#practice-task",
+    "href": "chapters/01basic/03_structured-data.html#practice-task",
     "title": "4  Structured Data Types",
     "section": "4.4 Practice Task",
     "text": "4.4 Practice Task\nWrite a program that:\n\nCreates a list of numbers: [1, 2, 3]\nAdds 4 to the list\nConverts it to a tuple\nPrints both the list and the tuple\n\nnums = [1, 2, 3]\nnums.append(4)\nt = tuple(nums)\n\nprint(\"List:\", nums)\nprint(\"Tuple:\", t)",
@@ -557,281 +557,6 @@
     "crumbs": [
       "Practice",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Function</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/00_input-output.html",
-    "href": "chapters/01basic/00_input-output.html",
-    "title": "1  Basic Concepts",
-    "section": "",
-    "text": "1.1 Variables\nA variable holds a value. You can store strings, numbers, or any data.",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/00_input-output.html#variables",
-    "href": "chapters/01basic/00_input-output.html#variables",
-    "title": "1  Basic Concepts",
-    "section": "",
-    "text": "city = \"Berlin\"\npopulation = 3850000\narea = 891.8        \nis_capital = True\nrivers=None\n\nNone represents the absence of a value. This is useful when you want to define a variable before assigning a real value.\nPython is case-sensitive. This means that variable names, function names, and identifiers with different capitalizations are treated as completely different.\n\n\n\ncommon Python data types\nHere’s a table of common Python data types with their descriptions and examples:\n\n\n\n\n\n\n\n\n\nType\nClass Name\nDescription\nExample\n\n\n\n\nString\nstr\nsequence of characters\n“hello”, ‘Python’\n\n\nInteger\nint\nWhole numbers\n42, -3\n\n\nFloating-point\nfloat\nDecimal numbers\n3.14, -0.01\n\n\nBoolean\nbool\nLogical values\nTrue, False\n\n\nNone\nNoneType\nRepresents no value\nNone",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/00_input-output.html#comments",
-    "href": "chapters/01basic/00_input-output.html#comments",
-    "title": "1  Basic Concepts",
-    "section": "1.2 Comments",
-    "text": "1.2 Comments\nIn Python, comments are used to explain the code and are ignored during execution.\n\nSingle-line comment\n\n# This prints \"Hello\"\n\nInline comment\n\nx = 5  # Store 5 in x\n\nMulti-line comment\n\n\"\"\"\nThis is a multi-line comment\nor documentation block.\n\"\"\"",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/00_input-output.html#display-output",
-    "href": "chapters/01basic/00_input-output.html#display-output",
-    "title": "1  Basic Concepts",
-    "section": "1.3 Display Output",
-    "text": "1.3 Display Output\nIn Python, print() is a built-in function used to display output on the screen (usually in the terminal or console). The basic syntax is\nprint(object1, object2, ..., sep=' ', end='\\n')\n\nCommon Uses\n\nPrint one or multiple items or variable\n\nprint(\"Hello, world!\")\nprint(42)\nprint(\"Age:\", 25) # Print one or multiple items\ncity = \"Berlin\"\nprint(\"City: \", city) # Print variable\n\n\nChange separator\n\nprint(\"A\", \"B\", \"C\", sep=\"-\") # Output: A-B-C\n\nChange end character\n\nprint(\"Hello\", end=\" \")\nprint(\"World\")\n# Output: Hello World\n\n\n\nFormatted output\n\n\n1. Using f-string (Recommended)\nprint(f\"{city} is with a population of {population:,} and an area of {area:.1f} km².\")\n\n\n2. Using str.format()\nprint(\"{} is with a population of {:,} and an area of {:.1f} km².\".format(city, population, area))\n\n\n3. Using % formatting (old style)\nprint(\"%s is with a population of %,d and an area of %.1f km².\" % (city, population, area))\nOutput:\nBerlin is with a population of 3,850,000 and an area of 891.8 km².",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/00_input-output.html#check-data-type",
-    "href": "chapters/01basic/00_input-output.html#check-data-type",
-    "title": "1  Basic Concepts",
-    "section": "1.4 Check Data Type",
-    "text": "1.4 Check Data Type\n\nThe type() function in Python is used to check the data type of a variable or value.The Syntax is\ntype(object)\n\nExamples\nprint(type(42))           # &lt;class 'int'&gt;\nprint(type(3.14))         # &lt;class 'float'&gt;\nprint(type(\"hello\"))      # &lt;class 'str'&gt;\nprint(type(None))         # &lt;class 'NoneType'&gt;\nprint(type(True))         # &lt;class 'bool'&gt;\nprint(type(print))        # &lt;class 'builtin_function_or_method'&gt;\n\nThe isinstance() function in Python is used to check if a value is an instance of a specific type or class. The Syntax is\nisinstance(object, &lt;class_name&gt;)\n\n\nExamples\nx = 42\ns = \"hello\"\nprint(isinstance(x, int))     # True\nprint(isinstance(x, float))   # False\nprint(isinstance(s, str))     # True\nprint(isinstance(s, bool))    # False",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/00_input-output.html#type-conversion",
-    "href": "chapters/01basic/00_input-output.html#type-conversion",
-    "title": "1  Basic Concepts",
-    "section": "1.5 Type Conversion",
-    "text": "1.5 Type Conversion\nIn Python, Type Conversion means converting a value from one data type to another. Two Types of Type Conversion are:\n\n\n\nType\nDescription\n\n\n\n\nImplicit\nDone automatically by Python\n\n\nExplicit\nDone manually using functions (casting)\n\n\n\n\n\n1. Implicit Type Conversion\nPython automatically converts types during expressions:\nx = 5      # int\ny = 2.0    # float\nz = x + y  # int + float → float\nprint(z)   # 7.0\nprint(type(z))  # &lt;class 'float'&gt;\n\n\n\n2. Explicit Type Conversion (Casting)\nYou can use built-in functions (class name):\n\n\n\nFunction\nConverts to\nExample\n\n\n\n\nint()\nInteger\nint(“5”) → 5\n\n\nfloat()\nFloat\nfloat(“3.14”) → 3.14\n\n\nstr()\nString\nstr(10) → “10”\n\n\nbool()\nBoolean\nbool(0) → False\n\n\n\n\n\n\nExamples\na = \"123\"\nb = int(a)       # Now b is 123 as int\n\nc = 3.99\nd = int(c)       # → 3 (truncates decimal)\n\ne = 0\nprint(bool(e))   # False",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/00_input-output.html#get-user-input",
-    "href": "chapters/01basic/00_input-output.html#get-user-input",
-    "title": "1  Basic Concepts",
-    "section": "1.6 Get User Input",
-    "text": "1.6 Get User Input\nThe input() function in Python is used to take input from the user as a string.\n\nSyntax\nvariable = input(\"Prompt message\")\n\nThe message inside input() is optional and is shown to the user.\nThe return value is always a string (str), even if the user types a number.\n\n\n\n\nExamples\n\n1. Get user’s name\nname = input(\"What is your name? \")\nprint(\"Hello, \" + name)\n\n\n2. Get number input\nage = input(\"Enter your age: \")\nprint(type(age))   # &lt;class 'str'&gt;\n\n\n\n3. Convert input to integer\nage = int(input(\"Enter your age: \"))\nprint(age + 5)\n\n\n4. Multiple inputs\nx, y = input(\"Enter two numbers separated by space: \").split()\nprint(x, y)\n\n\n\n\nCommon Mistake\nAlways validate or cast carefully.\n# This will cause an error if input is not a number\nnum = int(input(\"Enter a number: \"))",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/00_input-output.html#practice-task",
-    "href": "chapters/01basic/00_input-output.html#practice-task",
-    "title": "1  Basic Concepts",
-    "section": "1.7 Practice Task",
-    "text": "1.7 Practice Task\n# Define a constant for the value of Pi (used in circle area calculation)\nPI = 3.14159\n\n# Ask the user to enter their name and store it as a string\nname = input(\"Enter your name: \")\n\n# Ask the user to enter the radius, convert the input from string to float\nradius = float(input(\"Enter the radius of a circle: \"))\n\n# Calculate the area of the circle using the formula: area = π * r^2\narea = PI * radius * radius\n\n# Greet the user by name\nprint(\"Hello\", name)\n\n# Display the calculated area of the circle\nprint(\"Circle area is:\", area)",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Basic Concepts</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/01_condition.html",
-    "href": "chapters/01basic/01_condition.html",
-    "title": "2  Conditions and Loops",
-    "section": "",
-    "text": "2.1 Comparing Numbers\nPython uses comparison operators to compare values.\nThese expressions return a Boolean value: True or False.",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/01_condition.html#comparing-numbers",
-    "href": "chapters/01basic/01_condition.html#comparing-numbers",
-    "title": "2  Conditions and Loops",
-    "section": "",
-    "text": "Operator\nMeaning\nExample\n\n\n\n\n==\nEqual to\n3 == 3 → True\n\n\n!=\nNot equal to\n3 != 4 → True\n\n\n&gt;\nGreater than\n5 &gt; 2 → True\n\n\n&lt;\nLess than\n2 &lt; 5 → True\n\n\n&gt;=\nGreater than or equal\n5 &gt;= 5 → True\n\n\n&lt;=\nLess than or equal\n4 &lt;= 3 → False\n\n\n\n\n\nExample\nx = 10\ny = 5\n\nprint(x &gt; y)      # True\nprint(x == y)     # False\nYou can also store boolean values in variables:\nis_tall = True\nis_ready = False\nis_positive=30&gt;0",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/01_condition.html#if-elif-else-making-decisions",
-    "href": "chapters/01basic/01_condition.html#if-elif-else-making-decisions",
-    "title": "2  Conditions and Loops",
-    "section": "2.2 if-elif-else: Making Decisions",
-    "text": "2.2 if-elif-else: Making Decisions\n\nBuild-in keywords if, elif and else are used to control the flow of your program based on conditions.\n\nif Statement\nage = 18\n\nif age &gt;= 18:\n    print(\"You are an adult\")\n\nIn Python, curly braces {} are not used for blocks like in some other languages (e.g., C, Java, JavaScript). Instead, Python uses colen and indentation.\n\n\n\n\nif-else Statement\nage = 16\n\nif age &gt;= 18:\n    print(\"Adult\")\nelse:\n    print(\"Minor\")\n\n\n\nif-elif-else Chain\nscore = 75\n\nif score &gt;= 90:\n    print(\"Grade: A\")\nelif score &gt;= 80:\n    print(\"Grade: B\")\nelif score &gt;= 70:\n    print(\"Grade: C\")\nelse:\n    print(\"Grade: F\")",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/01_condition.html#while---loop-condition",
-    "href": "chapters/01basic/01_condition.html#while---loop-condition",
-    "title": "2  Conditions and Loops",
-    "section": "2.3 while - Loop Condition",
-    "text": "2.3 while - Loop Condition\nThe while loop keeps running as long as the condition is True.\ncount = 1\n\nwhile count &lt;= 5:\n    print(\"Count is:\", count)\n    count += 1  # Same as count = count + 1\nOutput:\nCount is: 1\nCount is: 2\nCount is: 3\nCount is: 4\nCount is: 5\n\n\nInfinite Loop\nIf you forget to change the condition, the loop can run forever!\n# WARNING: This loop never stops!\nwhile True:\n    print(\"Hello\")  # Press Ctrl + C to stop in terminal\n\n\n\nControlling a loop\n\nbreak — Stop the Loop Early\nx = 1\n\nwhile x &lt;= 10:\n    if x == 5:\n        break  # Exit the loop when x is 5\n    print(x)\n    x += 1\nOutput:\n1\n2\n3\n4\n\n\n\n\ncontinue — Skip One Iteration\nx = 0\n\nwhile x &lt; 5:\n    x += 1\n    if x == 3:\n        continue  # Skip the rest of the loop for x = 3\n    print(x)\nOutput:\n1\n2\n4\n5",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/01_condition.html#for---loop",
-    "href": "chapters/01basic/01_condition.html#for---loop",
-    "title": "2  Conditions and Loops",
-    "section": "2.4 for - Loop",
-    "text": "2.4 for - Loop\nIn Python, the for loop is used to iterate over a sequence (like a str that is a sequence of charechtors). Here’s how it works:\nfor variable in iterable:\n    # code block\n\n\nExamples\n\n1. For through a string\nfor letter in \"hello\":\n    print(letter)\n\n\n\n2. Build a reversed string\ntext = \"hello\"\nreversed_text = \"\"\n\nfor char in text:\n    reversed_text = char + reversed_text\n\nprint(reversed_text) # Output: olleh\n\n\n3. for with break and continue\nword = \"Python\"\nfor char in word:\n    if char == \"y\":\n        break  \n    print(char, end=\"_\") # P_\nword = \"Python\"\nfor char in word:\n    if char == \"y\":\n        continue  \n    print(char, end=\"_\") # P_t_h_o_n_",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/01_condition.html#summary-table",
-    "href": "chapters/01basic/01_condition.html#summary-table",
-    "title": "2  Conditions and Loops",
-    "section": "2.5 Summary Table",
-    "text": "2.5 Summary Table\n\n\n\n\n\n\n\n\nConcept\nExample\nDescription\n\n\n\n\nComparison\nx &gt; y, x == y\nCompares values\n\n\nBoolean\nTrue, False\nLogical values\n\n\nif\nif x &gt; 0:\nRun code if condition is True\n\n\nelif\nelif x == 0:\nCheck another condition\n\n\nelse\nelse:\nRun if all above are False\n\n\nwhile\nRepeat while condition is true\nwhile x &lt; 5:\n\n\nbreak\nExit the loop immediately\nif x == 5: break\n\n\ncontinue\nSkip current loop and go to next one\nif x == 3: continue",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/01_condition.html#practice-tasks",
-    "href": "chapters/01basic/01_condition.html#practice-tasks",
-    "title": "2  Conditions and Loops",
-    "section": "2.6 Practice Tasks",
-    "text": "2.6 Practice Tasks\n\n\nPractice Task 1\nWrite a program that:\n\nAsks the user to enter a number\nChecks if the number is: Positive, Zero or Negative\n\nnumber = float(input(\"Enter a number: \"))\n\nif number &gt; 0:\n    print(\"The number is positive\")\nelif number == 0:\n    print(\"The number is zero\")\nelse:\n    print(\"The number is negative\")\n\n\n\nPractice Task 2\nWrite a program that:\n\nAsks the user to guess a secret number between 1 and 10\nRepeats until the user guesses correctly\n\nsecret = 7\nguess = None\n\nwhile guess != secret:\n    guess = int(input(\"Guess the number (1-10): \"))\n    if guess == secret:\n        print(\"Correct!\")\n    else:\n        print(\"Try again!\")\n\n\n\nPractice Task 3\nWrite a program that:\n\nAsks the user to enter a number\nCount the number of “o”s or “O”s in a given text\n\ntext = str(input(\"Enter a text: \"))\ncount = 0\n\nfor char in text:\n    if char == \"o\":\n        count = count + 1\n    elif char == \"O\":\n        count = count + 1\n\nprint(f'Number of \"o\": {count}')\n\n\nPractice Task 4\nWrite a program to:\n\nAsks the user to enter a number\nclassify someone as child, adult, or old based on their age:\n\n\nIf age is less than 18, print “child”. If age is between 18 and 64 (inclusive of 18), print “adult”. Otherwise (65 and above), print “old”.\n\nage = int(input(\"Enter your age: \")) \n\nif age &lt; 18:\n    print(\"You are a child.\")\nelif 18 &lt;= age &lt; 65:\n    print(\"You are an adult.\")\nelse:\n    print(\"You are old.\")",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Conditions and Loops</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/02_simple-data.html",
-    "href": "chapters/01basic/02_simple-data.html",
-    "title": "3  Simple Data Types",
-    "section": "",
-    "text": "3.1 Boolean Type",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/02_simple-data.html#boolean-type",
-    "href": "chapters/01basic/02_simple-data.html#boolean-type",
-    "title": "3  Simple Data Types",
-    "section": "",
-    "text": "Introduction\nIn Python, booleans are a built-in data type that represent one of two values:\n\nTrue\nFalse\n\nThese are the two built-in constant of the bool type. For showing the type of a value, you can use the type() function.\ntype(True)   # &lt;class 'bool'&gt;\ntype(False)  # &lt;class 'bool'&gt;\n\nBooleans are often used in:\n\nComparisons\nConditionals (if, while)\nLogical operations\n\n\nExample:\nprint(2 &lt; 5)  # True\nprint(3==13)  # False\n\n\n\n\nNone in Python\nIn Python, built-in constants are special predefined names that represent fixed values. They are always available and do not require an import. Until now, we have used two built-in constants: True and False.\nNone is another built-in constant in Python that\n\nrepresents the absence of a value or a null value.\nIt is a singleton object: there is only one instance of NoneType.\n\n\nIt is often used to:\n\nIndicate that a variable has no value yet\nRepresent the default return value of functions that don’t explicitly return anything\n\nx = None\nprint(type(x))  # &lt;class 'NoneType'&gt;\n\n\nComparison with None\nUse is and is not to test an variable is change to None or not. Teses are comparison operators.\nx = 2\nprint(x is None) # False\nprint(x is not None) # True",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/02_simple-data.html#numeric-type",
-    "href": "chapters/01basic/02_simple-data.html#numeric-type",
-    "title": "3  Simple Data Types",
-    "section": "3.2 Numeric Type",
-    "text": "3.2 Numeric Type\nIn Python, numeric types are built-in data types used to store and manipulate numbers. There are three main numeric types:\n\n\n\n\n\n\n\n\nType\nDescription\nExample\n\n\n\n\nint\nInteger numbers\n10, -5, 0\n\n\nfloat\nFloating-point (decimal) numbers\n3.14, -0.01\n\n\ncomplex\nComplex numbers (real + imag part)\n2 + 3j, -1j\n\n\n\n\n\nint —Integer\n\nWhole numbers (no decimal point)\nUnlimited precision (arbitrary size)\n\nx = 42\nprint(type(x))  # &lt;class 'int'&gt;\n\nbig = 10**100   # Very large integer\nprint(type(big)) # &lt;class 'int'&gt;\n\n\n\nfloat — Floating-Point\n\nNumbers with a decimal point\nInternally based on IEEE 754 double-precision (64-bit)\n\npi = 3.14159\nprint(type(pi))  # &lt;class 'float'&gt;\ndiv = 1 / 3      \nprint(div)  # 0.333...\nSpecial float values:\nfloat('inf')     # ∞\nfloat('-inf')    # -∞\nfloat('nan')     # Not a Number\n\n\n\ncomplex —Complex Numbers\n\nNumbers with real and imaginary parts\nWritten as a + bj (use j, not i)\n\nz = 2 + 3j\nprint(type(z))     # &lt;class 'complex'&gt;\nprint(z.real)      # 2.0\nprint(z.imag)      # 3.0",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/02_simple-data.html#text-sequence-type",
-    "href": "chapters/01basic/02_simple-data.html#text-sequence-type",
-    "title": "3  Simple Data Types",
-    "section": "3.3 Text Sequence Type",
-    "text": "3.3 Text Sequence Type\nIn Python, the str type represents textual data — it’s one of the most commonly used built-in types. In fact in a str is an immutable sequence of Unicode characters.\nname = \"Sam\"\nprint(type(name))  # &lt;class 'str'&gt;\n\nCreating Strings\ns1 = 'hello'\ns2 = \"world\"\n\n\n\nMultiline Strings\npoem = \"\"\"Roses are red,\nViolets are blue,\nPython is awesome,\nAnd so are you.\"\"\"\n\n\n\nString Formatting\nWe can embed variabels in string and print it.\nname = \"Sam\"\nage = 30\n\n# .format()\nprint(\"My name is {} and I am {}\".format(name, age))\n\n# f-string (Python 3.6+)\nprint(f\"My name is {name} and I am {age}\")\n\n\n\nImmutability\nStrings are immutable. It means you can not modify (delete,add,update) any part of a string:\ns = \"hello\"\ns[0] = \"H\"  # TypeError\nTo modify a string, you must create a new one:\ns = \"hello\"\ns = \"H\" + s[1:]  # 'Hello'",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/02_simple-data.html#operations",
-    "href": "chapters/01basic/02_simple-data.html#operations",
-    "title": "3  Simple Data Types",
-    "section": "3.4 Operations",
-    "text": "3.4 Operations\n\n\nString Operators\nHere’s a clear explanation and example for each basic operation on strings in Python, organized in a readable table format:\n\n\n\n\n\n\n\n\n\nOperation\nDescription\nExample\nOutput\n\n\n\n\n+\nConcatenation – combines two strings\n‘Hello’ + ’ World’\n‘Hello World’\n\n\n*\nRepetition – repeats a string\n‘Ha’ * 3\n‘HaHaHa’\n\n\nlen(s)\nReturns the length of the string\nlen(‘hello’)\n5\n\n\ns[i]\nIndexing – gets character at index i\n‘hello’[1]\n‘e’\n\n\ns[start:end]\nSlicing – substring from start to end-1\n‘hello’[1:4]\n‘ell’\n\n\nin\nMembership test – checks if a substring exists\n‘lo’ in ‘hello’\nTrue\n\n\nnot in\nNegated membership test\n‘z’ not in ‘hello’\nTrue\n\n\n\n\n\nNotes:\n\nIndexing starts at 0, so ‘hello’[1] is the second character, ‘e’.\nSlicing does not include the character at the end index.\nThe in and not in operations are useful in conditionals and loops.\n\n\n\n\n\nNumeric Operators\nOperators Supported by All Numeric Types:\n\nArithmetic: +, -, *****, /, //, %, ```\nComparison: ==, !=, &lt;, &gt;, &lt;=, &gt;=\n\na = 5\nb = 2\nprint(a + b)    # 7\nprint(a / b)    # 2.5\nprint(a // b)   # 2 (floor division)\nHere’s a clean and complete table of numeric operations in Python, including their description, example result, and notes, based on the built-in types: int, float, and complex.\n\n\nNumeric Operations Table in Python\n\n\n\n\n\n\n\n\nOperation\nResult\nNotes\n\n\n\n\n-x\nNegation of x\n–\n\n\n+x\nx unchanged\nUnary plus\n\n\nx + y\nSum of x and y\nWorks for all numeric types\n\n\nx - y\nDifference of x and y\n–\n\n\nx * y\nProduct of x and y\n–\n\n\nx ** y or pow(x, y)\nx to the power y\nExponentiation (5)\n\n\nx / y\nQuotient of x and y (float)\nAlways returns float\n\n\nx // y\nFloored quotient of x and y\nDiscards fractional part\n\n\nx % y\nRemainder of x / y\nResult has same sign as y\n\n\ndivmod(x, y)\nReturns (x // y, x % y)\nTuple result -&gt; (x//y,x%y)\n\n\nabs(x)\nAbsolute value of x\nAlso works for complex numbers\n\n\nround(x,d)\nRounds x to the nearest integer\ne.g., round(2.337,2) -&gt; 2.34\n\n\nint(x)\nRemove decimal part of x\ne.g., int(-2.93) -&gt; -2\n\n\nc.conjugate()\nConjugate of complex number c\ne.g., (2+3j).conjugate() = 2-3j\n\n\n\n\nNotes:\n\n// performs floor division, e.g. 5 // 2 = 2, -5 // 2 = -3\n% uses Python’s modulus rule: the result has the same sign as the divisor (y)\nint(3.8) → 3; int(‘7’) → 7; int(‘abc’) → raises error\nfloat(‘3.14’) → 3.14\npow(2, 3) → 8; works like 2  3; can also do modular exponentiation: pow(2, 3, 5)** → 3\nint(), float(), and complex() are constructors for their respective types\nYou can find official documentation on https://docs.python.org\n\n\n\n\n\nBoolian Operators\nIn Python, comparison operators are used to compare values. These operators return Boolean values: True or False.\n\n\n\n\n\n\n\n\n\nOperator\nMeaning\nExample\nResult\n\n\n\n\n==\nEqual to\n3 == 3\nTrue\n\n\n!=\nNot equal to\n4 != 5\nTrue\n\n\n&gt;\nGreater than\n7 &gt; 2\nTrue\n\n\n&lt;\nLess than\n1 &lt; 0\nFalse\n\n\n&gt;=\nGreater than or equal to\n5 &gt;= 5\nTrue\n\n\n&lt;=\nLess than or equal to\n6 &lt;= 3\nFalse\n\n\nis\nObject identity\na is b\nTrue if same object\n\n\nis not\nNegated object identity\na is not b\nTrue if not same object\n\n\nin\nMembership\n‘a’ in ‘abc’\nTrue\n\n\nnot in\nNegated membership\n‘z’ not in ‘abc’\nTrue\n\n\n\n\nYou can also combination of statments\n\n\n\nOperator\nDescription\nExample\n\n\n\n\nand\nLogical AND\nTrue and False → False\n\n\nor\nLogical OR\nTrue or False → True\n\n\nnot\nLogical NOT\nnot True → False\n\n\n\n\n\nExample Code\nx = 10\ny = 20\n\nprint(x == y)     # False\nprint(x != y)     # True\nprint(x &lt; y)      # True\nprint(x &gt;= y)     # False\n\n\n\nChained Comparisons\nPython supports chaining of comparisons:\nx = 5\nprint(1 &lt; x &lt; 10)     # True\nprint(1 &lt; x and x &lt; 10)  # Same result, more verbose\nThis is equivalent to:\n(1 &lt; x) and (x &lt; 10)\n\n\n\nCompare is vs ==\n\n\n\n==\nCompares values\n\n\n\n\nis\nCompares identity (memory address)\n\n\n\na = [1, 2]\nb = [1, 2]\nprint(a == b)    # True (same contents)\nprint(a is b)    # False (different objects)\n\n\n\nNone\nUse is and is not instead of == for None:\nx = None\ny = 2\nprint(x is None) # True\nprint(x is not None) # False\nprint(y is None) # True\nWhy? Because None is a singleton, and identity checks (is) are more precise than equality checks (==).\n\n\n\nBoolean as a Subclass of Integer\nTrue == 1     # True\nFalse == 0    # True\nTrue + True   # 2\nFalse + 3     # 3\nBut for readability, it’s best to use True and False explicitly for logical operations rather than numeric 1 and 0.",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Simple Data Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/03_structured-data.html",
-    "href": "chapters/01basic/03_structured-data.html",
-    "title": "4  Structured Data Types",
-    "section": "",
-    "text": "4.1 Immutable Structured Types\nStructured data types let you store multiple values together (like collections or containers).\nOnce created, these cannot be changed (no item modification, addition, or deletion).",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Structured Data Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/03_structured-data.html#immutable-structured-types",
-    "href": "chapters/01basic/03_structured-data.html#immutable-structured-types",
-    "title": "4  Structured Data Types",
-    "section": "",
-    "text": "Type\nDescription\nExample\n\n\n\n\nstr\nText (sequence of characters)\n“hello”\n\n\ntuple\nOrdered, fixed-size collection\n(1, 2, 3)\n\n\nrange\nSequence of numbers\nrange(5)\n\n\n\n\nExamples:\n# String\ntext = \"hello\"\nprint(text[0])     # Output: h\n\n# Tuple\npoint = (3, 4)\nprint(point[1])    # Output: 4\n\n# Range\nnums = range(3)\nprint(list(nums))  # Output: [0, 1, 2]",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Structured Data Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/03_structured-data.html#mutable-structured-types",
-    "href": "chapters/01basic/03_structured-data.html#mutable-structured-types",
-    "title": "4  Structured Data Types",
-    "section": "4.2 Mutable Structured Types",
-    "text": "4.2 Mutable Structured Types\nThese can be changed after creation (add, remove, or update items).\n\n\n\n\n\n\n\n\nType\nDescription\nExample\n\n\n\n\nlist\nOrdered, changeable collection\n[1, 2, 3]\n\n\nset\nUnordered, unique items only\n{1, 2, 3}\n\n\ndict\nKey-value pairs\n{‘name’: ‘Ali’}\n\n\n\n\nExamples:\n# List\nfruits = [\"apple\", \"banana\"]\nfruits.append(\"cherry\")\nprint(fruits)  # ['apple', 'banana', 'cherry']\n\n# Set\nnums = {1, 2}\nnums.add(3)\nprint(nums)    # {1, 2, 3}\n\n# Dictionary\nperson = {\"name\": \"Ali\", \"age\": 25}\nperson[\"age\"] = 26\nprint(person)  # {'name': 'Ali', 'age': 26}",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Structured Data Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/03_structured-data.html#compare-table",
-    "href": "chapters/01basic/03_structured-data.html#compare-table",
-    "title": "4  Structured Data Types",
-    "section": "4.3 Compare Table",
-    "text": "4.3 Compare Table\n\n\n\n\n\n\n\n\n\n\nCategory\nType\nMutable?\nOrdered?\nAllows Duplicates?\n\n\n\n\nSequence\nlist\n✅\n✅\n✅\n\n\nMapping\ndict\n✅\n✅ (3.7+)\n❌ (keys must be unique)\n\n\nSet\nset\n✅\n❌\n❌\n\n\nSequence\ntuple\n❌\n✅\n✅\n\n\nSequence\nrange\n❌\n✅\n✅\n\n\nText\nstr\n❌\n✅\n✅",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Structured Data Types</span>"
-    ]
-  },
-  {
-    "objectID": "chapters/01basic/03_structured-data.html#practice-task",
-    "href": "chapters/01basic/03_structured-data.html#practice-task",
-    "title": "4  Structured Data Types",
-    "section": "4.4 Practice Task",
-    "text": "4.4 Practice Task\nWrite a program that:\n\nCreates a list of numbers: [1, 2, 3]\nAdds 4 to the list\nConverts it to a tuple\nPrints both the list and the tuple\n\nnums = [1, 2, 3]\nnums.append(4)\nt = tuple(nums)\n\nprint(\"List:\", nums)\nprint(\"Tuple:\", t)",
-    "crumbs": [
-      "Basics of Python",
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Structured Data Types</span>"
     ]
   }
 ]
