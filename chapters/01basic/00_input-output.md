@@ -2,11 +2,13 @@
 marp: true
 ---
 
-# Basic Concepts
+# **Basic Concepts**
 
 ---
 
-## Variables
+## **Variables**
+
+---
 
 A variable holds a value. You can store strings, numbers, or any data.
 
@@ -18,12 +20,25 @@ is_capital = True
 rivers=None
 ```
 
-- **None** represents the absence of a value. This is useful when you want to define a variable before assigning a real value.
-- Python is **case-sensitive**. This means that variable names, function names, and identifiers with different capitalizations are treated as completely different.
+Python is **case-sensitive**. This means that variable names, function names, and identifiers with different capitalizations are treated as completely different
 
 ---
 
-### common Python data types
+## **Built-in Constants**
+
+---
+
+In Python, **built-in constants** are special predefined names that represent fixed values. They are always available and do not require an import.
+
+**None** represents the absence of a value. This is useful when you want to define a variable before assigning a real value.
+
+**None** is a singleton object: there is only one instance of **NoneType**.
+
+**True** and **False** is two boolean constant.
+
+---
+
+### **Common Python Data Types**
 
 Here’s a table of **common Python data types** with their descriptions and examples:
 
@@ -37,23 +52,25 @@ Here’s a table of **common Python data types** with their descriptions and exa
 
 ---
 
-## Comments
+## **Comments**
+
+---
 
 In Python, **comments** are used to explain the code and are **ignored during execution**.
 
-- Single-line comment
+- **Single-line comment**
 
 ```python
-# This prints "Hello"
+# This is a single-line comment
 ```
 
-- Inline comment
+- **Inline comment**
 
 ```python
 x = 5  # Store 5 in x
 ```
 
-- Multi-line comment
+- **Multi-line comment**
 
 ```python
 """
@@ -64,7 +81,9 @@ or documentation block.
 
 ---
 
-## Display Output
+## **Display Output**
+
+---
 
 In Python, **print()** is a built-in function used to display output on the screen (usually in the terminal or console). The basic syntax is
 
@@ -72,19 +91,18 @@ In Python, **print()** is a built-in function used to display output on the scre
 print(object1, object2, ..., sep=' ', end='\n')
 ```
 
-### Common Uses
+---
+
+### **Common Uses**
 
 - **Print one or multiple items or variable**
 
 ```python
-print("Hello, world!")
-print(42)
-print("Age:", 25) # Print one or multiple items
+print("Hello, world!")  # Print one item
+print("Age:", 25)       # Print multiple items
 city = "Berlin"
-print("City: ", city) # Print variable
+print("City: ", city)   # Print variable
 ```
-
----
 
 - **Change separator**
 
@@ -102,35 +120,35 @@ print("World")
 
 ---
 
-### Formatted output
+### **Formatted output**
 
-### 1. Using **f-string** (Recommended)
-
-```python
-print(f"{city} is with a population of {population:,} and an area of {area:.1f} km².")
-```
-
-### 2. Using **`str.format()`**
+#### 1. Using **f-string** (Recommended)
 
 ```python
-print("{} is with a population of {:,} and an area of {:.1f} km².".format(city, population, area))
+print(f"{city} has {population:,} million people and an area of {area:.1f} km².")
 ```
 
-### 3. Using **`%` formatting** (old style)
+#### 2. Using **`str.format()`**
 
 ```python
-print("%s is with a population of %,d and an area of %.1f km²." % (city, population, area))
+print("{} has {:,} million people and an area of {:.1f} km².".format(city, population, area))
 ```
 
-Output:
+#### 3. Using **`%` formatting** (old style)
+
+```python
+print("%s has %,d million people and an area of %.1f km²." % (city, population, area))
+```
+
+**Output**:
 
 ```bash
-Berlin is with a population of 3,850,000 and an area of 891.8 km².
+Berlin has 3.85 million people and an area of 891.8 km².
 ```
 
 ---
 
-## Check Data Type
+## **Check Data Type**
 
 ---
 
@@ -140,7 +158,7 @@ The **type()** function in Python is used to check the **data type** of a variab
 type(object)
 ```
 
-### Examples
+### **Examples**
 
 ```python
 print(type(42))           # <class 'int'>
@@ -159,7 +177,7 @@ The **isinstance()** function in Python is used to **check if a value is an inst
 isinstance(object, <class_name>)
 ```
 
-### Examples
+#### **Examples**
 
 ```python
 x = 42
@@ -172,7 +190,9 @@ print(isinstance(s, bool))    # False
 
 ---
 
-## Type Conversion
+## **Type Conversion**
+
+---
 
 In Python, **Type Conversion** means converting a value from one data type to another. Two Types of Type Conversion are:
 
@@ -183,7 +203,7 @@ In Python, **Type Conversion** means converting a value from one data type to an
 
 ---
 
-### 1. Implicit Type Conversion
+### **1. Implicit Type Conversion**
 
 Python automatically converts types during expressions:
 
@@ -197,7 +217,7 @@ print(type(z))  # <class 'float'>
 
 ---
 
-### 2. Explicit Type Conversion (Casting)
+### **2. Explicit Type Conversion (Casting)**
 
 You can use built-in functions (class name):
 
@@ -210,26 +230,11 @@ You can use built-in functions (class name):
 
 ---
 
-### Examples
-
-```python
-a = "123"
-b = int(a)       # Now b is 123 as int
-
-c = 3.99
-d = int(c)       # → 3 (truncates decimal)
-
-e = 0
-print(bool(e))   # False
-```
+## **Get User Input**
 
 ---
 
-## Get User Input
-
-The **input()** function in Python is used to **take input from the user** as a **string**.
-
-### Syntax
+The **input()** function in Python is used to **take input from the user** as a **string**. The syntax is
 
 ```python
 variable = input("Prompt message")
@@ -238,54 +243,30 @@ variable = input("Prompt message")
 - The message inside **input()** is optional and is shown to the user.
 - The return value is always a **string** (`str`), even if the user types a number.
 
----
-
-### Examples
-
-#### 1. **Get user's name**
-
 ```python
 name = input("What is your name? ")
-print("Hello, " + name)
-```
-
-#### 2. **Get number input**
-
-```python
-age = input("Enter your age: ")
-print(type(age))   # <class 'str'>
+print("Hello, " , name)
 ```
 
 ---
 
-#### 3. **Convert input to integer**
+### **Common Mistake**
+
+Always validate or cast carefully. The input should convert to integer by **int**.
 
 ```python
+# This will cause an error if input is not a number
 age = int(input("Enter your age: "))
 print(age + 5)
 ```
 
-#### 4. **Multiple inputs**
+---
 
-```python
-x, y = input("Enter two numbers separated by space: ").split()
-print(x, y)
-```
+## **Practice Task**
 
 ---
 
-### Common Mistake
-
-Always validate or cast carefully.
-
-```python
-# This will cause an error if input is not a number
-num = int(input("Enter a number: "))
-```
-
----
-
-## Practice Task
+### **Practice Task 1**
 
 ```python
 # Define a constant for the value of Pi (used in circle area calculation)

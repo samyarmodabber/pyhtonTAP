@@ -1,67 +1,11 @@
+---
+marp: true
+---
+
 # Simple Data Types
 
-## Boolean Type
+---
 
-### Introduction
-
-In Python, **booleans** are a built-in data type that represent one of two values:
-
-* **True**
-* **False**
-
-These are the two built-in constant of the **bool** type.
-For showing the type of a value, you can use the **type()** function.
-
-```python
-type(True)   # <class 'bool'>
-type(False)  # <class 'bool'>
-```
-
-Booleans are often used in:
-
-* Comparisons
-* Conditionals (**if**, **while**)
-* Logical operations
-
-
-#### Example:
-
-```python
-print(2 < 5)  # True
-print(3==13)  # False
-```
-
-
-### **None** in Python
-
-In Python, **built-in constants** are special predefined names that represent fixed values. They are always available and do not require an import. Until now, we have used two built-in constants: **True** and **False**.
-
-**None** is another **built-in constant** in Python that 
-
-- represents the **absence of a value** or a **null value**.
-- It is a singleton object: there is only one instance of **NoneType**.
-
-
-It is often used to:
-
-- Indicate that a variable has no value yet
-- Represent the default return value of functions that don’t explicitly return anything
-
-```python
-x = None
-print(type(x))  # <class 'NoneType'>
-```
-
-
-#### Comparison with **None**
-
-Use **is** and **is not** to test an variable is change to None or not. Teses are **comparison operators**.
-
-```python
-x = 2
-print(x is None) # False
-print(x is not None) # True
-```
 ## Numeric Type
 
 In Python, **numeric types** are built-in data types used to store and manipulate numbers. There are three main numeric types:
@@ -72,6 +16,7 @@ In Python, **numeric types** are built-in data types used to store and manipulat
 | **float**   | Floating-point (decimal) numbers   | **3.14**, **-0.01** |
 | **complex** | Complex numbers (real + imag part) | **2 + 3j**, **-1j** |
 
+---
 
 ### **int** —Integer
 
@@ -85,6 +30,8 @@ print(type(x))  # <class 'int'>
 big = 10**100   # Very large integer
 print(type(big)) # <class 'int'>
 ```
+
+---
 
 ### **float** — Floating-Point
 
@@ -106,6 +53,8 @@ float('-inf')    # -∞
 float('nan')     # Not a Number
 ```
 
+---
+
 ### **complex** —Complex Numbers
 
 * Numbers with **real** and **imaginary** parts
@@ -118,6 +67,7 @@ print(z.real)      # 2.0
 print(z.imag)      # 3.0
 ```
 
+---
 
 ## Text Sequence Type
 
@@ -135,6 +85,8 @@ s1 = 'hello'
 s2 = "world"
 ```
 
+---
+
 #### Multiline Strings
 
 ```python
@@ -144,7 +96,10 @@ Python is awesome,
 And so are you."""
 ```
 
+---
+
 ### String Formatting
+
 We can embed variabels in string and print it.
 
 ```python
@@ -158,6 +113,8 @@ print("My name is {} and I am {}".format(name, age))
 print(f"My name is {name} and I am {age}")
 
 ```
+
+---
 
 ### Immutability
 
@@ -175,9 +132,15 @@ s = "hello"
 s = "H" + s[1:]  # 'Hello'
 ```
 
+---
+
 ## Operations
+
+---
+
 ### String Operators
-Here's a clear explanation and example for each **basic operation on strings** in Python, organized in a readable table format:
+
+Here's a **basic operation on strings** in Python, organized in a readable table format:
 
 
 | **Operation**    | **Description**                                | **Example**            | **Output**      |
@@ -190,12 +153,15 @@ Here's a clear explanation and example for each **basic operation on strings** i
 | **in**           | Membership test – checks if a substring exists | **'lo' in 'hello'**     | **True**          |
 | **not in**       | Negated membership test                        | **'z' not in 'hello'** | **True**          |
 
+---
+
 #### Notes:
 
 * **Indexing** starts at **0**, so **'hello'[1]** is the second character, **'e'**.
 * **Slicing** does **not** include the character at the **end** index.
 * The **in** and **not in** operations are useful in conditionals and loops.
 
+---
 
 ### Numeric Operators
 
@@ -214,7 +180,10 @@ print(a // b)   # 2 (floor division)
 
 Here’s a clean and complete table of **numeric operations** in Python, including their **description**, **example result**, and **notes**, based on the built-in types: **int**, **float**, and **complex**.
 
-**Numeric Operations Table in Python**
+---
+
+#### **Numeric Operations Table in Python**
+
 
 | **Operation**     | **Result**                               | **Notes**                            |
 | ----------------- | ---------------------------------------- | ------------------------------------ |
@@ -233,6 +202,8 @@ Here’s a clean and complete table of **numeric operations** in Python, includi
 | **int(x)**          | Remove decimal part of **x**               | e.g., **int(-2.93)** -> -2        |
 | **c.conjugate()**   | Conjugate of complex number **c**          | e.g., **(2+3j).conjugate() = 2-3j**    |
 
+---
+
 **Notes:**
 
 1. **//** performs **floor division**, e.g. **5 // 2 = 2**, **-5 // 2 = -3**
@@ -242,101 +213,3 @@ Here’s a clean and complete table of **numeric operations** in Python, includi
 5. **pow(2, 3)** → **8**; works like **2 ** 3**; can also do modular exponentiation: **pow(2, 3, 5)** → **3**
 6. **int()**, **float()**, and **complex()** are constructors for their respective types
 7. You can find official documentation on [https://docs.python.org](https://docs.python.org/3/library/stdtypes.html#numeric-types-int-float-complex)
-
-
-### Boolian Operators
-
-In Python, **comparison operators** are used to compare values. These operators return **Boolean values**: **True** or **False**.
-
-| **Operator** | **Meaning**              | **Example**        | **Result**                |
-| ------------ | ------------------------ | ------------------ | ------------------------- |
-| **==**         | Equal to                 | **3 == 3**           | **True**                    |
-| **!=**         | Not equal to             | **4 != 5**           | **True**                    |
-| **>**          | Greater than             | **7 > 2**            | **True**                    |
-| **<**          | Less than                | **1 < 0**            | **False**                   |
-| **>=**         | Greater than or equal to | **5 >= 5**           | **True**                    |
-| **<=**         | Less than or equal to    | **6 <= 3**           | **False**                   |
-| **is**         | **Object identity**      | **a is b**           | **True** if same object     |
-| **is not**     | Negated object identity  | **a is not b**       | **True** if not same object |
-| **in**         | Membership               | **'a' in 'abc'**     | **True**                    |
-| **not in**     | Negated membership       | **'z' not in 'abc'** | **True**                    |
-
-
-
-You can also combination of statments
-
-| Operator | Description | Example                    |
-| -------- | ----------- | -------------------------- |
-| **and**    | Logical AND | **True and False** → **False** |
-| **or**     | Logical OR  | **True or False** → **True**   |
-| **not**    | Logical NOT | **not True** → **False**       |
-
-
-
-**Example Code**
-
-```python
-x = 10
-y = 20
-
-print(x == y)     # False
-print(x != y)     # True
-print(x < y)      # True
-print(x >= y)     # False
-```
-
-
-#### Chained Comparisons
-
-Python supports **chaining** of comparisons:
-
-```python
-x = 5
-print(1 < x < 10)     # True
-print(1 < x and x < 10)  # Same result, more verbose
-```
-
-This is equivalent to:
-
-```python
-(1 < x) and (x < 10)
-```
-
----
-
-####  **is** vs **==**
-
-| **==** | Compares **values**                    |
-| ---- | -------------------------------------- |
-| **is** | Compares **identity** (memory address) |
-
-```python
-a = [1, 2]
-b = [1, 2]
-print(a == b)    # True (same contents)
-print(a is b)    # False (different objects)
-```
-
-#### None
-
-Use **is** and **is not** instead of **==** for **None**:
-
-```python
-x = None
-y = 2
-print(x is None) # True
-print(x is not None) # False
-print(y is None) # True
-```
-Why? Because **None** is a singleton, and identity checks (**is**) are more precise than equality checks (**==**).
-
-#### Boolean as a Subclass of Integer
-
-```python
-True == 1     # True
-False == 0    # True
-True + True   # 2
-False + 3     # 3
-```
-
-But for readability, it’s best to use **True** and **False** explicitly for logical operations rather than numeric 1 and 0.

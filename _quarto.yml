@@ -22,6 +22,8 @@ book:
   favicon: logo.png
   reader-mode: true
   page-navigation: true
+  downloads: [pdf]
+  sharing: [twitter, facebook]
 
   search:
     location: navbar
@@ -58,10 +60,10 @@ book:
     - index.qmd
     - part: "Basics of Python"
       chapters:
-        - chapters/01helloPython/00_input-output.md
-        - chapters/01helloPython/01_condition.md
-        - chapters/02dataTypes/01_simple.qmd
-        - chapters/02dataTypes/02_structured.qmd
+        - chapters/01basic/00_input-output.md
+        - chapters/01basic/01_condition.md
+        - chapters/01basic/02_simple-data.md
+        - chapters/01basic/03_structured-data.md
         # - chapters/01Build-inDataType/01_boolean.qmd
         # - chapters/01Build-inDataType/02_numeric.qmd
         # - chapters/01Build-inDataType/03_string.qmd
@@ -92,6 +94,7 @@ book:
 
 # https://github.com/mlr-org/mlr3book/blob/main/book/_quarto.yml
 format:
+  pdf: default
   html:
     theme:
       dark: [darkly, style/custom.scss]

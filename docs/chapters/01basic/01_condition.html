@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>1&nbsp; Basic Concepts – Python TAP (Theory, Application and Practice)</title>
+<title>2&nbsp; Conditions and Loops – Python TAP (Theory, Application and Practice)</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -64,8 +64,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
-<link href="../../chapters/01helloPython/01_condition.html" rel="next">
-<link href="../../index.html" rel="prev">
+<link href="../../chapters/01basic/02_simple-data.html" rel="next">
+<link href="../../chapters/01basic/00_input-output.html" rel="prev">
 <link href="../../logo.png" rel="icon" type="image/png">
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
@@ -330,7 +330,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/01helloPython/00_input-output.html">Basics of Python</a></li><li class="breadcrumb-item"><a href="../../chapters/01helloPython/00_input-output.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Basic Concepts</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/01basic/00_input-output.html">Basics of Python</a></li><li class="breadcrumb-item"><a href="../../chapters/01basic/01_condition.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conditions and Loops</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -372,25 +372,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/01helloPython/00_input-output.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../chapters/01basic/00_input-output.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Basic Concepts</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/01helloPython/01_condition.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/01basic/01_condition.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conditions and Loops</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/02dataTypes/01_simple.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/01basic/02_simple-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Simple Data Types</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../chapters/02dataTypes/02_structured.html" class="sidebar-item-text sidebar-link">
+  <a href="../../chapters/01basic/03_structured-data.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Structured Data Types</span></span></a>
   </div>
 </li>
@@ -453,13 +453,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">content</h2>
    
   <ul class="collapse">
-  <li><a href="#variables" id="toc-variables" class="nav-link active" data-scroll-target="#variables"><span class="header-section-number">1.1</span> Variables</a></li>
-  <li><a href="#comments" id="toc-comments" class="nav-link" data-scroll-target="#comments"><span class="header-section-number">1.2</span> Comments</a></li>
-  <li><a href="#display-output" id="toc-display-output" class="nav-link" data-scroll-target="#display-output"><span class="header-section-number">1.3</span> Display Output</a></li>
-  <li><a href="#check-data-type" id="toc-check-data-type" class="nav-link" data-scroll-target="#check-data-type"><span class="header-section-number">1.4</span> Check Data Type</a></li>
-  <li><a href="#type-conversion" id="toc-type-conversion" class="nav-link" data-scroll-target="#type-conversion"><span class="header-section-number">1.5</span> Type Conversion</a></li>
-  <li><a href="#get-user-input" id="toc-get-user-input" class="nav-link" data-scroll-target="#get-user-input"><span class="header-section-number">1.6</span> Get User Input</a></li>
-  <li><a href="#practice-task" id="toc-practice-task" class="nav-link" data-scroll-target="#practice-task"><span class="header-section-number">1.7</span> Practice Task</a></li>
+  <li><a href="#comparing-numbers" id="toc-comparing-numbers" class="nav-link active" data-scroll-target="#comparing-numbers"><span class="header-section-number">2.1</span> Comparing Numbers</a></li>
+  <li><a href="#if-elif-else-making-decisions" id="toc-if-elif-else-making-decisions" class="nav-link" data-scroll-target="#if-elif-else-making-decisions"><span class="header-section-number">2.2</span> <strong>if-elif-else</strong>: Making Decisions</a></li>
+  <li><a href="#while---loop-condition" id="toc-while---loop-condition" class="nav-link" data-scroll-target="#while---loop-condition"><span class="header-section-number">2.3</span> <strong>while</strong> - Loop Condition</a></li>
+  <li><a href="#for---loop" id="toc-for---loop" class="nav-link" data-scroll-target="#for---loop"><span class="header-section-number">2.4</span> <strong>for</strong> - Loop</a></li>
+  <li><a href="#summary-table" id="toc-summary-table" class="nav-link" data-scroll-target="#summary-table"><span class="header-section-number">2.5</span> Summary Table</a></li>
+  <li><a href="#practice-tasks" id="toc-practice-tasks" class="nav-link" data-scroll-target="#practice-tasks"><span class="header-section-number">2.6</span> Practice Tasks</a></li>
   </ul>
 </nav>
     </div>
@@ -467,9 +466,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <main class="content" id="quarto-document-content">
 
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/01helloPython/00_input-output.html">Basics of Python</a></li><li class="breadcrumb-item"><a href="../../chapters/01helloPython/00_input-output.html"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Basic Concepts</span></a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../chapters/01basic/00_input-output.html">Basics of Python</a></li><li class="breadcrumb-item"><a href="../../chapters/01basic/01_condition.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conditions and Loops</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Basic Concepts</span></h1>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conditions and Loops</span></h1>
 </div>
 
 
@@ -487,314 +486,343 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 
 <hr>
-<section id="variables" class="level2" data-number="1.1">
-<h2 data-number="1.1" class="anchored" data-anchor-id="variables"><span class="header-section-number">1.1</span> Variables</h2>
-<p>A variable holds a value. You can store strings, numbers, or any data.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>city <span class="op">=</span> <span class="st">"Berlin"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>population <span class="op">=</span> <span class="dv">3850000</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> <span class="fl">891.8</span>        </span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>is_capital <span class="op">=</span> <span class="va">True</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>rivers<span class="op">=</span><span class="va">None</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><strong>None</strong> represents the absence of a value. This is useful when you want to define a variable before assigning a real value.</li>
-<li>Python is <strong>case-sensitive</strong>. This means that variable names, function names, and identifiers with different capitalizations are treated as completely different.</li>
-</ul>
-<hr>
-<section id="common-python-data-types" class="level3">
-<h3 class="anchored" data-anchor-id="common-python-data-types">common Python data types</h3>
-<p>Here’s a table of <strong>common Python data types</strong> with their descriptions and examples:</p>
+<section id="comparing-numbers" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="comparing-numbers"><span class="header-section-number">2.1</span> Comparing Numbers</h2>
+<p>Python uses <strong>comparison operators</strong> to compare values.</p>
+<p>These expressions return a <strong>Boolean value</strong>: <strong>True</strong> or <strong>False</strong>.</p>
 <table class="caption-top table">
-<colgroup>
-<col style="width: 17%">
-<col style="width: 15%">
-<col style="width: 33%">
-<col style="width: 33%">
-</colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: left;">Type</th>
-<th style="text-align: left;">Class Name</th>
-<th style="text-align: left;">Description</th>
+<th style="text-align: left;">Operator</th>
+<th style="text-align: left;">Meaning</th>
 <th style="text-align: left;">Example</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;">String</td>
-<td style="text-align: left;"><strong>str</strong></td>
-<td style="text-align: left;">sequence of characters</td>
-<td style="text-align: left;"><strong>“hello”</strong>, <strong>‘Python’</strong></td>
+<td style="text-align: left;"><strong>==</strong></td>
+<td style="text-align: left;">Equal to</td>
+<td style="text-align: left;">3 == 3 → True</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Integer</td>
-<td style="text-align: left;"><strong>int</strong></td>
-<td style="text-align: left;">Whole numbers</td>
-<td style="text-align: left;"><strong>42</strong>, <strong>-3</strong></td>
+<td style="text-align: left;"><strong>!=</strong></td>
+<td style="text-align: left;">Not equal to</td>
+<td style="text-align: left;">3 != 4 → True</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">Floating-point</td>
-<td style="text-align: left;"><strong>float</strong></td>
-<td style="text-align: left;">Decimal numbers</td>
-<td style="text-align: left;"><strong>3.14</strong>, <strong>-0.01</strong></td>
+<td style="text-align: left;"><strong>&gt;</strong></td>
+<td style="text-align: left;">Greater than</td>
+<td style="text-align: left;">5 &gt; 2 → True</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;">Boolean</td>
-<td style="text-align: left;"><strong>bool</strong></td>
-<td style="text-align: left;">Logical values</td>
-<td style="text-align: left;"><strong>True</strong>, <strong>False</strong></td>
+<td style="text-align: left;"><strong>&lt;</strong></td>
+<td style="text-align: left;">Less than</td>
+<td style="text-align: left;">2 &lt; 5 → True</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;">None</td>
-<td style="text-align: left;"><strong>NoneType</strong></td>
-<td style="text-align: left;">Represents no value</td>
-<td style="text-align: left;"><strong>None</strong></td>
+<td style="text-align: left;"><strong>&gt;=</strong></td>
+<td style="text-align: left;">Greater than or equal</td>
+<td style="text-align: left;">5 &gt;= 5 → True</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;"><strong>&lt;=</strong></td>
+<td style="text-align: left;">Less than or equal</td>
+<td style="text-align: left;">4 &lt;= 3 → False</td>
 </tr>
 </tbody>
 </table>
 <hr>
-</section>
-</section>
-<section id="comments" class="level2" data-number="1.2">
-<h2 data-number="1.2" class="anchored" data-anchor-id="comments"><span class="header-section-number">1.2</span> Comments</h2>
-<p>In Python, <strong>comments</strong> are used to explain the code and are <strong>ignored during execution</strong>.</p>
-<ul>
-<li>Single-line comment</li>
-</ul>
-<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This prints "Hello"</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Inline comment</li>
-</ul>
-<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span>  <span class="co"># Store 5 in x</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li>Multi-line comment</li>
-</ul>
-<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">"""</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">This is a multi-line comment</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">or documentation block.</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">"""</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="example" class="level3">
+<h3 class="anchored" data-anchor-id="example">Example</h3>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">10</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="dv">5</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">&gt;</span> y)      <span class="co"># True</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x <span class="op">==</span> y)     <span class="co"># False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You can also store boolean values in variables:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>is_tall <span class="op">=</span> <span class="va">True</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>is_ready <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>is_positive<span class="op">=</span><span class="dv">30</span><span class="op">&gt;</span><span class="dv">0</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 </section>
-<section id="display-output" class="level2" data-number="1.3">
-<h2 data-number="1.3" class="anchored" data-anchor-id="display-output"><span class="header-section-number">1.3</span> Display Output</h2>
-<p>In Python, <strong>print()</strong> is a built-in function used to display output on the screen (usually in the terminal or console). The basic syntax is</p>
-<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(object1, object2, ..., sep<span class="op">=</span><span class="st">' '</span>, end<span class="op">=</span><span class="st">'</span><span class="ch">\n</span><span class="st">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<section id="common-uses" class="level3">
-<h3 class="anchored" data-anchor-id="common-uses">Common Uses</h3>
-<ul>
-<li><strong>Print one or multiple items or variable</strong></li>
-</ul>
-<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, world!"</span>)</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="dv">42</span>)</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Age:"</span>, <span class="dv">25</span>) <span class="co"># Print one or multiple items</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>city <span class="op">=</span> <span class="st">"Berlin"</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"City: "</span>, city) <span class="co"># Print variable</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="if-elif-else-making-decisions" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="if-elif-else-making-decisions"><span class="header-section-number">2.2</span> <strong>if-elif-else</strong>: Making Decisions</h2>
 <hr>
+<p>Build-in keywords <strong>if</strong>, <strong>elif</strong> and <strong>else</strong> are used to <strong>control the flow</strong> of your program based on conditions.</p>
+<section id="if-statement" class="level3">
+<h3 class="anchored" data-anchor-id="if-statement"><strong>if</strong> Statement</h3>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">18</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> age <span class="op">&gt;=</span> <span class="dv">18</span>:</span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"You are an adult"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <ul>
-<li><strong>Change separator</strong></li>
+<li>In Python, <strong>curly braces <code>{}</code> are not used</strong> for blocks like in some other languages (e.g., C, Java, JavaScript). Instead, Python uses <strong>colen</strong> and <strong>indentation</strong>.</li>
 </ul>
-<div class="sourceCode" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"A"</span>, <span class="st">"B"</span>, <span class="st">"C"</span>, sep<span class="op">=</span><span class="st">"-"</span>) <span class="co"># Output: A-B-C</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><strong>Change end character</strong></li>
-</ul>
-<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello"</span>, end<span class="op">=</span><span class="st">" "</span>)</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"World"</span>)</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Output: Hello World</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 </section>
-<section id="formatted-output" class="level3">
-<h3 class="anchored" data-anchor-id="formatted-output">Formatted output</h3>
+<section id="if-else-statement" class="level3">
+<h3 class="anchored" data-anchor-id="if-else-statement"><strong>if-else</strong> Statement</h3>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="dv">16</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> age <span class="op">&gt;=</span> <span class="dv">18</span>:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Adult"</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Minor"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
 </section>
-<section id="using-f-string-recommended" class="level3">
-<h3 class="anchored" data-anchor-id="using-f-string-recommended">1. Using <strong>f-string</strong> (Recommended)</h3>
-<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"</span><span class="sc">{</span>city<span class="sc">}</span><span class="ss"> is with a population of </span><span class="sc">{</span>population<span class="sc">:,}</span><span class="ss"> and an area of </span><span class="sc">{</span>area<span class="sc">:.1f}</span><span class="ss"> km²."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="if-elif-else-chain" class="level3">
+<h3 class="anchored" data-anchor-id="if-elif-else-chain"><strong>if-elif-else</strong> Chain</h3>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>score <span class="op">=</span> <span class="dv">75</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> score <span class="op">&gt;=</span> <span class="dv">90</span>:</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Grade: A"</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> score <span class="op">&gt;=</span> <span class="dv">80</span>:</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Grade: B"</span>)</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> score <span class="op">&gt;=</span> <span class="dv">70</span>:</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Grade: C"</span>)</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Grade: F"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
 </section>
-<section id="using-str.format" class="level3">
-<h3 class="anchored" data-anchor-id="using-str.format">2. Using <strong><code>str.format()</code></strong></h3>
-<div class="sourceCode" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">{}</span><span class="st"> is with a population of </span><span class="sc">{:,}</span><span class="st"> and an area of </span><span class="sc">{:.1f}</span><span class="st"> km²."</span>.<span class="bu">format</span>(city, population, area))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </section>
-<section id="using-formatting-old-style" class="level3">
-<h3 class="anchored" data-anchor-id="using-formatting-old-style">3. Using <strong><code>%</code> formatting</strong> (old style)</h3>
-<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"</span><span class="sc">%s</span><span class="st"> is with a population of %,d and an area of </span><span class="sc">%.1f</span><span class="st"> km²."</span> <span class="op">%</span> (city, population, area))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="while---loop-condition" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="while---loop-condition"><span class="header-section-number">2.3</span> <strong>while</strong> - Loop Condition</h2>
+<p>The <strong>while</strong> loop keeps running <strong>as long as</strong> the condition is <strong>True</strong>.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> count <span class="op">&lt;=</span> <span class="dv">5</span>:</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Count is:"</span>, count)</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    count <span class="op">+=</span> <span class="dv">1</span>  <span class="co"># Same as count = count + 1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>Output:</p>
-<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Berlin</span> is with a population of 3,850,000 and an area of 891.8 km².</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">Count</span> is: 1</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">Count</span> is: 2</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="ex">Count</span> is: 3</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="ex">Count</span> is: 4</span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="ex">Count</span> is: 5</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+<section id="infinite-loop" class="level3">
+<h3 class="anchored" data-anchor-id="infinite-loop">Infinite Loop</h3>
+<p>If you forget to change the condition, the loop can run forever!</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># </span><span class="al">WARNING</span><span class="co">: This loop never stops!</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> <span class="va">True</span>:</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"Hello"</span>)  <span class="co"># Press Ctrl + C to stop in terminal</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+</section>
+<section id="controlling-a-loop" class="level3">
+<h3 class="anchored" data-anchor-id="controlling-a-loop">Controlling a loop</h3>
+<section id="break-stop-the-loop-early" class="level4">
+<h4 class="anchored" data-anchor-id="break-stop-the-loop-early"><strong>break</strong> — Stop the Loop Early</h4>
+<div class="sourceCode" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">1</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> x <span class="op">&lt;=</span> <span class="dv">10</span>:</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">5</span>:</span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span>  <span class="co"># Exit the loop when x is 5</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>    x <span class="op">+=</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Output:</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">2</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">3</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="ex">4</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 </section>
 </section>
-<section id="check-data-type" class="level2" data-number="1.4">
-<h2 data-number="1.4" class="anchored" data-anchor-id="check-data-type"><span class="header-section-number">1.4</span> Check Data Type</h2>
+<section id="continue-skip-one-iteration" class="level3">
+<h3 class="anchored" data-anchor-id="continue-skip-one-iteration"><strong>continue</strong> — Skip One Iteration</h3>
+<div class="sourceCode" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> x <span class="op">&lt;</span> <span class="dv">5</span>:</span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>    x <span class="op">+=</span> <span class="dv">1</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> x <span class="op">==</span> <span class="dv">3</span>:</span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span>  <span class="co"># Skip the rest of the loop for x = 3</span></span>
+<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(x)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Output:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">1</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">2</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="ex">4</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="ex">5</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
-<p>The <strong>type()</strong> function in Python is used to check the <strong>data type</strong> of a variable or value.The Syntax is</p>
-<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="bu">type</span>(<span class="bu">object</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="for---loop" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="for---loop"><span class="header-section-number">2.4</span> <strong>for</strong> - Loop</h2>
+<p>In Python, the <strong>for</strong> loop is used to iterate over a sequence (like a str that is a sequence of charechtors). Here’s how it works:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> variable <span class="kw">in</span> iterable:</span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># code block</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
 <section id="examples" class="level3">
 <h3 class="anchored" data-anchor-id="examples">Examples</h3>
-<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(<span class="dv">42</span>))           <span class="co"># &lt;class 'int'&gt;</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(<span class="fl">3.14</span>))         <span class="co"># &lt;class 'float'&gt;</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(<span class="st">"hello"</span>))      <span class="co"># &lt;class 'str'&gt;</span></span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(<span class="va">None</span>))         <span class="co"># &lt;class 'NoneType'&gt;</span></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(<span class="va">True</span>))         <span class="co"># &lt;class 'bool'&gt;</span></span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(<span class="bu">print</span>))        <span class="co"># &lt;class 'builtin_function_or_method'&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="for-through-a-string" class="level4">
+<h4 class="anchored" data-anchor-id="for-through-a-string">1. For through a <strong>string</strong></h4>
+<div class="sourceCode" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> letter <span class="kw">in</span> <span class="st">"hello"</span>:</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(letter)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+</section>
+<section id="build-a-reversed-string" class="level3">
+<h3 class="anchored" data-anchor-id="build-a-reversed-string">2. Build a <strong>reversed string</strong></h3>
+<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="st">"hello"</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>reversed_text <span class="op">=</span> <span class="st">""</span></span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> char <span class="kw">in</span> text:</span>
+<span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>    reversed_text <span class="op">=</span> char <span class="op">+</span> reversed_text</span>
+<span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb15-7"><a href="#cb15-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(reversed_text) <span class="co"># Output: olleh</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
-<p>The <strong>isinstance()</strong> function in Python is used to <strong>check if a value is an instance of a specific type or class</strong>. The Syntax is</p>
-<div class="sourceCode" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="bu">isinstance</span>(<span class="bu">object</span>, <span class="op">&lt;</span>class_name<span class="op">&gt;</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="examples-1" class="level3">
-<h3 class="anchored" data-anchor-id="examples-1">Examples</h3>
-<div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">42</span></span>
-<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>s <span class="op">=</span> <span class="st">"hello"</span></span>
-<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">isinstance</span>(x, <span class="bu">int</span>))     <span class="co"># True</span></span>
-<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">isinstance</span>(x, <span class="bu">float</span>))   <span class="co"># False</span></span>
-<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">isinstance</span>(s, <span class="bu">str</span>))     <span class="co"># True</span></span>
-<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">isinstance</span>(s, <span class="bu">bool</span>))    <span class="co"># False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="for-with-break-and-continue" class="level4">
+<h4 class="anchored" data-anchor-id="for-with-break-and-continue">3. <strong>for</strong> with <strong>break</strong> and <strong>continue</strong></h4>
+<div class="sourceCode" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a>word <span class="op">=</span> <span class="st">"Python"</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> char <span class="kw">in</span> word:</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> char <span class="op">==</span> <span class="st">"y"</span>:</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">break</span>  </span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(char, end<span class="op">=</span><span class="st">"_"</span>) <span class="co"># P_</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>word <span class="op">=</span> <span class="st">"Python"</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> char <span class="kw">in</span> word:</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> char <span class="op">==</span> <span class="st">"y"</span>:</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>        <span class="cf">continue</span>  </span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(char, end<span class="op">=</span><span class="st">"_"</span>) <span class="co"># P_t_h_o_n_</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 </section>
 </section>
-<section id="type-conversion" class="level2" data-number="1.5">
-<h2 data-number="1.5" class="anchored" data-anchor-id="type-conversion"><span class="header-section-number">1.5</span> Type Conversion</h2>
-<p>In Python, <strong>Type Conversion</strong> means converting a value from one data type to another. Two Types of Type Conversion are:</p>
+</section>
+<section id="summary-table" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="summary-table"><span class="header-section-number">2.5</span> Summary Table</h2>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 17%">
+<col style="width: 30%">
+<col style="width: 51%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Type</th>
+<th>Concept</th>
+<th>Example</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><strong>Implicit</strong></td>
-<td>Done automatically by Python</td>
+<td>Comparison</td>
+<td><strong>x &gt; y</strong>, <strong>x == y</strong></td>
+<td>Compares values</td>
 </tr>
 <tr class="even">
-<td><strong>Explicit</strong></td>
-<td>Done manually using functions (casting)</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<section id="implicit-type-conversion" class="level3">
-<h3 class="anchored" data-anchor-id="implicit-type-conversion">1. Implicit Type Conversion</h3>
-<p>Python automatically converts types during expressions:</p>
-<div class="sourceCode" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a>x <span class="op">=</span> <span class="dv">5</span>      <span class="co"># int</span></span>
-<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> <span class="fl">2.0</span>    <span class="co"># float</span></span>
-<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>z <span class="op">=</span> x <span class="op">+</span> y  <span class="co"># int + float → float</span></span>
-<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(z)   <span class="co"># 7.0</span></span>
-<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(z))  <span class="co"># &lt;class 'float'&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-<section id="explicit-type-conversion-casting" class="level3">
-<h3 class="anchored" data-anchor-id="explicit-type-conversion-casting">2. Explicit Type Conversion (Casting)</h3>
-<p>You can use built-in functions (class name):</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Function</th>
-<th>Converts to</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><strong>int()</strong></td>
-<td>Integer</td>
-<td>int(“5”) → 5</td>
-</tr>
-<tr class="even">
-<td><strong>float()</strong></td>
-<td>Float</td>
-<td>float(“3.14”) → 3.14</td>
-</tr>
-<tr class="odd">
-<td><strong>str()</strong></td>
-<td>String</td>
-<td>str(10) → “10”</td>
-</tr>
-<tr class="even">
-<td><strong>bool()</strong></td>
 <td>Boolean</td>
-<td>bool(0) → False</td>
+<td><strong>True</strong>, <strong>False</strong></td>
+<td>Logical values</td>
+</tr>
+<tr class="odd">
+<td><strong>if</strong></td>
+<td><strong>if x &gt; 0:</strong></td>
+<td>Run code if condition is True</td>
+</tr>
+<tr class="even">
+<td><strong>elif</strong></td>
+<td><strong>elif x == 0:</strong></td>
+<td>Check another condition</td>
+</tr>
+<tr class="odd">
+<td><strong>else</strong></td>
+<td><strong>else:</strong></td>
+<td>Run if all above are False</td>
+</tr>
+<tr class="even">
+<td><strong>while</strong></td>
+<td>Repeat while condition is true</td>
+<td><strong>while x &lt; 5:</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>break</strong></td>
+<td>Exit the loop immediately</td>
+<td><strong>if x == 5: break</strong></td>
+</tr>
+<tr class="even">
+<td><strong>continue</strong></td>
+<td>Skip current loop and go to next one</td>
+<td><strong>if x == 3: continue</strong></td>
 </tr>
 </tbody>
 </table>
 <hr>
 </section>
-<section id="examples-2" class="level3">
-<h3 class="anchored" data-anchor-id="examples-2">Examples</h3>
-<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="st">"123"</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>b <span class="op">=</span> <span class="bu">int</span>(a)       <span class="co"># Now b is 123 as int</span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>c <span class="op">=</span> <span class="fl">3.99</span></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>d <span class="op">=</span> <span class="bu">int</span>(c)       <span class="co"># → 3 (truncates decimal)</span></span>
-<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a>e <span class="op">=</span> <span class="dv">0</span></span>
-<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">bool</span>(e))   <span class="co"># False</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="practice-tasks" class="level2" data-number="2.6">
+<h2 data-number="2.6" class="anchored" data-anchor-id="practice-tasks"><span class="header-section-number">2.6</span> Practice Tasks</h2>
+<hr>
+<section id="practice-task-1" class="level3">
+<h3 class="anchored" data-anchor-id="practice-task-1">Practice Task 1</h3>
+<p>Write a program that:</p>
+<ol type="1">
+<li>Asks the user to enter a number</li>
+<li>Checks if the number is: <strong>Positive</strong>, <strong>Zero</strong> or <strong>Negative</strong></li>
+</ol>
+<div class="sourceCode" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>number <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Enter a number: "</span>))</span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> number <span class="op">&gt;</span> <span class="dv">0</span>:</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"The number is positive"</span>)</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> number <span class="op">==</span> <span class="dv">0</span>:</span>
+<span id="cb18-6"><a href="#cb18-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"The number is zero"</span>)</span>
+<span id="cb18-7"><a href="#cb18-7" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb18-8"><a href="#cb18-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"The number is negative"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <hr>
 </section>
+<section id="practice-task-2" class="level3">
+<h3 class="anchored" data-anchor-id="practice-task-2">Practice Task 2</h3>
+<p>Write a program that:</p>
+<ol type="1">
+<li>Asks the user to guess a secret number between 1 and 10</li>
+<li>Repeats until the user guesses correctly</li>
+</ol>
+<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>secret <span class="op">=</span> <span class="dv">7</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>guess <span class="op">=</span> <span class="va">None</span></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> guess <span class="op">!=</span> secret:</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>    guess <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Guess the number (1-10): "</span>))</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> guess <span class="op">==</span> secret:</span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Correct!"</span>)</span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="st">"Try again!"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
 </section>
-<section id="get-user-input" class="level2" data-number="1.6">
-<h2 data-number="1.6" class="anchored" data-anchor-id="get-user-input"><span class="header-section-number">1.6</span> Get User Input</h2>
-<p>The <strong>input()</strong> function in Python is used to <strong>take input from the user</strong> as a <strong>string</strong>.</p>
-<section id="syntax" class="level3">
-<h3 class="anchored" data-anchor-id="syntax">Syntax</h3>
-<div class="sourceCode" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a>variable <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Prompt message"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="practice-task-3" class="level3">
+<h3 class="anchored" data-anchor-id="practice-task-3">Practice Task 3</h3>
+<p>Write a program that:</p>
+<ol type="1">
+<li><p>Asks the user to enter a number</p></li>
+<li><p>Count the number of “o”s or “O”s in a given text</p></li>
+</ol>
+<div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>text <span class="op">=</span> <span class="bu">str</span>(<span class="bu">input</span>(<span class="st">"Enter a text: "</span>))</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>count <span class="op">=</span> <span class="dv">0</span></span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> char <span class="kw">in</span> text:</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> char <span class="op">==</span> <span class="st">"o"</span>:</span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a>    <span class="cf">elif</span> char <span class="op">==</span> <span class="st">"O"</span>:</span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a>        count <span class="op">=</span> count <span class="op">+</span> <span class="dv">1</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f'Number of "o": </span><span class="sc">{</span>count<span class="sc">}</span><span class="ss">'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<hr>
+<section id="practice-task-4" class="level4">
+<h4 class="anchored" data-anchor-id="practice-task-4">Practice Task 4</h4>
+<p>Write a program to:</p>
+<ol type="1">
+<li>Asks the user to enter a number</li>
+<li>classify someone as <strong>child, adult, or old</strong> based on their age:</li>
+</ol>
 <ul>
-<li>The message inside <strong>input()</strong> is optional and is shown to the user.</li>
-<li>The return value is always a <strong>string</strong> (<code>str</code>), even if the user types a number.</li>
+<li>If age is <strong>less than 18</strong>, print “child”. If age is <strong>between 18 and 64</strong> (inclusive of 18), print “adult”. Otherwise (65 and above), print “old”.</li>
 </ul>
-<hr>
-</section>
-<section id="examples-3" class="level3">
-<h3 class="anchored" data-anchor-id="examples-3">Examples</h3>
-<section id="get-users-name" class="level4">
-<h4 class="anchored" data-anchor-id="get-users-name">1. <strong>Get user’s name</strong></h4>
-<div class="sourceCode" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">"What is your name? "</span>)</span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello, "</span> <span class="op">+</span> name)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="get-number-input" class="level4">
-<h4 class="anchored" data-anchor-id="get-number-input">2. <strong>Get number input</strong></h4>
-<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your age: "</span>)</span>
-<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="bu">type</span>(age))   <span class="co"># &lt;class 'str'&gt;</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-<section id="convert-input-to-integer" class="level4">
-<h4 class="anchored" data-anchor-id="convert-input-to-integer">3. <strong>Convert input to integer</strong></h4>
-<div class="sourceCode" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Enter your age: "</span>))</span>
-<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(age <span class="op">+</span> <span class="dv">5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="multiple-inputs" class="level4">
-<h4 class="anchored" data-anchor-id="multiple-inputs">4. <strong>Multiple inputs</strong></h4>
-<div class="sourceCode" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a>x, y <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter two numbers separated by space: "</span>).split()</span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(x, y)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-</section>
-<section id="common-mistake" class="level3">
-<h3 class="anchored" data-anchor-id="common-mistake">Common Mistake</h3>
-<p>Always validate or cast carefully.</p>
-<div class="sourceCode" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This will cause an error if input is not a number</span></span>
-<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>num <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Enter a number: "</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<hr>
-</section>
-</section>
-<section id="practice-task" class="level2" data-number="1.7">
-<h2 data-number="1.7" class="anchored" data-anchor-id="practice-task"><span class="header-section-number">1.7</span> Practice Task</h2>
-<div class="sourceCode" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Define a constant for the value of Pi (used in circle area calculation)</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>PI <span class="op">=</span> <span class="fl">3.14159</span></span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Ask the user to enter their name and store it as a string</span></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>name <span class="op">=</span> <span class="bu">input</span>(<span class="st">"Enter your name: "</span>)</span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Ask the user to enter the radius, convert the input from string to float</span></span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>radius <span class="op">=</span> <span class="bu">float</span>(<span class="bu">input</span>(<span class="st">"Enter the radius of a circle: "</span>))</span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the area of the circle using the formula: area = π * r^2</span></span>
-<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>area <span class="op">=</span> PI <span class="op">*</span> radius <span class="op">*</span> radius</span>
-<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-13"><a href="#cb25-13" aria-hidden="true" tabindex="-1"></a><span class="co"># Greet the user by name</span></span>
-<span id="cb25-14"><a href="#cb25-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Hello"</span>, name)</span>
-<span id="cb25-15"><a href="#cb25-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-16"><a href="#cb25-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the calculated area of the circle</span></span>
-<span id="cb25-17"><a href="#cb25-17" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"Circle area is:"</span>, area)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb21"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>age <span class="op">=</span> <span class="bu">int</span>(<span class="bu">input</span>(<span class="st">"Enter your age: "</span>)) </span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb21-3"><a href="#cb21-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> age <span class="op">&lt;</span> <span class="dv">18</span>:</span>
+<span id="cb21-4"><a href="#cb21-4" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"You are a child."</span>)</span>
+<span id="cb21-5"><a href="#cb21-5" aria-hidden="true" tabindex="-1"></a><span class="cf">elif</span> <span class="dv">18</span> <span class="op">&lt;=</span> age <span class="op">&lt;</span> <span class="dv">65</span>:</span>
+<span id="cb21-6"><a href="#cb21-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"You are an adult."</span>)</span>
+<span id="cb21-7"><a href="#cb21-7" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span>:</span>
+<span id="cb21-8"><a href="#cb21-8" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(<span class="st">"You are old."</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -1212,13 +1240,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../../index.html" class="pagination-link" aria-label="Introduction">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Introduction</span>
+      <a href="../../chapters/01basic/00_input-output.html" class="pagination-link" aria-label="Basic Concepts">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Basic Concepts</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../../chapters/01helloPython/01_condition.html" class="pagination-link" aria-label="Conditions and Loops">
-        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Conditions and Loops</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../../chapters/01basic/02_simple-data.html" class="pagination-link" aria-label="Simple Data Types">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Simple Data Types</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
