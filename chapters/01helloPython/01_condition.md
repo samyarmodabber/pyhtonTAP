@@ -1,7 +1,7 @@
 ---
 marp: true
 ---
-# Conditions
+# Conditions and Loops
 
 ---
 
@@ -42,11 +42,11 @@ is_positive=30>0
 
 ---
 
-## **IF-ELIF-ELSE**: Making Decisions
+## **if-elif-else**: Making Decisions
 
 ---
 
- Build-in keywords **if**, **elif** and **else** are used to **control the flow** of your program based on conditions.
+Build-in keywords **if**, **elif** and **else** are used to **control the flow** of your program based on conditions.
 
 ### **if** Statement
 
@@ -175,7 +175,7 @@ Output:
 
 ---
 
-## **For** - Loop
+## **for** - Loop
 
 In Python, the **for** loop is used to iterate over a sequence (like a str that is a sequence of charechtors). Here's how it works:
 
@@ -291,10 +291,14 @@ while guess != secret:
 
 ### Practice Task 3
 
-Count the number of "o"
+Write a program that:
+
+1. Asks the user to enter a number
+
+2. Count the number of "o"s or "O"s in a given text
 
 ```python
-text = "Hello World! Python is cool."
+text = str(input("Enter a text: "))
 count = 0
 
 for char in text:
@@ -310,14 +314,15 @@ print(f'Number of "o": {count}')
 
 #### Practice Task 4
 
-Using **`if`-`elif`-`else`** to classify someone as **child, adult, or old** based on their age:
+Write a program to:
 
-- If age is **less than 18**, print "child".
-- If age is **between 18 and 64** (inclusive of 18), print "adult".
-- Otherwise (65 and above), print "old".
+1. Asks the user to enter a number
+2. classify someone as **child, adult, or old** based on their age:
+
+- If age is **less than 18**, print "child". If age is **between 18 and 64** (inclusive of 18), print "adult". Otherwise (65 and above), print "old".
 
 ```python
-age = 45  # You can change this number to test different cases
+age = int(input("Enter your age: ")) 
 
 if age < 18:
     print("You are a child.")
