@@ -12,7 +12,7 @@ Python uses **comparison operators** to compare values.
 These expressions return a **Boolean value**: **True** or **False**.
 
 | Operator | Meaning               | Example            |
-| -------- | --------------------- | ------------------ |
+| :----------- | :-------------------- | :----------------- |
 |  **==**      | Equal to              |  3 == 3  →  True   |
 |  **!=**      | Not equal to          |  3 != 4  →  True   |
 |  **>**       | Greater than          |  5 > 2  →  True    |
@@ -46,7 +46,7 @@ is_positive=30>0
 
 ---
 
-These are used to **control the flow** of your program based on conditions.
+ Build-in keywords **if**, **elif** and **else** are used to **control the flow** of your program based on conditions.
 
 ### **if** Statement
 
@@ -56,6 +56,8 @@ age = 18
 if age >= 18:
     print("You are an adult")
 ```
+
+- In Python, **curly braces `{}` are not used** for blocks like in some other languages (e.g., C, Java, JavaScript). Instead, Python uses **colen** and **indentation**.
 
 ---
 
@@ -89,7 +91,7 @@ else:
 
 ---
 
-## **While** - Loop Condition
+## **while** - Loop Condition
 
 The **while** loop keeps running **as long as** the condition is **True**.
 
@@ -126,8 +128,6 @@ while True:
 ---
 
 ### Controlling a loop
-
----
 
 #### **break** — Stop the Loop Early
 
@@ -175,6 +175,60 @@ Output:
 
 ---
 
+## **For** - Loop
+
+In Python, the **for** loop is used to iterate over a sequence (like a str that is a sequence of charechtors). Here's how it works:
+
+```python
+for variable in iterable:
+    # code block
+```
+
+---
+
+### Examples
+
+#### 1. For through a **string**
+
+```python
+for letter in "hello":
+    print(letter)
+```
+
+### 2. Build a **reversed string**
+
+```python
+text = "hello"
+reversed_text = ""
+
+for char in text:
+    reversed_text = char + reversed_text
+
+print(reversed_text) # Output: olleh
+```
+
+---
+
+#### 3. **for** with **break** and **continue**
+
+```python
+word = "Python"
+for char in word:
+    if char == "y":
+        break  
+    print(char, end="_") # P_
+```
+
+```python
+word = "Python"
+for char in word:
+    if char == "y":
+        continue  
+    print(char, end="_") # P_t_h_o_n_
+```
+
+---
+
 ## Summary Table
 
 | Concept    | Example           | Description                   |
@@ -187,55 +241,6 @@ Output:
 | **while**    | Repeat while condition is true       | **while x < 5:**        |
 | **break**    | Exit the loop immediately            | **if x == 5: break**    |
 | **continue** | Skip current loop and go to next one | **if x == 3: continue** |
-
----
-
-## **For** - Loop
-
-In Python, the **for** loop is used to iterate over a sequence (like a str that is a sequence of charechtors). Here's how it works:
-
-### Syntax
-
-```python
-for variable in iterable:
-    # code block
-```
-
----
-
-### Examples
-
-#### For through a **string**
-
-```python
-for letter in "hello":
-    print(letter)
-```
-
-#### **For** with **break** and **continue**
-
-```python
-for i in range(5):
-    if i == 3:
-        break  # exits the loop
-    print(i)
-
-for i in range(5):
-    if i == 3:
-        continue  # skips 3
-    print(i)
-```
-
----
-
-#### For with **else**
-
-```python
-for i in range(3):
-    print(i)
-else:
-    print("Loop finished!")
-```
 
 ---
 
@@ -280,4 +285,44 @@ while guess != secret:
         print("Correct!")
     else:
         print("Try again!")
+```
+
+---
+
+### Practice Task 3
+
+Count the number of "o"
+
+```python
+text = "Hello World! Python is cool."
+count = 0
+
+for char in text:
+    if char == "o":
+        count = count + 1
+    elif char == "O":
+        count = count + 1
+
+print(f'Number of "o": {count}')
+```
+
+---
+
+#### Practice Task 4
+
+Using **`if`-`elif`-`else`** to classify someone as **child, adult, or old** based on their age:
+
+- If age is **less than 18**, print "child".
+- If age is **between 18 and 64** (inclusive of 18), print "adult".
+- Otherwise (65 and above), print "old".
+
+```python
+age = 45  # You can change this number to test different cases
+
+if age < 18:
+    print("You are a child.")
+elif 18 <= age < 65:
+    print("You are an adult.")
+else:
+    print("You are old.")
 ```

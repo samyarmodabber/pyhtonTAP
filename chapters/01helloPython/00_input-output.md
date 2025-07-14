@@ -66,9 +66,7 @@ or documentation block.
 
 ## Display Output
 
-In Python, **print()** is a built-in function used to display output on the screen (usually in the terminal or console).
-
-### Basic Syntax
+In Python, **print()** is a built-in function used to display output on the screen (usually in the terminal or console). The basic syntax is
 
 ```python
 print(object1, object2, ..., sep=' ', end='\n')
@@ -76,12 +74,14 @@ print(object1, object2, ..., sep=' ', end='\n')
 
 ### Common Uses
 
-- **Print one or multiple items**
+- **Print one or multiple items or variable**
 
 ```python
 print("Hello, world!")
 print(42)
-print("Age:", 25) # Output: Age: 25
+print("Age:", 25) # Print one or multiple items
+city = "Berlin"
+print("City: ", city) # Print variable
 ```
 
 ---
@@ -100,13 +100,6 @@ print("World")
 # Output: Hello World
 ```
 
-- **Print variables**
-
-```python
-name = "Samyar"
-print("Name:", name)
-```
-
 ---
 
 ### Formatted output
@@ -114,25 +107,25 @@ print("Name:", name)
 ### 1. Using **f-string** (Recommended)
 
 ```python
-print(f"{city} is a capital city with a population of {population:,} and an area of {area:.1f} km².")
+print(f"{city} is with a population of {population:,} and an area of {area:.1f} km².")
 ```
 
 ### 2. Using **`str.format()`**
 
 ```python
-print("{} is a capital city with a population of {:,} and an area of {:.1f} km².".format(city, population, area))
+print("{} is with a population of {:,} and an area of {:.1f} km².".format(city, population, area))
 ```
 
 ### 3. Using **`%` formatting** (old style)
 
 ```python
-print("%s is a capital city with a population of %,d and an area of %.1f km²." % (city, population, area))
+print("%s is with a population of %,d and an area of %.1f km²." % (city, population, area))
 ```
 
 Output:
 
 ```bash
-Berlin is a capital city with a population of 3,850,000 and an area of 891.8 km².
+Berlin is with a population of 3,850,000 and an area of 891.8 km².
 ```
 
 ---
@@ -141,9 +134,7 @@ Berlin is a capital city with a population of 3,850,000 and an area of 891.8 km�
 
 ---
 
-The **type()** function in Python is used to check the **data type** of a variable or value.
-
-### Syntax
+The **type()** function in Python is used to check the **data type** of a variable or value.The Syntax is
 
 ```python
 type(object)
@@ -162,9 +153,7 @@ print(type(print))        # <class 'builtin_function_or_method'>
 
 ---
 
-The **isinstance()** function in Python is used to **check if a value is an instance of a specific type or class**.
-
-### Syntax
+The **isinstance()** function in Python is used to **check if a value is an instance of a specific type or class**. The Syntax is
 
 ```python
 isinstance(object, <class_name>)
@@ -246,8 +235,8 @@ The **input()** function in Python is used to **take input from the user** as a 
 variable = input("Prompt message")
 ```
 
-* The message inside **input()** is optional and is shown to the user.
-* The return value is always a **string** (`str`), even if the user types a number.
+- The message inside **input()** is optional and is shown to the user.
+- The return value is always a **string** (`str`), even if the user types a number.
 
 ---
 

@@ -26,15 +26,14 @@ book:
   search:
     location: navbar
     type: overlay
-  
-  page-footer: 
-    left: "Copyright 2021, Samyar Modabber" 
-    right: 
+
+  page-footer:
+    left: "Copyright 2021, Samyar Modabber"
+    right:
       - icon: github
         href: https://github.com/samyarmodabber
-      - icon: innstagram 
+      - icon: innstagram
         href: https://instagram.com/samyar.de
-
 
   navbar:
     pinned: true
@@ -51,7 +50,7 @@ book:
     logo: logo.png
   # page-footer:
   #   center:
-  #     - text: "درباره ما"
+  #     - text: "About us"
   #       href: pages/about.qmd
   # - text: "License"
   #   href: pages/license.qmd
